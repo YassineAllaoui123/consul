@@ -1,0 +1,19 @@
+# Copyright (c) HashiCorp, Inc.
+# SPDX-License-Identifier: MPL-2.0
+
+---
+apiVersion: consul.hashicorp.com/v1alpha1
+kind: ServiceIntentions
+metadata:
+  name: public-api
+spec:
+  destination:
+    name: public-api
+    namespace: frontend
+  sources:
+    - name: graphql-ingress-gateway
+      namespace: frontend
+      action: allow
+    - name: web
+      namespace: frontend
+      action: allow

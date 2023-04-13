@@ -1,0 +1,18 @@
+[0m[1mdata.terraform_remote_state.iam: Refreshing state...[0m
+[0m[1mdata.terraform_remote_state.infra: Refreshing state...[0m
+[0m[1mconsul_config_entry.postgres: Refreshing state... [id=service-defaults-postgres][0m
+[0m[1mrandom_password.pg: Refreshing state... [id=none][0m
+[0m[1mazurerm_postgresql_flexible_server.postgres: Refreshing state... [id=/subscriptions/37bc21fd-d0f5-46a3-8802-d5136be12b7e/resourceGroups/instruqt-vfej/providers/Microsoft.DBforPostgreSQL/flexibleServers/instruqt-vfej][0m
+[0m[1mconsul_node.azure-pg: Refreshing state... [id=azure-pg-instruqt-vfej.postgres.database.azure.com][0m
+[0m[1mazurerm_postgresql_flexible_server_configuration.extensions: Refreshing state... [id=/subscriptions/37bc21fd-d0f5-46a3-8802-d5136be12b7e/resourceGroups/instruqt-vfej/providers/Microsoft.DBforPostgreSQL/flexibleServers/instruqt-vfej/configurations/azure.extensions][0m
+[0m[1mazurerm_postgresql_flexible_server_firewall_rule.postgres: Refreshing state... [id=/subscriptions/37bc21fd-d0f5-46a3-8802-d5136be12b7e/resourceGroups/instruqt-vfej/providers/Microsoft.DBforPostgreSQL/flexibleServers/instruqt-vfej/firewallRules/AllowAll][0m
+[0m[1mconsul_service.azure-pg: Refreshing state... [id=postgres][0m
+[0m[1mconsul_config_entry.postgres: Modifying... [id=service-defaults-postgres][0m[0m
+[0m[1mconsul_config_entry.postgres: Modifications complete after 1s [id=service-defaults-postgres][0m[0m
+[0m[1m[32m
+Apply complete! Resources: 0 added, 1 changed, 0 destroyed.[0m
+[0m[1m[32m
+Outputs:
+
+postgres_fqdn = instruqt-vfej.postgres.database.azure.com
+postgres_password = YO!QRaDfqBjpNuBLegtR[0m

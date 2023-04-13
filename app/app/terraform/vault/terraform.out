@@ -1,0 +1,36 @@
+[0m[1mdata.terraform_remote_state.infra: Refreshing state...[0m
+[0m[1mdata.aws_ami.ubuntu: Refreshing state... [id=ami-01e1e3f0046f48453][0m
+[0m[1maws_kms_key.vault: Refreshing state... [id=b2fe096f-d275-4712-b636-109a5b0d9d86][0m
+[0m[1maws_iam_role.vault: Refreshing state... [id=vault-vfej][0m
+[0m[1maws_security_group.vault: Refreshing state... [id=sg-097340a2c7f9e4979][0m
+[0m[1mdata.template_file.vault: Refreshing state... [id=7788965cb53db5b5e18a1166004a88235e3c33ff657c8d8c7c3994fc899eb369][0m
+[0m[1maws_iam_policy.vault: Refreshing state... [id=arn:aws:iam::332258952501:policy/vault-vfej][0m
+[0m[1maws_iam_instance_profile.vault: Refreshing state... [id=vault-vfej][0m
+[0m[1maws_iam_role_policy_attachment.vault: Refreshing state... [id=vault-vfej-20230413123736131100000001][0m
+[0m[1mdata.azurerm_client_config.current: Refreshing state... [id=2023-04-13 12:37:23.485183355 +0000 UTC][0m
+[0m[1mdata.azurerm_subscription.current: Refreshing state... [id=/subscriptions/37bc21fd-d0f5-46a3-8802-d5136be12b7e][0m
+[0m[1mdata.azurerm_image.ubuntu: Refreshing state... [id=/subscriptions/37bc21fd-d0f5-46a3-8802-d5136be12b7e/resourceGroups/packer/providers/Microsoft.Compute/images/hashistack-2023-04-13][0m
+[0m[1mazurerm_public_ip.vault: Refreshing state... [id=/subscriptions/37bc21fd-d0f5-46a3-8802-d5136be12b7e/resourceGroups/instruqt-vfej/providers/Microsoft.Network/publicIPAddresses/vault-server-ip][0m
+[0m[1mazurerm_key_vault.vault: Refreshing state... [id=/subscriptions/37bc21fd-d0f5-46a3-8802-d5136be12b7e/resourceGroups/instruqt-vfej/providers/Microsoft.KeyVault/vaults/vault-vfej][0m
+[0m[1maws_instance.vault: Refreshing state... [id=i-06ec826f1204f932f][0m
+[0m[1mazurerm_network_interface.vault: Refreshing state... [id=/subscriptions/37bc21fd-d0f5-46a3-8802-d5136be12b7e/resourceGroups/instruqt-vfej/providers/Microsoft.Network/networkInterfaces/vault-server-nic][0m
+[0m[1mazurerm_key_vault_access_policy.instruqt: Refreshing state... [id=/subscriptions/37bc21fd-d0f5-46a3-8802-d5136be12b7e/resourceGroups/instruqt-vfej/providers/Microsoft.KeyVault/vaults/vault-vfej/objectId/2c783f99-c484-45ba-9074-e01494a724db][0m
+[0m[1mazurerm_key_vault_key.vault: Refreshing state... [id=https://vault-vfej.vault.azure.net/keys/vault-key-vfej/1f5b0c965ebb43c6ba0faaef5f5c0759][0m
+[0m[1mdata.template_file.azure-vault-init: Refreshing state... [id=66a00e81b4f502d963f0883ebadb8c288650c79887b1c1d62f9876c396079af1][0m
+[0m[1mazurerm_virtual_machine.vault: Refreshing state... [id=/subscriptions/37bc21fd-d0f5-46a3-8802-d5136be12b7e/resourceGroups/instruqt-vfej/providers/Microsoft.Compute/virtualMachines/vault-server-vm][0m
+[0m[1mazurerm_role_assignment.vault-reader: Refreshing state... [id=/subscriptions/37bc21fd-d0f5-46a3-8802-d5136be12b7e/providers/Microsoft.Authorization/roleAssignments/91a9a78b-5b37-61d0-a048-c33342d00421][0m
+[0m[1mazurerm_role_assignment.vault-key-admin: Refreshing state... [id=/subscriptions/37bc21fd-d0f5-46a3-8802-d5136be12b7e/providers/Microsoft.Authorization/roleAssignments/463b2c8b-d153-fb7b-572c-843a4e6fd33e][0m
+[0m[1mazurerm_key_vault_access_policy.vault: Refreshing state... [id=/subscriptions/37bc21fd-d0f5-46a3-8802-d5136be12b7e/resourceGroups/instruqt-vfej/providers/Microsoft.KeyVault/vaults/vault-vfej/objectId/bc7160bb-b986-433b-a7e1-a6ec38982c02][0m
+[33m
+[1m[33mWarning: [0m[0m[1m"skip_credentials_validation": [DEPRECATED] This field is deprecated and will be removed in version 3.0 of the Azure Provider[0m
+
+[0m[0m[0m
+[0m[1m[32m
+Apply complete! Resources: 0 added, 0 changed, 0 destroyed.[0m
+[0m[1m[32m
+Outputs:
+
+aws_vault_iam_role_arn = arn:aws:iam::332258952501:role/vault-vfej
+aws_vault_ip = 54.89.189.97
+azure_vault_ip = 52.171.52.243
+azure_vault_user_assigned_identity_principal_id = bc7160bb-b986-433b-a7e1-a6ec38982c02[0m

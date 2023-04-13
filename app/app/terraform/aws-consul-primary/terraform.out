@@ -1,0 +1,20 @@
+[0m[1mdata.terraform_remote_state.iam: Refreshing state...[0m
+[0m[1mdata.terraform_remote_state.infra: Refreshing state...[0m
+[0m[1mdata.template_file.init: Refreshing state...[0m
+[0m[1mdata.template_file.aws_mgw_init: Refreshing state...[0m
+[0m[1mdata.aws_ami.ubuntu: Refreshing state...[0m
+[0m[1maws_security_group.consul: Creating...[0m[0m
+[0m[1maws_security_group.consul: Creation complete after 6s [id=sg-013ca9c7ef6f805b7][0m[0m
+[0m[1maws_instance.mesh_gateway: Creating...[0m[0m
+[0m[1maws_instance.consul: Creating...[0m[0m
+[0m[1maws_instance.mesh_gateway: Still creating... [10s elapsed][0m[0m
+[0m[1maws_instance.consul: Still creating... [10s elapsed][0m[0m
+[0m[1maws_instance.mesh_gateway: Creation complete after 16s [id=i-0683410a44d2ec17c][0m[0m
+[0m[1maws_instance.consul: Creation complete after 16s [id=i-06088deafbb0fee0c][0m[0m
+[0m[1m[32m
+Apply complete! Resources: 3 added, 0 changed, 0 destroyed.[0m
+[0m[1m[32m
+Outputs:
+
+aws_consul_public_ip = 3.80.228.37
+aws_mgw_public_ip = 34.201.63.113[0m

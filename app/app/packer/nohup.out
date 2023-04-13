@@ -1,0 +1,1084 @@
+[1;32mamazon-ebs-ubuntu-bionic: output will be in this color.[0m
+[1;36mazure-ubuntu-bionic: output will be in this color.[0m
+
+[1;36m==> azure-ubuntu-bionic: Running builder ...[0m
+[1;36m==> azure-ubuntu-bionic: Getting tokens using client secret[0m
+[1;36m==> azure-ubuntu-bionic: Getting tokens using client secret[0m
+[0;36m    azure-ubuntu-bionic: Creating Azure Resource Manager (ARM) client ...[0m
+[1;32m==> amazon-ebs-ubuntu-bionic: Force Deregister flag found, skipping prevalidating AMI Name[0m
+[0;32m    amazon-ebs-ubuntu-bionic: Found Image ID: ami-047aac48e2ffc201f[0m
+[1;32m==> amazon-ebs-ubuntu-bionic: Creating temporary keypair: packer_6437f535-9c18-a0e1-50c6-afc52399340a[0m
+[1;36m==> azure-ubuntu-bionic: WARNING: Zone resiliency may not be supported in South Central US, checkout the docs at https://docs.microsoft.com/en-us/azure/availability-zones/[0m
+[1;36m==> azure-ubuntu-bionic: Creating resource group ...[0m
+[1;36m==> azure-ubuntu-bionic:  -> ResourceGroupName : 'pkr-Resource-Group-mw3b8rzom0'[0m
+[1;36m==> azure-ubuntu-bionic:  -> Location          : 'South Central US'[0m
+[1;36m==> azure-ubuntu-bionic:  -> Tags              :[0m
+[1;36m==> azure-ubuntu-bionic:  ->> os-version : bionic[0m
+[1;36m==> azure-ubuntu-bionic:  ->> name : Hashistack[0m
+[1;36m==> azure-ubuntu-bionic:  ->> os : ubuntu[0m
+[1;32m==> amazon-ebs-ubuntu-bionic: Creating temporary security group for this instance: packer_6437f539-9479-ef45-a080-3aa0e438c535[0m
+[1;32m==> amazon-ebs-ubuntu-bionic: Authorizing access to port 22 from [0.0.0.0/0] in the temporary security groups...[0m
+[1;32m==> amazon-ebs-ubuntu-bionic: Launching a source AWS instance...[0m
+[1;32m==> amazon-ebs-ubuntu-bionic: Adding tags to source instance[0m
+[0;32m    amazon-ebs-ubuntu-bionic: Adding tag: "Name": "Packer Builder"[0m
+[1;36m==> azure-ubuntu-bionic: Validating deployment template ...[0m
+[1;36m==> azure-ubuntu-bionic:  -> ResourceGroupName : 'pkr-Resource-Group-mw3b8rzom0'[0m
+[1;36m==> azure-ubuntu-bionic:  -> DeploymentName    : 'pkrdpmw3b8rzom0'[0m
+[0;32m    amazon-ebs-ubuntu-bionic: Instance ID: i-096f6b66a310b7f10[0m
+[1;32m==> amazon-ebs-ubuntu-bionic: Waiting for instance (i-096f6b66a310b7f10) to become ready...[0m
+[1;36m==> azure-ubuntu-bionic: Deploying deployment template ...[0m
+[1;36m==> azure-ubuntu-bionic:  -> ResourceGroupName : 'pkr-Resource-Group-mw3b8rzom0'[0m
+[1;36m==> azure-ubuntu-bionic:  -> DeploymentName    : 'pkrdpmw3b8rzom0'[0m
+[1;32m==> amazon-ebs-ubuntu-bionic: Using ssh communicator to connect: 44.214.178.65[0m
+[1;32m==> amazon-ebs-ubuntu-bionic: Waiting for SSH to become available...[0m
+[1;32m==> amazon-ebs-ubuntu-bionic: Connected to SSH![0m
+[1;32m==> amazon-ebs-ubuntu-bionic: Provisioning with shell script: scripts/aws.sh[0m
+[0;32m    amazon-ebs-ubuntu-bionic: OK[0m
+[0;32m    amazon-ebs-ubuntu-bionic: Hit:1 http://us-east-1.ec2.archive.ubuntu.com/ubuntu bionic InRelease[0m
+[0;32m    amazon-ebs-ubuntu-bionic: Get:2 http://us-east-1.ec2.archive.ubuntu.com/ubuntu bionic-updates InRelease [88.7 kB][0m
+[0;32m    amazon-ebs-ubuntu-bionic: Get:3 http://us-east-1.ec2.archive.ubuntu.com/ubuntu bionic-backports InRelease [83.3 kB][0m
+[0;32m    amazon-ebs-ubuntu-bionic: Get:4 https://apt.releases.hashicorp.com bionic InRelease [12.9 kB][0m
+[0;32m    amazon-ebs-ubuntu-bionic: Get:5 http://security.ubuntu.com/ubuntu bionic-security InRelease [88.7 kB][0m
+[0;32m    amazon-ebs-ubuntu-bionic: Get:6 http://us-east-1.ec2.archive.ubuntu.com/ubuntu bionic/universe amd64 Packages [8570 kB][0m
+[0;32m    amazon-ebs-ubuntu-bionic: Get:7 http://us-east-1.ec2.archive.ubuntu.com/ubuntu bionic/universe Translation-en [4941 kB][0m
+[0;32m    amazon-ebs-ubuntu-bionic: Get:8 http://us-east-1.ec2.archive.ubuntu.com/ubuntu bionic/multiverse amd64 Packages [151 kB][0m
+[0;32m    amazon-ebs-ubuntu-bionic: Get:9 http://us-east-1.ec2.archive.ubuntu.com/ubuntu bionic/multiverse Translation-en [108 kB][0m
+[0;32m    amazon-ebs-ubuntu-bionic: Get:10 http://us-east-1.ec2.archive.ubuntu.com/ubuntu bionic-updates/main amd64 Packages [2946 kB][0m
+[0;32m    amazon-ebs-ubuntu-bionic: Get:11 http://us-east-1.ec2.archive.ubuntu.com/ubuntu bionic-updates/main Translation-en [539 kB][0m
+[0;32m    amazon-ebs-ubuntu-bionic: Get:12 http://us-east-1.ec2.archive.ubuntu.com/ubuntu bionic-updates/restricted amd64 Packages [1200 kB][0m
+[0;32m    amazon-ebs-ubuntu-bionic: Get:13 http://us-east-1.ec2.archive.ubuntu.com/ubuntu bionic-updates/universe amd64 Packages [1896 kB][0m
+[0;32m    amazon-ebs-ubuntu-bionic: Get:14 http://us-east-1.ec2.archive.ubuntu.com/ubuntu bionic-updates/universe Translation-en [415 kB][0m
+[0;32m    amazon-ebs-ubuntu-bionic: Get:15 http://us-east-1.ec2.archive.ubuntu.com/ubuntu bionic-updates/multiverse amd64 Packages [25.6 kB][0m
+[0;32m    amazon-ebs-ubuntu-bionic: Get:16 http://us-east-1.ec2.archive.ubuntu.com/ubuntu bionic-updates/multiverse Translation-en [6088 B][0m
+[0;32m    amazon-ebs-ubuntu-bionic: Get:17 http://us-east-1.ec2.archive.ubuntu.com/ubuntu bionic-backports/main amd64 Packages [53.3 kB][0m
+[0;32m    amazon-ebs-ubuntu-bionic: Get:18 http://us-east-1.ec2.archive.ubuntu.com/ubuntu bionic-backports/main Translation-en [14.6 kB][0m
+[0;32m    amazon-ebs-ubuntu-bionic: Get:19 http://us-east-1.ec2.archive.ubuntu.com/ubuntu bionic-backports/universe amd64 Packages [18.1 kB][0m
+[0;32m    amazon-ebs-ubuntu-bionic: Get:20 http://us-east-1.ec2.archive.ubuntu.com/ubuntu bionic-backports/universe Translation-en [8668 B][0m
+[0;32m    amazon-ebs-ubuntu-bionic: Get:21 https://apt.releases.hashicorp.com bionic/main amd64 Packages [82.5 kB][0m
+[0;32m    amazon-ebs-ubuntu-bionic: Get:22 http://security.ubuntu.com/ubuntu bionic-security/main amd64 Packages [2613 kB][0m
+[0;32m    amazon-ebs-ubuntu-bionic: Get:23 http://security.ubuntu.com/ubuntu bionic-security/main Translation-en [452 kB][0m
+[0;32m    amazon-ebs-ubuntu-bionic: Get:24 http://security.ubuntu.com/ubuntu bionic-security/restricted amd64 Packages [1169 kB][0m
+[0;32m    amazon-ebs-ubuntu-bionic: Get:25 http://security.ubuntu.com/ubuntu bionic-security/universe amd64 Packages [1284 kB][0m
+[0;32m    amazon-ebs-ubuntu-bionic: Get:26 http://security.ubuntu.com/ubuntu bionic-security/universe Translation-en [302 kB][0m
+[0;32m    amazon-ebs-ubuntu-bionic: Get:27 http://security.ubuntu.com/ubuntu bionic-security/multiverse amd64 Packages [19.8 kB][0m
+[0;32m    amazon-ebs-ubuntu-bionic: Get:28 http://security.ubuntu.com/ubuntu bionic-security/multiverse Translation-en [3928 B][0m
+[0;32m    amazon-ebs-ubuntu-bionic: Fetched 27.1 MB in 5s (5319 kB/s)[0m
+[1;36m==> azure-ubuntu-bionic:[0m
+[1;36m==> azure-ubuntu-bionic: Getting the VM's IP address ...[0m
+[1;36m==> azure-ubuntu-bionic:  -> ResourceGroupName   : 'pkr-Resource-Group-mw3b8rzom0'[0m
+[1;36m==> azure-ubuntu-bionic:  -> PublicIPAddressName : 'pkripmw3b8rzom0'[0m
+[1;36m==> azure-ubuntu-bionic:  -> NicName             : 'pkrnimw3b8rzom0'[0m
+[1;36m==> azure-ubuntu-bionic:  -> Network Connection  : 'PublicEndpoint'[0m
+[1;36m==> azure-ubuntu-bionic:  -> IP Address          : '40.124.44.186'[0m
+[1;36m==> azure-ubuntu-bionic: Waiting for SSH to become available...[0m
+[0;32m    amazon-ebs-ubuntu-bionic: Reading package lists... Done[0m
+[0;32m    amazon-ebs-ubuntu-bionic: Hit:1 http://us-east-1.ec2.archive.ubuntu.com/ubuntu bionic InRelease[0m
+[0;32m    amazon-ebs-ubuntu-bionic: Hit:2 http://us-east-1.ec2.archive.ubuntu.com/ubuntu bionic-updates InRelease[0m
+[0;32m    amazon-ebs-ubuntu-bionic: Hit:3 http://us-east-1.ec2.archive.ubuntu.com/ubuntu bionic-backports InRelease[0m
+[0;32m    amazon-ebs-ubuntu-bionic: Hit:4 http://security.ubuntu.com/ubuntu bionic-security InRelease[0m
+[0;32m    amazon-ebs-ubuntu-bionic: Hit:5 https://apt.releases.hashicorp.com bionic InRelease[0m
+[1;36m==> azure-ubuntu-bionic: Connected to SSH![0m
+[1;36m==> azure-ubuntu-bionic: Provisioning with shell script: scripts/azure.sh[0m
+[0;32m    amazon-ebs-ubuntu-bionic: Reading package lists... Done[0m
+[0;32m    amazon-ebs-ubuntu-bionic: Building dependency tree[0m
+[0;32m    amazon-ebs-ubuntu-bionic: Reading state information... Done[0m
+[0;32m    amazon-ebs-ubuntu-bionic: 12 packages can be upgraded. Run 'apt list --upgradable' to see them.[0m
+[0;32m    amazon-ebs-ubuntu-bionic: Reading package lists... Done[0m
+[0;32m    amazon-ebs-ubuntu-bionic: Building dependency tree[0m
+[0;32m    amazon-ebs-ubuntu-bionic: Reading state information... Done[0m
+[0;32m    amazon-ebs-ubuntu-bionic: The following additional packages will be installed:[0m
+[0;32m    amazon-ebs-ubuntu-bionic:   bridge-utils containerd docutils-common fontconfig fontconfig-config[0m
+[0;32m    amazon-ebs-ubuntu-bionic:   fonts-dejavu-core fonts-droid-fallback fonts-noto-mono ghostscript groff[0m
+[0;32m    amazon-ebs-ubuntu-bionic:   gsfonts hicolor-icon-theme imagemagick imagemagick-6-common[0m
+[0;32m    amazon-ebs-ubuntu-bionic:   imagemagick-6.q16 libavahi-client3 libavahi-common-data libavahi-common3[0m
+[0;32m    amazon-ebs-ubuntu-bionic:   libcairo2 libcups2 libcupsfilters1 libcupsimage2 libdatrie1[0m
+[0;32m    amazon-ebs-ubuntu-bionic:   libdjvulibre-text libdjvulibre21 libfftw3-double3 libfontconfig1 libgomp1[0m
+[0;32m    amazon-ebs-ubuntu-bionic:   libgraphite2-3 libgs9 libgs9-common libharfbuzz0b libice6 libijs-0.35[0m
+[0;32m    amazon-ebs-ubuntu-bionic:   libilmbase12 libjbig0 libjbig2dec0 libjemalloc1 libjpeg-turbo8 libjpeg8[0m
+[0;32m    amazon-ebs-ubuntu-bionic:   libjq1 liblcms2-2 liblqr-1-0 libltdl7 libmagickcore-6.q16-3[0m
+[0;32m    amazon-ebs-ubuntu-bionic:   libmagickcore-6.q16-3-extra libmagickwand-6.q16-3 libnetpbm10 libonig4[0m
+[0;32m    amazon-ebs-ubuntu-bionic:   libopenexr22 libpango-1.0-0 libpangocairo-1.0-0 libpangoft2-1.0-0[0m
+[0;32m    amazon-ebs-ubuntu-bionic:   libpaper-utils libpaper1 libpixman-1-0 libsm6 libthai-data libthai0 libtiff5[0m
+[0;32m    amazon-ebs-ubuntu-bionic:   libwebp6 libwebpdemux2 libwebpmux3 libwmf0.2-7 libxaw7 libxcb-render0[0m
+[0;32m    amazon-ebs-ubuntu-bionic:   libxcb-shm0 libxmu6 libxpm4 libxrender1 libxt6 netpbm pigz poppler-data[0m
+[0;32m    amazon-ebs-ubuntu-bionic:   psutils python3-botocore python3-dateutil python3-docutils python3-jmespath[0m
+[0;32m    amazon-ebs-ubuntu-bionic:   python3-olefile python3-pil python3-pygments python3-roman python3-rsa[0m
+[0;32m    amazon-ebs-ubuntu-bionic:   python3-s3transfer redis-tools runc sgml-base ubuntu-fan x11-common xml-core[0m
+[0;32m    amazon-ebs-ubuntu-bionic: Suggested packages:[0m
+[0;32m    amazon-ebs-ubuntu-bionic:   ifupdown aufs-tools cgroupfs-mount | cgroup-lite debootstrap docker-doc[0m
+[0;32m    amazon-ebs-ubuntu-bionic:   rinse zfs-fuse | zfsutils fonts-noto ghostscript-x imagemagick-doc autotrace[0m
+[0;32m    amazon-ebs-ubuntu-bionic:   cups-bsd | lpr | lprng enscript ffmpeg gimp gnuplot grads graphviz hp2xx[0m
+[0;32m    amazon-ebs-ubuntu-bionic:   html2ps libwmf-bin mplayer povray radiance sane-utils texlive-base-bin[0m
+[0;32m    amazon-ebs-ubuntu-bionic:   transfig ufraw-batch xdg-utils cups-common libfftw3-bin libfftw3-dev[0m
+[0;32m    amazon-ebs-ubuntu-bionic:   liblcms2-utils inkscape libjxr-tools libwmf0.2-7-gtk poppler-utils[0m
+[0;32m    amazon-ebs-ubuntu-bionic:   fonts-japanese-mincho | fonts-ipafont-mincho fonts-japanese-gothic[0m
+[0;32m    amazon-ebs-ubuntu-bionic:   | fonts-ipafont-gothic fonts-arphic-ukai fonts-arphic-uming fonts-nanum[0m
+[0;32m    amazon-ebs-ubuntu-bionic:   docutils-doc fonts-linuxlibertine | ttf-linux-libertine texlive-lang-french[0m
+[0;32m    amazon-ebs-ubuntu-bionic:   texlive-latex-base texlive-latex-recommended python-pil-doc python3-pil-dbg[0m
+[0;32m    amazon-ebs-ubuntu-bionic:   ttf-bitstream-vera ruby-redis sgml-base-doc zip debhelper[0m
+[0;32m    amazon-ebs-ubuntu-bionic: The following NEW packages will be installed:[0m
+[0;32m    amazon-ebs-ubuntu-bionic:   awscli bridge-utils consul-enterprise containerd docker.io docutils-common[0m
+[0;32m    amazon-ebs-ubuntu-bionic:   fontconfig fontconfig-config fonts-dejavu-core fonts-droid-fallback[0m
+[0;32m    amazon-ebs-ubuntu-bionic:   fonts-noto-mono ghostscript groff gsfonts hicolor-icon-theme imagemagick[0m
+[0;32m    amazon-ebs-ubuntu-bionic:   imagemagick-6-common imagemagick-6.q16 jq libavahi-client3[0m
+[0;32m    amazon-ebs-ubuntu-bionic:   libavahi-common-data libavahi-common3 libcairo2 libcups2 libcupsfilters1[0m
+[0;32m    amazon-ebs-ubuntu-bionic:   libcupsimage2 libdatrie1 libdjvulibre-text libdjvulibre21 libfftw3-double3[0m
+[0;32m    amazon-ebs-ubuntu-bionic:   libfontconfig1 libgomp1 libgraphite2-3 libgs9 libgs9-common libharfbuzz0b[0m
+[0;32m    amazon-ebs-ubuntu-bionic:   libice6 libijs-0.35 libilmbase12 libjbig0 libjbig2dec0 libjemalloc1[0m
+[0;32m    amazon-ebs-ubuntu-bionic:   libjpeg-turbo8 libjpeg8 libjq1 liblcms2-2 liblqr-1-0 libltdl7[0m
+[0;32m    amazon-ebs-ubuntu-bionic:   libmagickcore-6.q16-3 libmagickcore-6.q16-3-extra libmagickwand-6.q16-3[0m
+[0;32m    amazon-ebs-ubuntu-bionic:   libnetpbm10 libonig4 libopenexr22 libpango-1.0-0 libpangocairo-1.0-0[0m
+[0;32m    amazon-ebs-ubuntu-bionic:   libpangoft2-1.0-0 libpaper-utils libpaper1 libpixman-1-0 libsm6 libthai-data[0m
+[0;32m    amazon-ebs-ubuntu-bionic:   libthai0 libtiff5 libwebp6 libwebpdemux2 libwebpmux3 libwmf0.2-7 libxaw7[0m
+[0;32m    amazon-ebs-ubuntu-bionic:   libxcb-render0 libxcb-shm0 libxmu6 libxpm4 libxrender1 libxt6 netpbm[0m
+[0;32m    amazon-ebs-ubuntu-bionic:   nomad-enterprise pigz poppler-data psutils python3-botocore python3-dateutil[0m
+[0;32m    amazon-ebs-ubuntu-bionic:   python3-docutils python3-jmespath python3-olefile python3-pil[0m
+[0;32m    amazon-ebs-ubuntu-bionic:   python3-pygments python3-roman python3-rsa python3-s3transfer redis-server[0m
+[0;32m    amazon-ebs-ubuntu-bionic:   redis-tools runc sgml-base ubuntu-fan unzip vault-enterprise x11-common[0m
+[0;32m    amazon-ebs-ubuntu-bionic:   xml-core[0m
+[0;32m    amazon-ebs-ubuntu-bionic: 0 upgraded, 99 newly installed, 0 to remove and 12 not upgraded.[0m
+[0;32m    amazon-ebs-ubuntu-bionic: Need to get 253 MB of archives.[0m
+[0;32m    amazon-ebs-ubuntu-bionic: After this operation, 866 MB of additional disk space will be used.[0m
+[0;32m    amazon-ebs-ubuntu-bionic: Get:1 http://us-east-1.ec2.archive.ubuntu.com/ubuntu bionic/main amd64 fonts-dejavu-core all 2.37-1 [1041 kB][0m
+[0;32m    amazon-ebs-ubuntu-bionic: Get:2 http://us-east-1.ec2.archive.ubuntu.com/ubuntu bionic/main amd64 fontconfig-config all 2.12.6-0ubuntu2 [55.8 kB][0m
+[0;32m    amazon-ebs-ubuntu-bionic: Get:3 http://us-east-1.ec2.archive.ubuntu.com/ubuntu bionic/main amd64 libfontconfig1 amd64 2.12.6-0ubuntu2 [137 kB][0m
+[0;32m    amazon-ebs-ubuntu-bionic: Get:4 http://us-east-1.ec2.archive.ubuntu.com/ubuntu bionic/main amd64 fontconfig amd64 2.12.6-0ubuntu2 [169 kB][0m
+[0;32m    amazon-ebs-ubuntu-bionic: Get:5 http://us-east-1.ec2.archive.ubuntu.com/ubuntu bionic/main amd64 fonts-droid-fallback all 1:6.0.1r16-1.1 [1805 kB][0m
+[0;32m    amazon-ebs-ubuntu-bionic: Get:6 http://us-east-1.ec2.archive.ubuntu.com/ubuntu bionic-updates/main amd64 libjpeg-turbo8 amd64 1.5.2-0ubuntu5.18.04.6 [111 kB][0m
+[0;32m    amazon-ebs-ubuntu-bionic: Get:7 http://us-east-1.ec2.archive.ubuntu.com/ubuntu bionic-updates/main amd64 libgomp1 amd64 8.4.0-1ubuntu1~18.04 [76.5 kB][0m
+[0;32m    amazon-ebs-ubuntu-bionic: Get:8 http://us-east-1.ec2.archive.ubuntu.com/ubuntu bionic/main amd64 libfftw3-double3 amd64 3.3.7-1 [735 kB][0m
+[0;32m    amazon-ebs-ubuntu-bionic: Get:9 http://us-east-1.ec2.archive.ubuntu.com/ubuntu bionic-updates/main amd64 libjbig0 amd64 2.1-3.1ubuntu0.18.04.1 [27.0 kB][0m
+[0;32m    amazon-ebs-ubuntu-bionic: Get:10 http://us-east-1.ec2.archive.ubuntu.com/ubuntu bionic/main amd64 libjpeg8 amd64 8c-2ubuntu8 [2194 B][0m
+[0;32m    amazon-ebs-ubuntu-bionic: Get:11 http://us-east-1.ec2.archive.ubuntu.com/ubuntu bionic-updates/main amd64 liblcms2-2 amd64 2.9-1ubuntu0.1 [139 kB][0m
+[0;32m    amazon-ebs-ubuntu-bionic: Get:12 http://us-east-1.ec2.archive.ubuntu.com/ubuntu bionic/main amd64 liblqr-1-0 amd64 0.4.2-2.1 [27.7 kB][0m
+[0;32m    amazon-ebs-ubuntu-bionic: Get:13 http://us-east-1.ec2.archive.ubuntu.com/ubuntu bionic/main amd64 libltdl7 amd64 2.4.6-2 [38.8 kB][0m
+[0;32m    amazon-ebs-ubuntu-bionic: Get:14 http://us-east-1.ec2.archive.ubuntu.com/ubuntu bionic-updates/main amd64 libtiff5 amd64 4.0.9-5ubuntu0.10 [154 kB][0m
+[0;32m    amazon-ebs-ubuntu-bionic: Get:15 http://us-east-1.ec2.archive.ubuntu.com/ubuntu bionic-updates/main amd64 imagemagick-6-common all 8:6.9.7.4+dfsg-16ubuntu6.15 [60.2 kB][0m
+[0;32m    amazon-ebs-ubuntu-bionic: Get:16 http://us-east-1.ec2.archive.ubuntu.com/ubuntu bionic-updates/main amd64 libmagickcore-6.q16-3 amd64 8:6.9.7.4+dfsg-16ubuntu6.15 [1621 kB][0m
+[0;32m    amazon-ebs-ubuntu-bionic: Get:17 http://us-east-1.ec2.archive.ubuntu.com/ubuntu bionic-updates/main amd64 libmagickwand-6.q16-3 amd64 8:6.9.7.4+dfsg-16ubuntu6.15 [293 kB][0m
+[0;32m    amazon-ebs-ubuntu-bionic: Get:18 http://us-east-1.ec2.archive.ubuntu.com/ubuntu bionic-updates/main amd64 x11-common all 1:7.7+19ubuntu7.1 [22.5 kB][0m
+[0;32m    amazon-ebs-ubuntu-bionic: Get:19 http://us-east-1.ec2.archive.ubuntu.com/ubuntu bionic-updates/main amd64 libice6 amd64 2:1.0.9-2ubuntu0.18.04.1 [40.7 kB][0m
+[0;32m    amazon-ebs-ubuntu-bionic: Get:20 http://us-east-1.ec2.archive.ubuntu.com/ubuntu bionic/main amd64 libsm6 amd64 2:1.2.2-1 [15.8 kB][0m
+[0;32m    amazon-ebs-ubuntu-bionic: Get:21 http://us-east-1.ec2.archive.ubuntu.com/ubuntu bionic/main amd64 poppler-data all 0.4.8-2 [1479 kB][0m
+[0;32m    amazon-ebs-ubuntu-bionic: Get:22 http://us-east-1.ec2.archive.ubuntu.com/ubuntu bionic/main amd64 sgml-base all 1.29 [12.3 kB][0m
+[0;32m    amazon-ebs-ubuntu-bionic: Get:23 http://us-east-1.ec2.archive.ubuntu.com/ubuntu bionic/universe amd64 pigz amd64 2.4-1 [57.4 kB][0m
+[0;32m    amazon-ebs-ubuntu-bionic: Get:24 http://us-east-1.ec2.archive.ubuntu.com/ubuntu bionic/main amd64 libxt6 amd64 1:1.1.5-1 [160 kB][0m
+[0;32m    amazon-ebs-ubuntu-bionic: Get:25 http://us-east-1.ec2.archive.ubuntu.com/ubuntu bionic/main amd64 libxmu6 amd64 2:1.1.2-2 [46.0 kB][0m
+[0;32m    amazon-ebs-ubuntu-bionic: Get:26 http://us-east-1.ec2.archive.ubuntu.com/ubuntu bionic-updates/main amd64 libxpm4 amd64 1:3.5.12-1ubuntu0.18.04.2 [34.8 kB][0m
+[0;32m    amazon-ebs-ubuntu-bionic: Get:27 http://us-east-1.ec2.archive.ubuntu.com/ubuntu bionic/main amd64 libxaw7 amd64 2:1.0.13-1 [173 kB][0m
+[0;32m    amazon-ebs-ubuntu-bionic: Get:28 http://us-east-1.ec2.archive.ubuntu.com/ubuntu bionic/universe amd64 groff amd64 1.22.3-10 [3150 kB][0m
+[0;32m    amazon-ebs-ubuntu-bionic: Get:29 https://apt.releases.hashicorp.com bionic/main amd64 consul-enterprise amd64 1.10.2+ent [41.8 MB][0m
+[0;32m    amazon-ebs-ubuntu-bionic: Get:30 http://us-east-1.ec2.archive.ubuntu.com/ubuntu bionic/main amd64 python3-dateutil all 2.6.1-1 [52.3 kB][0m
+[0;32m    amazon-ebs-ubuntu-bionic: Get:31 http://us-east-1.ec2.archive.ubuntu.com/ubuntu bionic/main amd64 xml-core all 0.18 [21.3 kB][0m
+[0;32m    amazon-ebs-ubuntu-bionic: Get:32 http://us-east-1.ec2.archive.ubuntu.com/ubuntu bionic/main amd64 docutils-common all 0.14+dfsg-3 [156 kB][0m
+[0;32m    amazon-ebs-ubuntu-bionic: Get:33 http://us-east-1.ec2.archive.ubuntu.com/ubuntu bionic/main amd64 python3-roman all 2.0.0-3 [8624 B][0m
+[0;32m    amazon-ebs-ubuntu-bionic: Get:34 http://us-east-1.ec2.archive.ubuntu.com/ubuntu bionic/main amd64 python3-docutils all 0.14+dfsg-3 [363 kB][0m
+[0;32m    amazon-ebs-ubuntu-bionic: Get:35 http://us-east-1.ec2.archive.ubuntu.com/ubuntu bionic-updates/universe amd64 python3-jmespath all 0.9.3-1ubuntu1.1 [18.8 kB][0m
+[0;32m    amazon-ebs-ubuntu-bionic: Get:36 http://us-east-1.ec2.archive.ubuntu.com/ubuntu bionic-updates/universe amd64 python3-botocore all 1.16.19+repack-1ubuntu0.18.04.1 [3255 kB][0m
+[0;32m    amazon-ebs-ubuntu-bionic: Get:37 http://us-east-1.ec2.archive.ubuntu.com/ubuntu bionic/universe amd64 python3-rsa all 3.4.2-1 [29.0 kB][0m
+[0;32m    amazon-ebs-ubuntu-bionic: Get:38 http://us-east-1.ec2.archive.ubuntu.com/ubuntu bionic-updates/universe amd64 python3-s3transfer all 0.3.3-1ubuntu0.18.04.1 [46.7 kB][0m
+[0;32m    amazon-ebs-ubuntu-bionic: Get:39 http://us-east-1.ec2.archive.ubuntu.com/ubuntu bionic-updates/universe amd64 awscli all 1.18.69-1ubuntu0.18.04.1 [967 kB][0m
+[0;32m    amazon-ebs-ubuntu-bionic: Get:40 http://us-east-1.ec2.archive.ubuntu.com/ubuntu bionic/main amd64 bridge-utils amd64 1.5-15ubuntu1 [30.1 kB][0m
+[0;32m    amazon-ebs-ubuntu-bionic: Get:41 http://us-east-1.ec2.archive.ubuntu.com/ubuntu bionic-updates/universe amd64 runc amd64 1.1.4-0ubuntu1~18.04.1 [3820 kB][0m
+[0;32m    amazon-ebs-ubuntu-bionic: Get:42 http://us-east-1.ec2.archive.ubuntu.com/ubuntu bionic-updates/universe amd64 containerd amd64 1.6.12-0ubuntu1~18.04.1 [31.5 MB][0m
+[0;32m    amazon-ebs-ubuntu-bionic: Get:43 https://apt.releases.hashicorp.com bionic/main amd64 nomad-enterprise amd64 1.0.4+ent [41.8 MB][0m
+[0;32m    amazon-ebs-ubuntu-bionic: Get:44 http://us-east-1.ec2.archive.ubuntu.com/ubuntu bionic-updates/universe amd64 docker.io amd64 20.10.21-0ubuntu1~18.04.2 [30.3 MB][0m
+[0;32m    amazon-ebs-ubuntu-bionic: Get:45 https://apt.releases.hashicorp.com bionic/main amd64 vault-enterprise amd64 1.8.0+ent [68.8 MB][0m
+[0;32m    amazon-ebs-ubuntu-bionic: Get:46 http://us-east-1.ec2.archive.ubuntu.com/ubuntu bionic/main amd64 fonts-noto-mono all 20171026-2 [75.5 kB][0m
+[0;32m    amazon-ebs-ubuntu-bionic: Get:47 http://us-east-1.ec2.archive.ubuntu.com/ubuntu bionic-updates/main amd64 libavahi-common-data amd64 0.7-3.1ubuntu1.3 [22.2 kB][0m
+[0;32m    amazon-ebs-ubuntu-bionic: Get:48 http://us-east-1.ec2.archive.ubuntu.com/ubuntu bionic-updates/main amd64 libavahi-common3 amd64 0.7-3.1ubuntu1.3 [21.6 kB][0m
+[0;32m    amazon-ebs-ubuntu-bionic: Get:49 http://us-east-1.ec2.archive.ubuntu.com/ubuntu bionic-updates/main amd64 libavahi-client3 amd64 0.7-3.1ubuntu1.3 [25.2 kB][0m
+[0;32m    amazon-ebs-ubuntu-bionic: Get:50 http://us-east-1.ec2.archive.ubuntu.com/ubuntu bionic-updates/main amd64 libcups2 amd64 2.2.7-1ubuntu2.9 [211 kB][0m
+[0;32m    amazon-ebs-ubuntu-bionic: Get:51 http://us-east-1.ec2.archive.ubuntu.com/ubuntu bionic-updates/main amd64 libcupsimage2 amd64 2.2.7-1ubuntu2.9 [18.6 kB][0m
+[0;32m    amazon-ebs-ubuntu-bionic: Get:52 http://us-east-1.ec2.archive.ubuntu.com/ubuntu bionic/main amd64 libijs-0.35 amd64 0.35-13 [15.5 kB][0m
+[0;32m    amazon-ebs-ubuntu-bionic: Get:53 http://us-east-1.ec2.archive.ubuntu.com/ubuntu bionic/main amd64 libjbig2dec0 amd64 0.13-6 [55.9 kB][0m
+[0;32m    amazon-ebs-ubuntu-bionic: Get:54 http://us-east-1.ec2.archive.ubuntu.com/ubuntu bionic/main amd64 libpaper1 amd64 1.1.24+nmu5ubuntu1 [13.6 kB][0m
+[0;32m    amazon-ebs-ubuntu-bionic: Get:55 http://us-east-1.ec2.archive.ubuntu.com/ubuntu bionic-updates/main amd64 libgs9-common all 9.26~dfsg+0-0ubuntu0.18.04.17 [5092 kB][0m
+[0;32m    amazon-ebs-ubuntu-bionic: Get:56 http://us-east-1.ec2.archive.ubuntu.com/ubuntu bionic-updates/main amd64 libgs9 amd64 9.26~dfsg+0-0ubuntu0.18.04.17 [2267 kB][0m
+[0;32m    amazon-ebs-ubuntu-bionic: Get:57 http://us-east-1.ec2.archive.ubuntu.com/ubuntu bionic-updates/main amd64 ghostscript amd64 9.26~dfsg+0-0ubuntu0.18.04.17 [51.3 kB][0m
+[0;32m    amazon-ebs-ubuntu-bionic: Get:58 http://us-east-1.ec2.archive.ubuntu.com/ubuntu bionic/main amd64 gsfonts all 1:8.11+urwcyr1.0.7~pre44-4.4 [3120 kB][0m
+[0;32m    amazon-ebs-ubuntu-bionic: Get:59 http://us-east-1.ec2.archive.ubuntu.com/ubuntu bionic/main amd64 hicolor-icon-theme all 0.17-2 [9976 B][0m
+[0;32m    amazon-ebs-ubuntu-bionic: Get:60 http://us-east-1.ec2.archive.ubuntu.com/ubuntu bionic-updates/main amd64 imagemagick-6.q16 amd64 8:6.9.7.4+dfsg-16ubuntu6.15 [423 kB][0m
+[0;32m    amazon-ebs-ubuntu-bionic: Get:61 http://us-east-1.ec2.archive.ubuntu.com/ubuntu bionic-updates/main amd64 imagemagick amd64 8:6.9.7.4+dfsg-16ubuntu6.15 [14.2 kB][0m
+[0;32m    amazon-ebs-ubuntu-bionic: Get:62 http://us-east-1.ec2.archive.ubuntu.com/ubuntu bionic/universe amd64 libonig4 amd64 6.7.0-1 [119 kB][0m
+[0;32m    amazon-ebs-ubuntu-bionic: Get:63 http://us-east-1.ec2.archive.ubuntu.com/ubuntu bionic/universe amd64 libjq1 amd64 1.5+dfsg-2 [111 kB][0m
+[0;32m    amazon-ebs-ubuntu-bionic: Get:64 http://us-east-1.ec2.archive.ubuntu.com/ubuntu bionic/universe amd64 jq amd64 1.5+dfsg-2 [45.6 kB][0m
+[0;32m    amazon-ebs-ubuntu-bionic: Get:65 http://us-east-1.ec2.archive.ubuntu.com/ubuntu bionic-updates/main amd64 libpixman-1-0 amd64 0.34.0-2ubuntu0.1 [229 kB][0m
+[0;32m    amazon-ebs-ubuntu-bionic: Get:66 http://us-east-1.ec2.archive.ubuntu.com/ubuntu bionic-updates/main amd64 libxcb-render0 amd64 1.13-2~ubuntu18.04 [14.7 kB][0m
+[0;32m    amazon-ebs-ubuntu-bionic: Get:67 http://us-east-1.ec2.archive.ubuntu.com/ubuntu bionic-updates/main amd64 libxcb-shm0 amd64 1.13-2~ubuntu18.04 [5600 B][0m
+[0;32m    amazon-ebs-ubuntu-bionic: Get:68 http://us-east-1.ec2.archive.ubuntu.com/ubuntu bionic/main amd64 libxrender1 amd64 1:0.9.10-1 [18.7 kB][0m
+[0;32m    amazon-ebs-ubuntu-bionic: Get:69 http://us-east-1.ec2.archive.ubuntu.com/ubuntu bionic-updates/main amd64 libcairo2 amd64 1.15.10-2ubuntu0.1 [580 kB][0m
+[0;32m    amazon-ebs-ubuntu-bionic: Get:70 http://us-east-1.ec2.archive.ubuntu.com/ubuntu bionic-updates/main amd64 libcupsfilters1 amd64 1.20.2-0ubuntu3.1 [108 kB][0m
+[0;32m    amazon-ebs-ubuntu-bionic: Get:71 http://us-east-1.ec2.archive.ubuntu.com/ubuntu bionic/main amd64 libdatrie1 amd64 0.2.10-7 [17.8 kB][0m
+[0;32m    amazon-ebs-ubuntu-bionic: Get:72 http://us-east-1.ec2.archive.ubuntu.com/ubuntu bionic-updates/main amd64 libdjvulibre-text all 3.5.27.1-8ubuntu0.4 [49.4 kB][0m
+[0;32m    amazon-ebs-ubuntu-bionic: Get:73 http://us-east-1.ec2.archive.ubuntu.com/ubuntu bionic-updates/main amd64 libdjvulibre21 amd64 3.5.27.1-8ubuntu0.4 [561 kB][0m
+[0;32m    amazon-ebs-ubuntu-bionic: Get:74 http://us-east-1.ec2.archive.ubuntu.com/ubuntu bionic/main amd64 libgraphite2-3 amd64 1.3.11-2 [78.7 kB][0m
+[0;32m    amazon-ebs-ubuntu-bionic: Get:75 http://us-east-1.ec2.archive.ubuntu.com/ubuntu bionic/main amd64 libharfbuzz0b amd64 1.7.2-1ubuntu1 [232 kB][0m
+[0;32m    amazon-ebs-ubuntu-bionic: Get:76 http://us-east-1.ec2.archive.ubuntu.com/ubuntu bionic/main amd64 libilmbase12 amd64 2.2.0-11ubuntu2 [71.4 kB][0m
+[0;32m    amazon-ebs-ubuntu-bionic: Get:77 http://us-east-1.ec2.archive.ubuntu.com/ubuntu bionic-updates/main amd64 libopenexr22 amd64 2.2.0-11.1ubuntu1.9 [559 kB][0m
+[0;32m    amazon-ebs-ubuntu-bionic: Get:78 http://us-east-1.ec2.archive.ubuntu.com/ubuntu bionic/main amd64 libthai-data all 0.1.27-2 [133 kB][0m
+[0;32m    amazon-ebs-ubuntu-bionic: Get:79 http://us-east-1.ec2.archive.ubuntu.com/ubuntu bionic/main amd64 libthai0 amd64 0.1.27-2 [18.0 kB][0m
+[0;32m    amazon-ebs-ubuntu-bionic: Get:80 http://us-east-1.ec2.archive.ubuntu.com/ubuntu bionic-updates/main amd64 libpango-1.0-0 amd64 1.40.14-1ubuntu0.1 [153 kB][0m
+[0;32m    amazon-ebs-ubuntu-bionic: Get:81 http://us-east-1.ec2.archive.ubuntu.com/ubuntu bionic-updates/main amd64 libpangoft2-1.0-0 amd64 1.40.14-1ubuntu0.1 [33.2 kB][0m
+[0;32m    amazon-ebs-ubuntu-bionic: Get:82 http://us-east-1.ec2.archive.ubuntu.com/ubuntu bionic-updates/main amd64 libpangocairo-1.0-0 amd64 1.40.14-1ubuntu0.1 [20.8 kB][0m
+[0;32m    amazon-ebs-ubuntu-bionic: Get:83 http://us-east-1.ec2.archive.ubuntu.com/ubuntu bionic/main amd64 libwmf0.2-7 amd64 0.2.8.4-12 [150 kB][0m
+[0;32m    amazon-ebs-ubuntu-bionic: Get:84 http://us-east-1.ec2.archive.ubuntu.com/ubuntu bionic-updates/main amd64 libmagickcore-6.q16-3-extra amd64 8:6.9.7.4+dfsg-16ubuntu6.15 [62.4 kB][0m
+[0;32m    amazon-ebs-ubuntu-bionic: Get:85 http://us-east-1.ec2.archive.ubuntu.com/ubuntu bionic/main amd64 libnetpbm10 amd64 2:10.0-15.3build1 [58.0 kB][0m
+[0;32m    amazon-ebs-ubuntu-bionic: Get:86 http://us-east-1.ec2.archive.ubuntu.com/ubuntu bionic/main amd64 libpaper-utils amd64 1.1.24+nmu5ubuntu1 [8170 B][0m
+[0;32m    amazon-ebs-ubuntu-bionic: Get:87 http://us-east-1.ec2.archive.ubuntu.com/ubuntu bionic-updates/main amd64 libwebp6 amd64 0.6.1-2ubuntu0.18.04.1 [186 kB][0m
+[0;32m    amazon-ebs-ubuntu-bionic: Get:88 http://us-east-1.ec2.archive.ubuntu.com/ubuntu bionic-updates/main amd64 libwebpdemux2 amd64 0.6.1-2ubuntu0.18.04.1 [9476 B][0m
+[0;32m    amazon-ebs-ubuntu-bionic: Get:89 http://us-east-1.ec2.archive.ubuntu.com/ubuntu bionic-updates/main amd64 libwebpmux3 amd64 0.6.1-2ubuntu0.18.04.1 [19.6 kB][0m
+[0;32m    amazon-ebs-ubuntu-bionic: Get:90 http://us-east-1.ec2.archive.ubuntu.com/ubuntu bionic/main amd64 netpbm amd64 2:10.0-15.3build1 [1017 kB][0m
+[0;32m    amazon-ebs-ubuntu-bionic: Get:91 http://us-east-1.ec2.archive.ubuntu.com/ubuntu bionic/universe amd64 psutils amd64 1.17.dfsg-4 [56.2 kB][0m
+[0;32m    amazon-ebs-ubuntu-bionic: Get:92 http://us-east-1.ec2.archive.ubuntu.com/ubuntu bionic/main amd64 python3-olefile all 0.45.1-1 [33.3 kB][0m
+[0;32m    amazon-ebs-ubuntu-bionic: Get:93 http://us-east-1.ec2.archive.ubuntu.com/ubuntu bionic-updates/main amd64 python3-pil amd64 5.1.0-1ubuntu0.8 [331 kB][0m
+[0;32m    amazon-ebs-ubuntu-bionic: Get:94 http://us-east-1.ec2.archive.ubuntu.com/ubuntu bionic-updates/main amd64 python3-pygments all 2.2.0+dfsg-1ubuntu0.2 [574 kB][0m
+[0;32m    amazon-ebs-ubuntu-bionic: Get:95 http://us-east-1.ec2.archive.ubuntu.com/ubuntu bionic/universe amd64 libjemalloc1 amd64 3.6.0-11 [82.4 kB][0m
+[0;32m    amazon-ebs-ubuntu-bionic: Get:96 http://us-east-1.ec2.archive.ubuntu.com/ubuntu bionic-updates/universe amd64 redis-tools amd64 5:4.0.9-1ubuntu0.2 [516 kB][0m
+[0;32m    amazon-ebs-ubuntu-bionic: Get:97 http://us-east-1.ec2.archive.ubuntu.com/ubuntu bionic-updates/universe amd64 redis-server amd64 5:4.0.9-1ubuntu0.2 [35.4 kB][0m
+[0;32m    amazon-ebs-ubuntu-bionic: Get:98 http://us-east-1.ec2.archive.ubuntu.com/ubuntu bionic/main amd64 ubuntu-fan all 0.12.10 [34.7 kB][0m
+[0;32m    amazon-ebs-ubuntu-bionic: Get:99 http://us-east-1.ec2.archive.ubuntu.com/ubuntu bionic-updates/main amd64 unzip amd64 6.0-21ubuntu1.2 [168 kB][0m
+[0;32m    amazon-ebs-ubuntu-bionic: Fetched 253 MB in 4s (67.9 MB/s)[0m
+[0;32m    amazon-ebs-ubuntu-bionic: Extracting templates from packages: 100%[0m
+[0;32m    amazon-ebs-ubuntu-bionic: Preconfiguring packages ...[0m
+[0;32m    amazon-ebs-ubuntu-bionic:[0m
+[0;32m    amazon-ebs-ubuntu-bionic: 7[0;39r8[1ASelecting previously unselected package fonts-dejavu-core.[0m
+[0;32m    amazon-ebs-ubuntu-bionic: (Reading database ... 58186 files and directories currently installed.)[0m
+[0;32m    amazon-ebs-ubuntu-bionic: Preparing to unpack .../00-fonts-dejavu-core_2.37-1_all.deb ...[0m
+[0;32m    amazon-ebs-ubuntu-bionic: 7[40;0f[42m[30mProgress: [  0%][49m[39m [..........................................................] 8Unpacking fonts-dejavu-core (2.37-1) ...[0m
+[0;32m    amazon-ebs-ubuntu-bionic: Selecting previously unselected package fontconfig-config.[0m
+[0;32m    amazon-ebs-ubuntu-bionic: Preparing to unpack .../01-fontconfig-config_2.12.6-0ubuntu2_all.deb ...[0m
+[0;32m    amazon-ebs-ubuntu-bionic: Unpacking fontconfig-config (2.12.6-0ubuntu2) ...[0m
+[0;32m    amazon-ebs-ubuntu-bionic: 7[40;0f[42m[30mProgress: [  1%][49m[39m [..........................................................] 8Selecting previously unselected package libfontconfig1:amd64.[0m
+[0;32m    amazon-ebs-ubuntu-bionic: Preparing to unpack .../02-libfontconfig1_2.12.6-0ubuntu2_amd64.deb ...[0m
+[0;32m    amazon-ebs-ubuntu-bionic: Unpacking libfontconfig1:amd64 (2.12.6-0ubuntu2) ...[0m
+[0;32m    amazon-ebs-ubuntu-bionic: Selecting previously unselected package fontconfig.[0m
+[0;32m    amazon-ebs-ubuntu-bionic: Preparing to unpack .../03-fontconfig_2.12.6-0ubuntu2_amd64.deb ...[0m
+[0;32m    amazon-ebs-ubuntu-bionic: 7[40;0f[42m[30mProgress: [  2%][49m[39m [#.........................................................] 8Unpacking fontconfig (2.12.6-0ubuntu2) ...[0m
+[0;32m    amazon-ebs-ubuntu-bionic: Selecting previously unselected package fonts-droid-fallback.[0m
+[0;32m    amazon-ebs-ubuntu-bionic: Preparing to unpack .../04-fonts-droid-fallback_1%3a6.0.1r16-1.1_all.deb ...[0m
+[0;32m    amazon-ebs-ubuntu-bionic: Unpacking fonts-droid-fallback (1:6.0.1r16-1.1) ...[0m
+[0;32m    amazon-ebs-ubuntu-bionic: 7[40;0f[42m[30mProgress: [  3%][49m[39m [#.........................................................] 8Selecting previously unselected package libjpeg-turbo8:amd64.[0m
+[0;32m    amazon-ebs-ubuntu-bionic: Preparing to unpack .../05-libjpeg-turbo8_1.5.2-0ubuntu5.18.04.6_amd64.deb ...[0m
+[0;32m    amazon-ebs-ubuntu-bionic: Unpacking libjpeg-turbo8:amd64 (1.5.2-0ubuntu5.18.04.6) ...[0m
+[0;32m    amazon-ebs-ubuntu-bionic: Selecting previously unselected package libgomp1:amd64.[0m
+[0;32m    amazon-ebs-ubuntu-bionic: Preparing to unpack .../06-libgomp1_8.4.0-1ubuntu1~18.04_amd64.deb ...[0m
+[0;32m    amazon-ebs-ubuntu-bionic: Unpacking libgomp1:amd64 (8.4.0-1ubuntu1~18.04) ...[0m
+[0;32m    amazon-ebs-ubuntu-bionic: 7[40;0f[42m[30mProgress: [  4%][49m[39m [##........................................................] 8Selecting previously unselected package libfftw3-double3:amd64.[0m
+[0;32m    amazon-ebs-ubuntu-bionic: Preparing to unpack .../07-libfftw3-double3_3.3.7-1_amd64.deb ...[0m
+[0;32m    amazon-ebs-ubuntu-bionic: Unpacking libfftw3-double3:amd64 (3.3.7-1) ...[0m
+[0;32m    amazon-ebs-ubuntu-bionic: Selecting previously unselected package libjbig0:amd64.[0m
+[0;32m    amazon-ebs-ubuntu-bionic: Preparing to unpack .../08-libjbig0_2.1-3.1ubuntu0.18.04.1_amd64.deb ...[0m
+[0;32m    amazon-ebs-ubuntu-bionic: 7[40;0f[42m[30mProgress: [  5%][49m[39m [##........................................................] 8Unpacking libjbig0:amd64 (2.1-3.1ubuntu0.18.04.1) ...[0m
+[0;32m    amazon-ebs-ubuntu-bionic: Selecting previously unselected package libjpeg8:amd64.[0m
+[0;32m    amazon-ebs-ubuntu-bionic: Preparing to unpack .../09-libjpeg8_8c-2ubuntu8_amd64.deb ...[0m
+[0;32m    amazon-ebs-ubuntu-bionic: Unpacking libjpeg8:amd64 (8c-2ubuntu8) ...[0m
+[0;32m    amazon-ebs-ubuntu-bionic: 7[40;0f[42m[30mProgress: [  6%][49m[39m [###.......................................................] 8Selecting previously unselected package liblcms2-2:amd64.[0m
+[0;32m    amazon-ebs-ubuntu-bionic: Preparing to unpack .../10-liblcms2-2_2.9-1ubuntu0.1_amd64.deb ...[0m
+[0;32m    amazon-ebs-ubuntu-bionic: Unpacking liblcms2-2:amd64 (2.9-1ubuntu0.1) ...[0m
+[0;32m    amazon-ebs-ubuntu-bionic: Selecting previously unselected package liblqr-1-0:amd64.[0m
+[0;32m    amazon-ebs-ubuntu-bionic: Preparing to unpack .../11-liblqr-1-0_0.4.2-2.1_amd64.deb ...[0m
+[0;32m    amazon-ebs-ubuntu-bionic: Unpacking liblqr-1-0:amd64 (0.4.2-2.1) ...[0m
+[0;32m    amazon-ebs-ubuntu-bionic: 7[40;0f[42m[30mProgress: [  7%][49m[39m [####......................................................] 8Selecting previously unselected package libltdl7:amd64.[0m
+[0;32m    amazon-ebs-ubuntu-bionic: Preparing to unpack .../12-libltdl7_2.4.6-2_amd64.deb ...[0m
+[0;32m    amazon-ebs-ubuntu-bionic: Unpacking libltdl7:amd64 (2.4.6-2) ...[0m
+[0;32m    amazon-ebs-ubuntu-bionic: Selecting previously unselected package libtiff5:amd64.[0m
+[0;32m    amazon-ebs-ubuntu-bionic: Preparing to unpack .../13-libtiff5_4.0.9-5ubuntu0.10_amd64.deb ...[0m
+[0;32m    amazon-ebs-ubuntu-bionic: 7[40;0f[42m[30mProgress: [  8%][49m[39m [####......................................................] 8Unpacking libtiff5:amd64 (4.0.9-5ubuntu0.10) ...[0m
+[0;32m    amazon-ebs-ubuntu-bionic: Selecting previously unselected package imagemagick-6-common.[0m
+[0;32m    amazon-ebs-ubuntu-bionic: Preparing to unpack .../14-imagemagick-6-common_8%3a6.9.7.4+dfsg-16ubuntu6.15_all.deb ...[0m
+[0;32m    amazon-ebs-ubuntu-bionic: Unpacking imagemagick-6-common (8:6.9.7.4+dfsg-16ubuntu6.15) ...[0m
+[0;32m    amazon-ebs-ubuntu-bionic: 7[40;0f[42m[30mProgress: [  9%][49m[39m [#####.....................................................] 8Selecting previously unselected package libmagickcore-6.q16-3:amd64.[0m
+[0;32m    amazon-ebs-ubuntu-bionic: Preparing to unpack .../15-libmagickcore-6.q16-3_8%3a6.9.7.4+dfsg-16ubuntu6.15_amd64.deb ...[0m
+[0;32m    amazon-ebs-ubuntu-bionic: Unpacking libmagickcore-6.q16-3:amd64 (8:6.9.7.4+dfsg-16ubuntu6.15) ...[0m
+[0;32m    amazon-ebs-ubuntu-bionic: Selecting previously unselected package libmagickwand-6.q16-3:amd64.[0m
+[0;32m    amazon-ebs-ubuntu-bionic: Preparing to unpack .../16-libmagickwand-6.q16-3_8%3a6.9.7.4+dfsg-16ubuntu6.15_amd64.deb ...[0m
+[0;32m    amazon-ebs-ubuntu-bionic: Unpacking libmagickwand-6.q16-3:amd64 (8:6.9.7.4+dfsg-16ubuntu6.15) ...[0m
+[0;32m    amazon-ebs-ubuntu-bionic: 7[40;0f[42m[30mProgress: [ 10%][49m[39m [#####.....................................................] 8Selecting previously unselected package x11-common.[0m
+[0;32m    amazon-ebs-ubuntu-bionic: Preparing to unpack .../17-x11-common_1%3a7.7+19ubuntu7.1_all.deb ...[0m
+[0;32m    amazon-ebs-ubuntu-bionic: [1mdpkg-query:[0m no packages found matching nux-tools[0m
+[0;32m    amazon-ebs-ubuntu-bionic: Unpacking x11-common (1:7.7+19ubuntu7.1) ...[0m
+[0;32m    amazon-ebs-ubuntu-bionic: Selecting previously unselected package libice6:amd64.[0m
+[0;32m    amazon-ebs-ubuntu-bionic: Preparing to unpack .../18-libice6_2%3a1.0.9-2ubuntu0.18.04.1_amd64.deb ...[0m
+[0;32m    amazon-ebs-ubuntu-bionic: 7[40;0f[42m[30mProgress: [ 11%][49m[39m [######....................................................] 8Unpacking libice6:amd64 (2:1.0.9-2ubuntu0.18.04.1) ...[0m
+[0;32m    amazon-ebs-ubuntu-bionic: Selecting previously unselected package libsm6:amd64.[0m
+[0;32m    amazon-ebs-ubuntu-bionic: Preparing to unpack .../19-libsm6_2%3a1.2.2-1_amd64.deb ...[0m
+[0;32m    amazon-ebs-ubuntu-bionic: Unpacking libsm6:amd64 (2:1.2.2-1) ...[0m
+[0;32m    amazon-ebs-ubuntu-bionic: 7[40;0f[42m[30mProgress: [ 12%][49m[39m [#######...................................................] 8Selecting previously unselected package poppler-data.[0m
+[0;32m    amazon-ebs-ubuntu-bionic: Preparing to unpack .../20-poppler-data_0.4.8-2_all.deb ...[0m
+[0;32m    amazon-ebs-ubuntu-bionic: Unpacking poppler-data (0.4.8-2) ...[0m
+[0;32m    amazon-ebs-ubuntu-bionic: Selecting previously unselected package sgml-base.[0m
+[0;32m    amazon-ebs-ubuntu-bionic: Preparing to unpack .../21-sgml-base_1.29_all.deb ...[0m
+[0;32m    amazon-ebs-ubuntu-bionic: Unpacking sgml-base (1.29) ...[0m
+[0;32m    amazon-ebs-ubuntu-bionic: 7[40;0f[42m[30mProgress: [ 13%][49m[39m [#######...................................................] 8Selecting previously unselected package pigz.[0m
+[0;32m    amazon-ebs-ubuntu-bionic: Preparing to unpack .../22-pigz_2.4-1_amd64.deb ...[0m
+[0;32m    amazon-ebs-ubuntu-bionic: Unpacking pigz (2.4-1) ...[0m
+[0;32m    amazon-ebs-ubuntu-bionic: Selecting previously unselected package libxt6:amd64.[0m
+[0;32m    amazon-ebs-ubuntu-bionic: Preparing to unpack .../23-libxt6_1%3a1.1.5-1_amd64.deb ...[0m
+[0;32m    amazon-ebs-ubuntu-bionic: 7[40;0f[42m[30mProgress: [ 14%][49m[39m [########..................................................] 8Unpacking libxt6:amd64 (1:1.1.5-1) ...[0m
+[0;32m    amazon-ebs-ubuntu-bionic: Selecting previously unselected package libxmu6:amd64.[0m
+[0;32m    amazon-ebs-ubuntu-bionic: Preparing to unpack .../24-libxmu6_2%3a1.1.2-2_amd64.deb ...[0m
+[0;32m    amazon-ebs-ubuntu-bionic: Unpacking libxmu6:amd64 (2:1.1.2-2) ...[0m
+[0;32m    amazon-ebs-ubuntu-bionic: 7[40;0f[42m[30mProgress: [ 15%][49m[39m [########..................................................] 8Selecting previously unselected package libxpm4:amd64.[0m
+[0;32m    amazon-ebs-ubuntu-bionic: Preparing to unpack .../25-libxpm4_1%3a3.5.12-1ubuntu0.18.04.2_amd64.deb ...[0m
+[0;32m    amazon-ebs-ubuntu-bionic: Unpacking libxpm4:amd64 (1:3.5.12-1ubuntu0.18.04.2) ...[0m
+[0;32m    amazon-ebs-ubuntu-bionic: Selecting previously unselected package libxaw7:amd64.[0m
+[0;32m    amazon-ebs-ubuntu-bionic: Preparing to unpack .../26-libxaw7_2%3a1.0.13-1_amd64.deb ...[0m
+[0;32m    amazon-ebs-ubuntu-bionic: Unpacking libxaw7:amd64 (2:1.0.13-1) ...[0m
+[0;32m    amazon-ebs-ubuntu-bionic: 7[40;0f[42m[30mProgress: [ 16%][49m[39m [#########.................................................] 8Selecting previously unselected package groff.[0m
+[0;32m    amazon-ebs-ubuntu-bionic: Preparing to unpack .../27-groff_1.22.3-10_amd64.deb ...[0m
+[0;32m    amazon-ebs-ubuntu-bionic: Unpacking groff (1.22.3-10) ...[0m
+[0;32m    amazon-ebs-ubuntu-bionic: Selecting previously unselected package python3-dateutil.[0m
+[0;32m    amazon-ebs-ubuntu-bionic: Preparing to unpack .../28-python3-dateutil_2.6.1-1_all.deb ...[0m
+[0;32m    amazon-ebs-ubuntu-bionic: 7[40;0f[42m[30mProgress: [ 17%][49m[39m [#########.................................................] 8Unpacking python3-dateutil (2.6.1-1) ...[0m
+[0;32m    amazon-ebs-ubuntu-bionic: Selecting previously unselected package xml-core.[0m
+[0;32m    amazon-ebs-ubuntu-bionic: Preparing to unpack .../29-xml-core_0.18_all.deb ...[0m
+[0;32m    amazon-ebs-ubuntu-bionic: Unpacking xml-core (0.18) ...[0m
+[0;32m    amazon-ebs-ubuntu-bionic: 7[40;0f[42m[30mProgress: [ 18%][49m[39m [##########................................................] 8Selecting previously unselected package docutils-common.[0m
+[0;32m    amazon-ebs-ubuntu-bionic: Preparing to unpack .../30-docutils-common_0.14+dfsg-3_all.deb ...[0m
+[0;32m    amazon-ebs-ubuntu-bionic: Unpacking docutils-common (0.14+dfsg-3) ...[0m
+[0;32m    amazon-ebs-ubuntu-bionic: Selecting previously unselected package python3-roman.[0m
+[0;32m    amazon-ebs-ubuntu-bionic: Preparing to unpack .../31-python3-roman_2.0.0-3_all.deb ...[0m
+[0;32m    amazon-ebs-ubuntu-bionic: Unpacking python3-roman (2.0.0-3) ...[0m
+[0;32m    amazon-ebs-ubuntu-bionic: 7[40;0f[42m[30mProgress: [ 19%][49m[39m [###########...............................................] 8Selecting previously unselected package python3-docutils.[0m
+[0;32m    amazon-ebs-ubuntu-bionic: Preparing to unpack .../32-python3-docutils_0.14+dfsg-3_all.deb ...[0m
+[0;32m    amazon-ebs-ubuntu-bionic: Unpacking python3-docutils (0.14+dfsg-3) ...[0m
+[0;32m    amazon-ebs-ubuntu-bionic: Selecting previously unselected package python3-jmespath.[0m
+[0;32m    amazon-ebs-ubuntu-bionic: Preparing to unpack .../33-python3-jmespath_0.9.3-1ubuntu1.1_all.deb ...[0m
+[0;32m    amazon-ebs-ubuntu-bionic: 7[40;0f[42m[30mProgress: [ 20%][49m[39m [###########...............................................] 8Unpacking python3-jmespath (0.9.3-1ubuntu1.1) ...[0m
+[0;32m    amazon-ebs-ubuntu-bionic: Selecting previously unselected package python3-botocore.[0m
+[0;32m    amazon-ebs-ubuntu-bionic: Preparing to unpack .../34-python3-botocore_1.16.19+repack-1ubuntu0.18.04.1_all.deb ...[0m
+[0;32m    amazon-ebs-ubuntu-bionic: Unpacking python3-botocore (1.16.19+repack-1ubuntu0.18.04.1) ...[0m
+[0;32m    amazon-ebs-ubuntu-bionic: 7[40;0f[42m[30mProgress: [ 21%][49m[39m [############..............................................] 8Selecting previously unselected package python3-rsa.[0m
+[0;32m    amazon-ebs-ubuntu-bionic: Preparing to unpack .../35-python3-rsa_3.4.2-1_all.deb ...[0m
+[0;32m    amazon-ebs-ubuntu-bionic: Unpacking python3-rsa (3.4.2-1) ...[0m
+[0;32m    amazon-ebs-ubuntu-bionic: Selecting previously unselected package python3-s3transfer.[0m
+[0;32m    amazon-ebs-ubuntu-bionic: Preparing to unpack .../36-python3-s3transfer_0.3.3-1ubuntu0.18.04.1_all.deb ...[0m
+[0;32m    amazon-ebs-ubuntu-bionic: Unpacking python3-s3transfer (0.3.3-1ubuntu0.18.04.1) ...[0m
+[0;32m    amazon-ebs-ubuntu-bionic: 7[40;0f[42m[30mProgress: [ 22%][49m[39m [############..............................................] 8Selecting previously unselected package awscli.[0m
+[0;32m    amazon-ebs-ubuntu-bionic: Preparing to unpack .../37-awscli_1.18.69-1ubuntu0.18.04.1_all.deb ...[0m
+[0;32m    amazon-ebs-ubuntu-bionic: Unpacking awscli (1.18.69-1ubuntu0.18.04.1) ...[0m
+[0;32m    amazon-ebs-ubuntu-bionic: Selecting previously unselected package bridge-utils.[0m
+[0;32m    amazon-ebs-ubuntu-bionic: Preparing to unpack .../38-bridge-utils_1.5-15ubuntu1_amd64.deb ...[0m
+[0;32m    amazon-ebs-ubuntu-bionic: 7[40;0f[42m[30mProgress: [ 23%][49m[39m [#############.............................................] 8Unpacking bridge-utils (1.5-15ubuntu1) ...[0m
+[0;32m    amazon-ebs-ubuntu-bionic: Selecting previously unselected package runc.[0m
+[0;32m    amazon-ebs-ubuntu-bionic: Preparing to unpack .../39-runc_1.1.4-0ubuntu1~18.04.1_amd64.deb ...[0m
+[0;32m    amazon-ebs-ubuntu-bionic: Unpacking runc (1.1.4-0ubuntu1~18.04.1) ...[0m
+[0;32m    amazon-ebs-ubuntu-bionic: 7[40;0f[42m[30mProgress: [ 24%][49m[39m [##############............................................] 8Selecting previously unselected package containerd.[0m
+[0;32m    amazon-ebs-ubuntu-bionic: Preparing to unpack .../40-containerd_1.6.12-0ubuntu1~18.04.1_amd64.deb ...[0m
+[0;32m    amazon-ebs-ubuntu-bionic: Unpacking containerd (1.6.12-0ubuntu1~18.04.1) ...[0m
+[0;32m    amazon-ebs-ubuntu-bionic: Selecting previously unselected package docker.io.[0m
+[0;32m    amazon-ebs-ubuntu-bionic: Preparing to unpack .../41-docker.io_20.10.21-0ubuntu1~18.04.2_amd64.deb ...[0m
+[0;32m    amazon-ebs-ubuntu-bionic: 7[40;0f[42m[30mProgress: [ 25%][49m[39m [##############............................................] 8Unpacking docker.io (20.10.21-0ubuntu1~18.04.2) ...[0m
+[0;32m    amazon-ebs-ubuntu-bionic: Selecting previously unselected package fonts-noto-mono.[0m
+[0;32m    amazon-ebs-ubuntu-bionic: Preparing to unpack .../42-fonts-noto-mono_20171026-2_all.deb ...[0m
+[0;32m    amazon-ebs-ubuntu-bionic: Unpacking fonts-noto-mono (20171026-2) ...[0m
+[0;32m    amazon-ebs-ubuntu-bionic: 7[40;0f[42m[30mProgress: [ 26%][49m[39m [###############...........................................] 8Selecting previously unselected package libavahi-common-data:amd64.[0m
+[0;32m    amazon-ebs-ubuntu-bionic: Preparing to unpack .../43-libavahi-common-data_0.7-3.1ubuntu1.3_amd64.deb ...[0m
+[0;32m    amazon-ebs-ubuntu-bionic: Unpacking libavahi-common-data:amd64 (0.7-3.1ubuntu1.3) ...[0m
+[0;32m    amazon-ebs-ubuntu-bionic: Selecting previously unselected package libavahi-common3:amd64.[0m
+[0;32m    amazon-ebs-ubuntu-bionic: Preparing to unpack .../44-libavahi-common3_0.7-3.1ubuntu1.3_amd64.deb ...[0m
+[0;32m    amazon-ebs-ubuntu-bionic: Unpacking libavahi-common3:amd64 (0.7-3.1ubuntu1.3) ...[0m
+[0;32m    amazon-ebs-ubuntu-bionic: 7[40;0f[42m[30mProgress: [ 27%][49m[39m [###############...........................................] 8Selecting previously unselected package libavahi-client3:amd64.[0m
+[0;32m    amazon-ebs-ubuntu-bionic: Preparing to unpack .../45-libavahi-client3_0.7-3.1ubuntu1.3_amd64.deb ...[0m
+[0;32m    amazon-ebs-ubuntu-bionic: Unpacking libavahi-client3:amd64 (0.7-3.1ubuntu1.3) ...[0m
+[0;32m    amazon-ebs-ubuntu-bionic: Selecting previously unselected package libcups2:amd64.[0m
+[0;32m    amazon-ebs-ubuntu-bionic: Preparing to unpack .../46-libcups2_2.2.7-1ubuntu2.9_amd64.deb ...[0m
+[0;32m    amazon-ebs-ubuntu-bionic: 7[40;0f[42m[30mProgress: [ 28%][49m[39m [################..........................................] 8Unpacking libcups2:amd64 (2.2.7-1ubuntu2.9) ...[0m
+[0;32m    amazon-ebs-ubuntu-bionic: Selecting previously unselected package libcupsimage2:amd64.[0m
+[0;32m    amazon-ebs-ubuntu-bionic: Preparing to unpack .../47-libcupsimage2_2.2.7-1ubuntu2.9_amd64.deb ...[0m
+[0;32m    amazon-ebs-ubuntu-bionic: Unpacking libcupsimage2:amd64 (2.2.7-1ubuntu2.9) ...[0m
+[0;32m    amazon-ebs-ubuntu-bionic: 7[40;0f[42m[30mProgress: [ 29%][49m[39m [################..........................................] 8Selecting previously unselected package libijs-0.35:amd64.[0m
+[0;32m    amazon-ebs-ubuntu-bionic: Preparing to unpack .../48-libijs-0.35_0.35-13_amd64.deb ...[0m
+[0;32m    amazon-ebs-ubuntu-bionic: Unpacking libijs-0.35:amd64 (0.35-13) ...[0m
+[0;32m    amazon-ebs-ubuntu-bionic: Selecting previously unselected package libjbig2dec0:amd64.[0m
+[0;32m    amazon-ebs-ubuntu-bionic: Preparing to unpack .../49-libjbig2dec0_0.13-6_amd64.deb ...[0m
+[0;32m    amazon-ebs-ubuntu-bionic: Unpacking libjbig2dec0:amd64 (0.13-6) ...[0m
+[0;32m    amazon-ebs-ubuntu-bionic: 7[40;0f[42m[30mProgress: [ 30%][49m[39m [#################.........................................] 8Selecting previously unselected package libpaper1:amd64.[0m
+[0;32m    amazon-ebs-ubuntu-bionic: Preparing to unpack .../50-libpaper1_1.1.24+nmu5ubuntu1_amd64.deb ...[0m
+[0;32m    amazon-ebs-ubuntu-bionic: Unpacking libpaper1:amd64 (1.1.24+nmu5ubuntu1) ...[0m
+[0;32m    amazon-ebs-ubuntu-bionic: Selecting previously unselected package libgs9-common.[0m
+[0;32m    amazon-ebs-ubuntu-bionic: Preparing to unpack .../51-libgs9-common_9.26~dfsg+0-0ubuntu0.18.04.17_all.deb ...[0m
+[0;32m    amazon-ebs-ubuntu-bionic: 7[40;0f[42m[30mProgress: [ 31%][49m[39m [##################........................................] 8Unpacking libgs9-common (9.26~dfsg+0-0ubuntu0.18.04.17) ...[0m
+[0;32m    amazon-ebs-ubuntu-bionic: Selecting previously unselected package libgs9:amd64.[0m
+[0;32m    amazon-ebs-ubuntu-bionic: Preparing to unpack .../52-libgs9_9.26~dfsg+0-0ubuntu0.18.04.17_amd64.deb ...[0m
+[0;32m    amazon-ebs-ubuntu-bionic: Unpacking libgs9:amd64 (9.26~dfsg+0-0ubuntu0.18.04.17) ...[0m
+[0;32m    amazon-ebs-ubuntu-bionic: 7[40;0f[42m[30mProgress: [ 32%][49m[39m [##################........................................] 8Selecting previously unselected package ghostscript.[0m
+[0;32m    amazon-ebs-ubuntu-bionic: Preparing to unpack .../53-ghostscript_9.26~dfsg+0-0ubuntu0.18.04.17_amd64.deb ...[0m
+[0;32m    amazon-ebs-ubuntu-bionic: Unpacking ghostscript (9.26~dfsg+0-0ubuntu0.18.04.17) ...[0m
+[0;32m    amazon-ebs-ubuntu-bionic: Selecting previously unselected package gsfonts.[0m
+[0;32m    amazon-ebs-ubuntu-bionic: Preparing to unpack .../54-gsfonts_1%3a8.11+urwcyr1.0.7~pre44-4.4_all.deb ...[0m
+[0;32m    amazon-ebs-ubuntu-bionic: Unpacking gsfonts (1:8.11+urwcyr1.0.7~pre44-4.4) ...[0m
+[0;32m    amazon-ebs-ubuntu-bionic: 7[40;0f[42m[30mProgress: [ 33%][49m[39m [###################.......................................] 8Selecting previously unselected package hicolor-icon-theme.[0m
+[0;32m    amazon-ebs-ubuntu-bionic: Preparing to unpack .../55-hicolor-icon-theme_0.17-2_all.deb ...[0m
+[0;32m    amazon-ebs-ubuntu-bionic: Unpacking hicolor-icon-theme (0.17-2) ...[0m
+[0;32m    amazon-ebs-ubuntu-bionic: Selecting previously unselected package imagemagick-6.q16.[0m
+[0;32m    amazon-ebs-ubuntu-bionic: Preparing to unpack .../56-imagemagick-6.q16_8%3a6.9.7.4+dfsg-16ubuntu6.15_amd64.deb ...[0m
+[0;32m    amazon-ebs-ubuntu-bionic: 7[40;0f[42m[30mProgress: [ 34%][49m[39m [###################.......................................] 8Unpacking imagemagick-6.q16 (8:6.9.7.4+dfsg-16ubuntu6.15) ...[0m
+[0;32m    amazon-ebs-ubuntu-bionic: Selecting previously unselected package imagemagick.[0m
+[0;32m    amazon-ebs-ubuntu-bionic: Preparing to unpack .../57-imagemagick_8%3a6.9.7.4+dfsg-16ubuntu6.15_amd64.deb ...[0m
+[0;32m    amazon-ebs-ubuntu-bionic: Unpacking imagemagick (8:6.9.7.4+dfsg-16ubuntu6.15) ...[0m
+[0;32m    amazon-ebs-ubuntu-bionic: 7[40;0f[42m[30mProgress: [ 35%][49m[39m [####################......................................] 8Selecting previously unselected package libonig4:amd64.[0m
+[0;32m    amazon-ebs-ubuntu-bionic: Preparing to unpack .../58-libonig4_6.7.0-1_amd64.deb ...[0m
+[0;32m    amazon-ebs-ubuntu-bionic: Unpacking libonig4:amd64 (6.7.0-1) ...[0m
+[0;32m    amazon-ebs-ubuntu-bionic: Selecting previously unselected package libjq1:amd64.[0m
+[0;32m    amazon-ebs-ubuntu-bionic: Preparing to unpack .../59-libjq1_1.5+dfsg-2_amd64.deb ...[0m
+[0;32m    amazon-ebs-ubuntu-bionic: Unpacking libjq1:amd64 (1.5+dfsg-2) ...[0m
+[0;32m    amazon-ebs-ubuntu-bionic: 7[40;0f[42m[30mProgress: [ 36%][49m[39m [####################......................................] 8Selecting previously unselected package jq.[0m
+[0;32m    amazon-ebs-ubuntu-bionic: Preparing to unpack .../60-jq_1.5+dfsg-2_amd64.deb ...[0m
+[0;32m    amazon-ebs-ubuntu-bionic: Unpacking jq (1.5+dfsg-2) ...[0m
+[0;32m    amazon-ebs-ubuntu-bionic: Selecting previously unselected package libpixman-1-0:amd64.[0m
+[0;32m    amazon-ebs-ubuntu-bionic: Preparing to unpack .../61-libpixman-1-0_0.34.0-2ubuntu0.1_amd64.deb ...[0m
+[0;32m    amazon-ebs-ubuntu-bionic: 7[40;0f[42m[30mProgress: [ 37%][49m[39m [#####################.....................................] 8Unpacking libpixman-1-0:amd64 (0.34.0-2ubuntu0.1) ...[0m
+[0;32m    amazon-ebs-ubuntu-bionic: Selecting previously unselected package libxcb-render0:amd64.[0m
+[0;32m    amazon-ebs-ubuntu-bionic: Preparing to unpack .../62-libxcb-render0_1.13-2~ubuntu18.04_amd64.deb ...[0m
+[0;32m    amazon-ebs-ubuntu-bionic: Unpacking libxcb-render0:amd64 (1.13-2~ubuntu18.04) ...[0m
+[0;32m    amazon-ebs-ubuntu-bionic: 7[40;0f[42m[30mProgress: [ 38%][49m[39m [######################....................................] 8Selecting previously unselected package libxcb-shm0:amd64.[0m
+[0;32m    amazon-ebs-ubuntu-bionic: Preparing to unpack .../63-libxcb-shm0_1.13-2~ubuntu18.04_amd64.deb ...[0m
+[0;32m    amazon-ebs-ubuntu-bionic: Unpacking libxcb-shm0:amd64 (1.13-2~ubuntu18.04) ...[0m
+[0;32m    amazon-ebs-ubuntu-bionic: Selecting previously unselected package libxrender1:amd64.[0m
+[0;32m    amazon-ebs-ubuntu-bionic: Preparing to unpack .../64-libxrender1_1%3a0.9.10-1_amd64.deb ...[0m
+[0;32m    amazon-ebs-ubuntu-bionic: Unpacking libxrender1:amd64 (1:0.9.10-1) ...[0m
+[0;32m    amazon-ebs-ubuntu-bionic: 7[40;0f[42m[30mProgress: [ 39%][49m[39m [######################....................................] 8Selecting previously unselected package libcairo2:amd64.[0m
+[0;32m    amazon-ebs-ubuntu-bionic: Preparing to unpack .../65-libcairo2_1.15.10-2ubuntu0.1_amd64.deb ...[0m
+[0;32m    amazon-ebs-ubuntu-bionic: Unpacking libcairo2:amd64 (1.15.10-2ubuntu0.1) ...[0m
+[0;32m    amazon-ebs-ubuntu-bionic: Selecting previously unselected package libcupsfilters1:amd64.[0m
+[0;32m    amazon-ebs-ubuntu-bionic: Preparing to unpack .../66-libcupsfilters1_1.20.2-0ubuntu3.1_amd64.deb ...[0m
+[0;32m    amazon-ebs-ubuntu-bionic: 7[40;0f[42m[30mProgress: [ 40%][49m[39m [#######################...................................] 8Unpacking libcupsfilters1:amd64 (1.20.2-0ubuntu3.1) ...[0m
+[0;32m    amazon-ebs-ubuntu-bionic: Selecting previously unselected package libdatrie1:amd64.[0m
+[0;32m    amazon-ebs-ubuntu-bionic: Preparing to unpack .../67-libdatrie1_0.2.10-7_amd64.deb ...[0m
+[0;32m    amazon-ebs-ubuntu-bionic: Unpacking libdatrie1:amd64 (0.2.10-7) ...[0m
+[0;32m    amazon-ebs-ubuntu-bionic: 7[40;0f[42m[30mProgress: [ 41%][49m[39m [#######################...................................] 8Selecting previously unselected package libdjvulibre-text.[0m
+[0;32m    amazon-ebs-ubuntu-bionic: Preparing to unpack .../68-libdjvulibre-text_3.5.27.1-8ubuntu0.4_all.deb ...[0m
+[0;32m    amazon-ebs-ubuntu-bionic: Unpacking libdjvulibre-text (3.5.27.1-8ubuntu0.4) ...[0m
+[0;32m    amazon-ebs-ubuntu-bionic: Selecting previously unselected package libdjvulibre21:amd64.[0m
+[0;32m    amazon-ebs-ubuntu-bionic: Preparing to unpack .../69-libdjvulibre21_3.5.27.1-8ubuntu0.4_amd64.deb ...[0m
+[0;32m    amazon-ebs-ubuntu-bionic: Unpacking libdjvulibre21:amd64 (3.5.27.1-8ubuntu0.4) ...[0m
+[0;32m    amazon-ebs-ubuntu-bionic: 7[40;0f[42m[30mProgress: [ 42%][49m[39m [########################..................................] 8Selecting previously unselected package libgraphite2-3:amd64.[0m
+[0;32m    amazon-ebs-ubuntu-bionic: Preparing to unpack .../70-libgraphite2-3_1.3.11-2_amd64.deb ...[0m
+[0;32m    amazon-ebs-ubuntu-bionic: Unpacking libgraphite2-3:amd64 (1.3.11-2) ...[0m
+[0;32m    amazon-ebs-ubuntu-bionic: Selecting previously unselected package libharfbuzz0b:amd64.[0m
+[0;32m    amazon-ebs-ubuntu-bionic: Preparing to unpack .../71-libharfbuzz0b_1.7.2-1ubuntu1_amd64.deb ...[0m
+[0;32m    amazon-ebs-ubuntu-bionic: 7[40;0f[42m[30mProgress: [ 43%][49m[39m [#########################.................................] 8Unpacking libharfbuzz0b:amd64 (1.7.2-1ubuntu1) ...[0m
+[0;32m    amazon-ebs-ubuntu-bionic: Selecting previously unselected package libilmbase12:amd64.[0m
+[0;32m    amazon-ebs-ubuntu-bionic: Preparing to unpack .../72-libilmbase12_2.2.0-11ubuntu2_amd64.deb ...[0m
+[0;32m    amazon-ebs-ubuntu-bionic: Unpacking libilmbase12:amd64 (2.2.0-11ubuntu2) ...[0m
+[0;32m    amazon-ebs-ubuntu-bionic: 7[40;0f[42m[30mProgress: [ 44%][49m[39m [#########################.................................] 8Selecting previously unselected package libopenexr22:amd64.[0m
+[0;32m    amazon-ebs-ubuntu-bionic: Preparing to unpack .../73-libopenexr22_2.2.0-11.1ubuntu1.9_amd64.deb ...[0m
+[0;32m    amazon-ebs-ubuntu-bionic: Unpacking libopenexr22:amd64 (2.2.0-11.1ubuntu1.9) ...[0m
+[0;32m    amazon-ebs-ubuntu-bionic: Selecting previously unselected package libthai-data.[0m
+[0;32m    amazon-ebs-ubuntu-bionic: Preparing to unpack .../74-libthai-data_0.1.27-2_all.deb ...[0m
+[0;32m    amazon-ebs-ubuntu-bionic: Unpacking libthai-data (0.1.27-2) ...[0m
+[0;32m    amazon-ebs-ubuntu-bionic: 7[40;0f[42m[30mProgress: [ 45%][49m[39m [##########################................................] 8Selecting previously unselected package libthai0:amd64.[0m
+[0;32m    amazon-ebs-ubuntu-bionic: Preparing to unpack .../75-libthai0_0.1.27-2_amd64.deb ...[0m
+[0;32m    amazon-ebs-ubuntu-bionic: Unpacking libthai0:amd64 (0.1.27-2) ...[0m
+[0;32m    amazon-ebs-ubuntu-bionic: Selecting previously unselected package libpango-1.0-0:amd64.[0m
+[0;32m    amazon-ebs-ubuntu-bionic: Preparing to unpack .../76-libpango-1.0-0_1.40.14-1ubuntu0.1_amd64.deb ...[0m
+[0;32m    amazon-ebs-ubuntu-bionic: 7[40;0f[42m[30mProgress: [ 46%][49m[39m [##########################................................] 8Unpacking libpango-1.0-0:amd64 (1.40.14-1ubuntu0.1) ...[0m
+[0;32m    amazon-ebs-ubuntu-bionic: Selecting previously unselected package libpangoft2-1.0-0:amd64.[0m
+[0;32m    amazon-ebs-ubuntu-bionic: Preparing to unpack .../77-libpangoft2-1.0-0_1.40.14-1ubuntu0.1_amd64.deb ...[0m
+[0;32m    amazon-ebs-ubuntu-bionic: Unpacking libpangoft2-1.0-0:amd64 (1.40.14-1ubuntu0.1) ...[0m
+[0;32m    amazon-ebs-ubuntu-bionic: 7[40;0f[42m[30mProgress: [ 47%][49m[39m [###########################...............................] 8Selecting previously unselected package libpangocairo-1.0-0:amd64.[0m
+[0;32m    amazon-ebs-ubuntu-bionic: Preparing to unpack .../78-libpangocairo-1.0-0_1.40.14-1ubuntu0.1_amd64.deb ...[0m
+[0;32m    amazon-ebs-ubuntu-bionic: Unpacking libpangocairo-1.0-0:amd64 (1.40.14-1ubuntu0.1) ...[0m
+[0;32m    amazon-ebs-ubuntu-bionic: Selecting previously unselected package libwmf0.2-7:amd64.[0m
+[0;32m    amazon-ebs-ubuntu-bionic: Preparing to unpack .../79-libwmf0.2-7_0.2.8.4-12_amd64.deb ...[0m
+[0;32m    amazon-ebs-ubuntu-bionic: Unpacking libwmf0.2-7:amd64 (0.2.8.4-12) ...[0m
+[0;32m    amazon-ebs-ubuntu-bionic: 7[40;0f[42m[30mProgress: [ 48%][49m[39m [###########################...............................] 8Selecting previously unselected package libmagickcore-6.q16-3-extra:amd64.[0m
+[0;32m    amazon-ebs-ubuntu-bionic: Preparing to unpack .../80-libmagickcore-6.q16-3-extra_8%3a6.9.7.4+dfsg-16ubuntu6.15_amd64.deb ...[0m
+[0;32m    amazon-ebs-ubuntu-bionic: Unpacking libmagickcore-6.q16-3-extra:amd64 (8:6.9.7.4+dfsg-16ubuntu6.15) ...[0m
+[0;32m    amazon-ebs-ubuntu-bionic: Selecting previously unselected package libnetpbm10.[0m
+[0;32m    amazon-ebs-ubuntu-bionic: Preparing to unpack .../81-libnetpbm10_2%3a10.0-15.3build1_amd64.deb ...[0m
+[0;32m    amazon-ebs-ubuntu-bionic: 7[40;0f[42m[30mProgress: [ 49%][49m[39m [############################..............................] 8Unpacking libnetpbm10 (2:10.0-15.3build1) ...[0m
+[0;32m    amazon-ebs-ubuntu-bionic: Selecting previously unselected package libpaper-utils.[0m
+[0;32m    amazon-ebs-ubuntu-bionic: Preparing to unpack .../82-libpaper-utils_1.1.24+nmu5ubuntu1_amd64.deb ...[0m
+[0;32m    amazon-ebs-ubuntu-bionic: Unpacking libpaper-utils (1.1.24+nmu5ubuntu1) ...[0m
+[0;32m    amazon-ebs-ubuntu-bionic: 7[40;0f[42m[30mProgress: [ 50%][49m[39m [#############################.............................] 8Selecting previously unselected package libwebp6:amd64.[0m
+[0;32m    amazon-ebs-ubuntu-bionic: Preparing to unpack .../83-libwebp6_0.6.1-2ubuntu0.18.04.1_amd64.deb ...[0m
+[0;32m    amazon-ebs-ubuntu-bionic: Unpacking libwebp6:amd64 (0.6.1-2ubuntu0.18.04.1) ...[0m
+[0;32m    amazon-ebs-ubuntu-bionic: Selecting previously unselected package libwebpdemux2:amd64.[0m
+[0;32m    amazon-ebs-ubuntu-bionic: Preparing to unpack .../84-libwebpdemux2_0.6.1-2ubuntu0.18.04.1_amd64.deb ...[0m
+[0;32m    amazon-ebs-ubuntu-bionic: 7[40;0f[42m[30mProgress: [ 51%][49m[39m [#############################.............................] 8Unpacking libwebpdemux2:amd64 (0.6.1-2ubuntu0.18.04.1) ...[0m
+[0;32m    amazon-ebs-ubuntu-bionic: Selecting previously unselected package libwebpmux3:amd64.[0m
+[0;32m    amazon-ebs-ubuntu-bionic: Preparing to unpack .../85-libwebpmux3_0.6.1-2ubuntu0.18.04.1_amd64.deb ...[0m
+[0;32m    amazon-ebs-ubuntu-bionic: Unpacking libwebpmux3:amd64 (0.6.1-2ubuntu0.18.04.1) ...[0m
+[0;32m    amazon-ebs-ubuntu-bionic: 7[40;0f[42m[30mProgress: [ 52%][49m[39m [##############################............................] 8Selecting previously unselected package netpbm.[0m
+[0;32m    amazon-ebs-ubuntu-bionic: Preparing to unpack .../86-netpbm_2%3a10.0-15.3build1_amd64.deb ...[0m
+[0;32m    amazon-ebs-ubuntu-bionic: Unpacking netpbm (2:10.0-15.3build1) ...[0m
+[0;32m    amazon-ebs-ubuntu-bionic: Selecting previously unselected package psutils.[0m
+[0;32m    amazon-ebs-ubuntu-bionic: Preparing to unpack .../87-psutils_1.17.dfsg-4_amd64.deb ...[0m
+[0;32m    amazon-ebs-ubuntu-bionic: Unpacking psutils (1.17.dfsg-4) ...[0m
+[0;32m    amazon-ebs-ubuntu-bionic: 7[40;0f[42m[30mProgress: [ 53%][49m[39m [##############################............................] 8Selecting previously unselected package python3-olefile.[0m
+[0;32m    amazon-ebs-ubuntu-bionic: Preparing to unpack .../88-python3-olefile_0.45.1-1_all.deb ...[0m
+[0;32m    amazon-ebs-ubuntu-bionic: Unpacking python3-olefile (0.45.1-1) ...[0m
+[0;32m    amazon-ebs-ubuntu-bionic: Selecting previously unselected package python3-pil:amd64.[0m
+[0;32m    amazon-ebs-ubuntu-bionic: Preparing to unpack .../89-python3-pil_5.1.0-1ubuntu0.8_amd64.deb ...[0m
+[0;32m    amazon-ebs-ubuntu-bionic: 7[40;0f[42m[30mProgress: [ 54%][49m[39m [###############################...........................] 8Unpacking python3-pil:amd64 (5.1.0-1ubuntu0.8) ...[0m
+[0;32m    amazon-ebs-ubuntu-bionic: Selecting previously unselected package python3-pygments.[0m
+[0;32m    amazon-ebs-ubuntu-bionic: Preparing to unpack .../90-python3-pygments_2.2.0+dfsg-1ubuntu0.2_all.deb ...[0m
+[0;32m    amazon-ebs-ubuntu-bionic: Unpacking python3-pygments (2.2.0+dfsg-1ubuntu0.2) ...[0m
+[0;32m    amazon-ebs-ubuntu-bionic: 7[40;0f[42m[30mProgress: [ 55%][49m[39m [###############################...........................] 8Selecting previously unselected package libjemalloc1.[0m
+[0;32m    amazon-ebs-ubuntu-bionic: Preparing to unpack .../91-libjemalloc1_3.6.0-11_amd64.deb ...[0m
+[0;32m    amazon-ebs-ubuntu-bionic: Unpacking libjemalloc1 (3.6.0-11) ...[0m
+[0;32m    amazon-ebs-ubuntu-bionic: Selecting previously unselected package redis-tools.[0m
+[0;32m    amazon-ebs-ubuntu-bionic: Preparing to unpack .../92-redis-tools_5%3a4.0.9-1ubuntu0.2_amd64.deb ...[0m
+[0;32m    amazon-ebs-ubuntu-bionic: Unpacking redis-tools (5:4.0.9-1ubuntu0.2) ...[0m
+[0;32m    amazon-ebs-ubuntu-bionic: 7[40;0f[42m[30mProgress: [ 56%][49m[39m [################################..........................] 8Selecting previously unselected package redis-server.[0m
+[0;32m    amazon-ebs-ubuntu-bionic: Preparing to unpack .../93-redis-server_5%3a4.0.9-1ubuntu0.2_amd64.deb ...[0m
+[0;32m    amazon-ebs-ubuntu-bionic: Unpacking redis-server (5:4.0.9-1ubuntu0.2) ...[0m
+[0;32m    amazon-ebs-ubuntu-bionic: Selecting previously unselected package ubuntu-fan.[0m
+[0;32m    amazon-ebs-ubuntu-bionic: Preparing to unpack .../94-ubuntu-fan_0.12.10_all.deb ...[0m
+[0;32m    amazon-ebs-ubuntu-bionic: 7[40;0f[42m[30mProgress: [ 57%][49m[39m [#################################.........................] 8Unpacking ubuntu-fan (0.12.10) ...[0m
+[0;32m    amazon-ebs-ubuntu-bionic: Selecting previously unselected package unzip.[0m
+[0;32m    amazon-ebs-ubuntu-bionic: Preparing to unpack .../95-unzip_6.0-21ubuntu1.2_amd64.deb ...[0m
+[0;32m    amazon-ebs-ubuntu-bionic: Unpacking unzip (6.0-21ubuntu1.2) ...[0m
+[0;32m    amazon-ebs-ubuntu-bionic: 7[40;0f[42m[30mProgress: [ 58%][49m[39m [#################################.........................] 8Selecting previously unselected package consul-enterprise.[0m
+[0;32m    amazon-ebs-ubuntu-bionic: Preparing to unpack .../96-consul-enterprise_1.10.2+ent_amd64.deb ...[0m
+[0;32m    amazon-ebs-ubuntu-bionic: Unpacking consul-enterprise (1.10.2+ent) ...[0m
+[0;32m    amazon-ebs-ubuntu-bionic: Selecting previously unselected package nomad-enterprise.[0m
+[0;32m    amazon-ebs-ubuntu-bionic: Preparing to unpack .../97-nomad-enterprise_1.0.4+ent_amd64.deb ...[0m
+[0;32m    amazon-ebs-ubuntu-bionic: Unpacking nomad-enterprise (1.0.4+ent) ...[0m
+[0;32m    amazon-ebs-ubuntu-bionic: 7[40;0f[42m[30mProgress: [ 59%][49m[39m [##################################........................] 8Selecting previously unselected package vault-enterprise.[0m
+[0;32m    amazon-ebs-ubuntu-bionic: Preparing to unpack .../98-vault-enterprise_1.8.0+ent_amd64.deb ...[0m
+[0;32m    amazon-ebs-ubuntu-bionic: Unpacking vault-enterprise (1.8.0+ent) ...[0m
+[0;32m    amazon-ebs-ubuntu-bionic: Setting up libgs9-common (9.26~dfsg+0-0ubuntu0.18.04.17) ...[0m
+[0;32m    amazon-ebs-ubuntu-bionic: 7[40;0f[42m[30mProgress: [ 60%][49m[39m [##################################........................] 8Setting up libgomp1:amd64 (8.4.0-1ubuntu1~18.04) ...[0m
+[0;32m    amazon-ebs-ubuntu-bionic: Setting up libpaper1:amd64 (1.1.24+nmu5ubuntu1) ...[0m
+[0;32m    amazon-ebs-ubuntu-bionic:[0m
+[0;32m    amazon-ebs-ubuntu-bionic: Creating config file /etc/papersize with new version[0m
+[0;32m    amazon-ebs-ubuntu-bionic: 7[40;0f[42m[30mProgress: [ 61%][49m[39m [###################################.......................] 8Setting up imagemagick-6-common (8:6.9.7.4+dfsg-16ubuntu6.15) ...[0m
+[1;31m==> azure-ubuntu-bionic: Warning: apt-key output should not be parsed (stdout is not a terminal)[0m
+[0;32m    amazon-ebs-ubuntu-bionic: Setting up fonts-droid-fallback (1:6.0.1r16-1.1) ...[0m
+[0;32m    amazon-ebs-ubuntu-bionic: Setting up libpaper-utils (1.1.24+nmu5ubuntu1) ...[0m
+[0;32m    amazon-ebs-ubuntu-bionic: 7[40;0f[42m[30mProgress: [ 62%][49m[39m [####################################......................] 8Setting up vault-enterprise (1.8.0+ent) ...[0m
+[0;32m    amazon-ebs-ubuntu-bionic: Generating Vault TLS key and self-signed certificate...[0m
+[0;32m    amazon-ebs-ubuntu-bionic: Can't load /home/ubuntu/.rnd into RNG[0m
+[0;32m    amazon-ebs-ubuntu-bionic: 140315804701120:error:2406F079:random number generator:RAND_load_file:Cannot open file:../crypto/rand/randfile.c:88:Filename=/home/ubuntu/.rnd[0m
+[0;32m    amazon-ebs-ubuntu-bionic: Generating a RSA private key[0m
+[0;32m    amazon-ebs-ubuntu-bionic: ....................................................................++++[0m
+[0;32m    amazon-ebs-ubuntu-bionic: .....................................................................++++[0m
+[0;32m    amazon-ebs-ubuntu-bionic: writing new private key to 'tls.key'[0m
+[0;32m    amazon-ebs-ubuntu-bionic: -----[0m
+[0;32m    amazon-ebs-ubuntu-bionic: Vault TLS key and self-signed certificate have been generated in '/opt/vault/tls'.[0m
+[0;32m    amazon-ebs-ubuntu-bionic:[0m
+[0;32m    amazon-ebs-ubuntu-bionic: The following shall apply unless your organization has a separately signed Enterprise License Agreement or Evaluation Agreement governing your use of the software:[0m
+[0;32m    amazon-ebs-ubuntu-bionic:[0m
+[0;32m    amazon-ebs-ubuntu-bionic: Software in this repository is subject to the license terms located in the software, copies of which are also available at https://eula.hashicorp.com/ClickThruELA-Global.pdf or https://www.hashicorp.com/terms-of-evaluation as applicable. Please read the license terms prior to using the software. Your installation and use of the software constitutes your acceptance of these terms. If you do not accept the terms, do not use the software.[0m
+[0;32m    amazon-ebs-ubuntu-bionic:[0m
+[0;32m    amazon-ebs-ubuntu-bionic: Setting up python3-roman (2.0.0-3) ...[0m
+[0;36m    azure-ubuntu-bionic: OK[0m
+[0;32m    amazon-ebs-ubuntu-bionic: 7[40;0f[42m[30mProgress: [ 63%][49m[39m [####################################......................] 8Setting up libxcb-render0:amd64 (1.13-2~ubuntu18.04) ...[0m
+[0;32m    amazon-ebs-ubuntu-bionic: Setting up runc (1.1.4-0ubuntu1~18.04.1) ...[0m
+[0;32m    amazon-ebs-ubuntu-bionic: Setting up gsfonts (1:8.11+urwcyr1.0.7~pre44-4.4) ...[0m
+[0;32m    amazon-ebs-ubuntu-bionic: 7[40;0f[42m[30mProgress: [ 64%][49m[39m [#####################################.....................] 8Setting up python3-olefile (0.45.1-1) ...[0m
+[0;32m    amazon-ebs-ubuntu-bionic: Setting up libjemalloc1 (3.6.0-11) ...[0m
+[0;32m    amazon-ebs-ubuntu-bionic: 7[40;0f[42m[30mProgress: [ 65%][49m[39m [#####################################.....................] 8Setting up liblcms2-2:amd64 (2.9-1ubuntu0.1) ...[0m
+[0;32m    amazon-ebs-ubuntu-bionic: Setting up libjbig0:amd64 (2.1-3.1ubuntu0.18.04.1) ...[0m
+[0;32m    amazon-ebs-ubuntu-bionic: Setting up fonts-dejavu-core (2.37-1) ...[0m
+[0;32m    amazon-ebs-ubuntu-bionic: 7[40;0f[42m[30mProgress: [ 66%][49m[39m [######################################....................] 8Setting up poppler-data (0.4.8-2) ...[0m
+[0;32m    amazon-ebs-ubuntu-bionic: Setting up libdjvulibre-text (3.5.27.1-8ubuntu0.4) ...[0m
+[0;32m    amazon-ebs-ubuntu-bionic: 7[40;0f[42m[30mProgress: [ 67%][49m[39m [######################################....................] 8Setting up libnetpbm10 (2:10.0-15.3build1) ...[0m
+[0;32m    amazon-ebs-ubuntu-bionic: Setting up libonig4:amd64 (6.7.0-1) ...[0m
+[0;32m    amazon-ebs-ubuntu-bionic: Setting up unzip (6.0-21ubuntu1.2) ...[0m
+[0;32m    amazon-ebs-ubuntu-bionic: 7[40;0f[42m[30mProgress: [ 68%][49m[39m [#######################################...................] 8Setting up libdatrie1:amd64 (0.2.10-7) ...[0m
+[0;32m    amazon-ebs-ubuntu-bionic: Setting up nomad-enterprise (1.0.4+ent) ...[0m
+[0;32m    amazon-ebs-ubuntu-bionic: 7[40;0f[42m[30mProgress: [ 69%][49m[39m [########################################..................] 8Setting up libjpeg-turbo8:amd64 (1.5.2-0ubuntu5.18.04.6) ...[0m
+[0;32m    amazon-ebs-ubuntu-bionic: Setting up sgml-base (1.29) ...[0m
+[0;32m    amazon-ebs-ubuntu-bionic: Setting up libfftw3-double3:amd64 (3.3.7-1) ...[0m
+[0;32m    amazon-ebs-ubuntu-bionic: 7[40;0f[42m[30mProgress: [ 70%][49m[39m [########################################..................] 8Setting up containerd (1.6.12-0ubuntu1~18.04.1) ...[0m
+[0;32m    amazon-ebs-ubuntu-bionic: Created symlink /etc/systemd/system/multi-user.target.wants/containerd.service → /lib/systemd/system/containerd.service.[0m
+[0;32m    amazon-ebs-ubuntu-bionic: Setting up psutils (1.17.dfsg-4) ...[0m
+[0;32m    amazon-ebs-ubuntu-bionic: 7[40;0f[42m[30mProgress: [ 71%][49m[39m [#########################################.................] 8Setting up bridge-utils (1.5-15ubuntu1) ...[0m
+[0;32m    amazon-ebs-ubuntu-bionic: Setting up fonts-noto-mono (20171026-2) ...[0m
+[0;32m    amazon-ebs-ubuntu-bionic: Setting up libgraphite2-3:amd64 (1.3.11-2) ...[0m
+[0;32m    amazon-ebs-ubuntu-bionic: 7[40;0f[42m[30mProgress: [ 72%][49m[39m [#########################################.................] 8Setting up python3-rsa (3.4.2-1) ...[0m
+[0;36m    azure-ubuntu-bionic: Hit:1 http://azure.archive.ubuntu.com/ubuntu bionic InRelease[0m
+[0;36m    azure-ubuntu-bionic: Get:2 http://azure.archive.ubuntu.com/ubuntu bionic-updates InRelease [88.7 kB][0m
+[0;36m    azure-ubuntu-bionic: Get:3 http://azure.archive.ubuntu.com/ubuntu bionic-backports InRelease [83.3 kB][0m
+[0;36m    azure-ubuntu-bionic: Get:4 http://azure.archive.ubuntu.com/ubuntu bionic-security InRelease [88.7 kB][0m
+[0;32m    amazon-ebs-ubuntu-bionic: Setting up libjq1:amd64 (1.5+dfsg-2) ...[0m
+[0;32m    amazon-ebs-ubuntu-bionic: 7[40;0f[42m[30mProgress: [ 73%][49m[39m [##########################################................] 8Setting up libilmbase12:amd64 (2.2.0-11ubuntu2) ...[0m
+[0;32m    amazon-ebs-ubuntu-bionic: Setting up liblqr-1-0:amd64 (0.4.2-2.1) ...[0m
+[0;32m    amazon-ebs-ubuntu-bionic: Setting up libjbig2dec0:amd64 (0.13-6) ...[0m
+[0;32m    amazon-ebs-ubuntu-bionic: 7[40;0f[42m[30mProgress: [ 74%][49m[39m [###########################################...............] 8Setting up libpixman-1-0:amd64 (0.34.0-2ubuntu0.1) ...[0m
+[0;32m    amazon-ebs-ubuntu-bionic: Setting up ubuntu-fan (0.12.10) ...[0m
+[0;36m    azure-ubuntu-bionic: Get:5 https://apt.releases.hashicorp.com bionic InRelease [12.9 kB][0m
+[0;32m    amazon-ebs-ubuntu-bionic: 7[40;0f[42m[30mProgress: [ 75%][49m[39m [###########################################...............] 8Created symlink /etc/systemd/system/multi-user.target.wants/ubuntu-fan.service → /lib/systemd/system/ubuntu-fan.service.[0m
+[0;36m    azure-ubuntu-bionic: Get:6 https://apt.releases.hashicorp.com bionic/main amd64 Packages [82.5 kB][0m
+[0;32m    amazon-ebs-ubuntu-bionic: Setting up libltdl7:amd64 (2.4.6-2) ...[0m
+[0;32m    amazon-ebs-ubuntu-bionic: Setting up libijs-0.35:amd64 (0.35-13) ...[0m
+[0;32m    amazon-ebs-ubuntu-bionic: 7[40;0f[42m[30mProgress: [ 76%][49m[39m [############################################..............] 8Setting up libxcb-shm0:amd64 (1.13-2~ubuntu18.04) ...[0m
+[0;32m    amazon-ebs-ubuntu-bionic: Setting up libxpm4:amd64 (1:3.5.12-1ubuntu0.18.04.2) ...[0m
+[0;32m    amazon-ebs-ubuntu-bionic: Setting up libxrender1:amd64 (1:0.9.10-1) ...[0m
+[0;32m    amazon-ebs-ubuntu-bionic: 7[40;0f[42m[30mProgress: [ 77%][49m[39m [############################################..............] 8Setting up python3-jmespath (0.9.3-1ubuntu1.1) ...[0m
+[0;32m    amazon-ebs-ubuntu-bionic: Setting up consul-enterprise (1.10.2+ent) ...[0m
+[0;36m    azure-ubuntu-bionic: Get:7 http://azure.archive.ubuntu.com/ubuntu bionic/universe amd64 Packages [8570 kB][0m
+[0;32m    amazon-ebs-ubuntu-bionic:[0m
+[0;32m    amazon-ebs-ubuntu-bionic: The following shall apply unless your organization has a separately signed Enterprise License Agreement or Evaluation Agreement governing your use of the software:[0m
+[0;32m    amazon-ebs-ubuntu-bionic:[0m
+[0;32m    amazon-ebs-ubuntu-bionic: Software in this repository is subject to the license terms located in the software, copies of which are also available at https://eula.hashicorp.com/ClickThruELA-Global.pdf or https://www.hashicorp.com/terms-of-evaluation as applicable. Please read the license terms prior to using the software. Your installation and use of the software constitutes your acceptance of these terms. If you do not accept the terms, do not use the software.[0m
+[0;32m    amazon-ebs-ubuntu-bionic:[0m
+[0;32m    amazon-ebs-ubuntu-bionic: 7[40;0f[42m[30mProgress: [ 78%][49m[39m [#############################################.............] 8Setting up libthai-data (0.1.27-2) ...[0m
+[0;32m    amazon-ebs-ubuntu-bionic: Setting up xml-core (0.18) ...[0m
+[0;36m    azure-ubuntu-bionic: Get:8 http://azure.archive.ubuntu.com/ubuntu bionic/universe Translation-en [4941 kB][0m
+[0;36m    azure-ubuntu-bionic: Get:9 http://azure.archive.ubuntu.com/ubuntu bionic/multiverse amd64 Packages [151 kB][0m
+[0;36m    azure-ubuntu-bionic: Get:10 http://azure.archive.ubuntu.com/ubuntu bionic/multiverse Translation-en [108 kB][0m
+[0;36m    azure-ubuntu-bionic: Get:11 http://azure.archive.ubuntu.com/ubuntu bionic-updates/main amd64 Packages [2946 kB][0m
+[0;36m    azure-ubuntu-bionic: Get:12 http://azure.archive.ubuntu.com/ubuntu bionic-updates/main Translation-en [539 kB][0m
+[0;36m    azure-ubuntu-bionic: Get:13 http://azure.archive.ubuntu.com/ubuntu bionic-updates/restricted amd64 Packages [1200 kB][0m
+[0;32m    amazon-ebs-ubuntu-bionic: Setting up x11-common (1:7.7+19ubuntu7.1) ...[0m
+[0;36m    azure-ubuntu-bionic: Get:14 http://azure.archive.ubuntu.com/ubuntu bionic-updates/restricted Translation-en [166 kB][0m
+[0;36m    azure-ubuntu-bionic: Get:15 http://azure.archive.ubuntu.com/ubuntu bionic-updates/universe amd64 Packages [1896 kB][0m
+[0;36m    azure-ubuntu-bionic: Get:16 http://azure.archive.ubuntu.com/ubuntu bionic-updates/universe Translation-en [415 kB][0m
+[0;36m    azure-ubuntu-bionic: Get:17 http://azure.archive.ubuntu.com/ubuntu bionic-updates/multiverse amd64 Packages [25.6 kB][0m
+[0;36m    azure-ubuntu-bionic: Get:18 http://azure.archive.ubuntu.com/ubuntu bionic-updates/multiverse Translation-en [6088 B][0m
+[0;36m    azure-ubuntu-bionic: Get:19 http://azure.archive.ubuntu.com/ubuntu bionic-backports/main amd64 Packages [53.3 kB][0m
+[0;36m    azure-ubuntu-bionic: Get:20 http://azure.archive.ubuntu.com/ubuntu bionic-backports/main Translation-en [14.6 kB][0m
+[0;36m    azure-ubuntu-bionic: Get:21 http://azure.archive.ubuntu.com/ubuntu bionic-backports/universe amd64 Packages [18.1 kB][0m
+[0;36m    azure-ubuntu-bionic: Get:22 http://azure.archive.ubuntu.com/ubuntu bionic-backports/universe Translation-en [8668 B][0m
+[0;36m    azure-ubuntu-bionic: Get:23 http://azure.archive.ubuntu.com/ubuntu bionic-security/main amd64 Packages [2613 kB][0m
+[0;36m    azure-ubuntu-bionic: Get:24 http://azure.archive.ubuntu.com/ubuntu bionic-security/main Translation-en [452 kB][0m
+[0;36m    azure-ubuntu-bionic: Get:25 http://azure.archive.ubuntu.com/ubuntu bionic-security/restricted amd64 Packages [1169 kB][0m
+[0;36m    azure-ubuntu-bionic: Get:26 http://azure.archive.ubuntu.com/ubuntu bionic-security/restricted Translation-en [162 kB][0m
+[0;36m    azure-ubuntu-bionic: Get:27 http://azure.archive.ubuntu.com/ubuntu bionic-security/universe amd64 Packages [1284 kB][0m
+[0;36m    azure-ubuntu-bionic: Get:28 http://azure.archive.ubuntu.com/ubuntu bionic-security/universe Translation-en [302 kB][0m
+[0;36m    azure-ubuntu-bionic: Get:29 http://azure.archive.ubuntu.com/ubuntu bionic-security/multiverse amd64 Packages [19.8 kB][0m
+[0;36m    azure-ubuntu-bionic: Get:30 http://azure.archive.ubuntu.com/ubuntu bionic-security/multiverse Translation-en [3928 B][0m
+[0;32m    amazon-ebs-ubuntu-bionic: update-rc.d: warning: start and stop actions are no longer supported; falling back to defaults[0m
+[0;32m    amazon-ebs-ubuntu-bionic: Setting up hicolor-icon-theme (0.17-2) ...[0m
+[0;32m    amazon-ebs-ubuntu-bionic: 7[40;0f[42m[30mProgress: [ 79%][49m[39m [#############################################.............] 8Setting up pigz (2.4-1) ...[0m
+[0;32m    amazon-ebs-ubuntu-bionic: Setting up python3-dateutil (2.6.1-1) ...[0m
+[0;32m    amazon-ebs-ubuntu-bionic: Setting up libavahi-common-data:amd64 (0.7-3.1ubuntu1.3) ...[0m
+[0;32m    amazon-ebs-ubuntu-bionic: 7[40;0f[42m[30mProgress: [ 80%][49m[39m [##############################################............] 8Setting up libwebp6:amd64 (0.6.1-2ubuntu0.18.04.1) ...[0m
+[0;32m    amazon-ebs-ubuntu-bionic: Setting up libjpeg8:amd64 (8c-2ubuntu8) ...[0m
+[0;32m    amazon-ebs-ubuntu-bionic: 7[40;0f[42m[30mProgress: [ 81%][49m[39m [###############################################...........] 8Setting up python3-pygments (2.2.0+dfsg-1ubuntu0.2) ...[0m
+[0;32m    amazon-ebs-ubuntu-bionic: Setting up jq (1.5+dfsg-2) ...[0m
+[0;32m    amazon-ebs-ubuntu-bionic: Setting up fontconfig-config (2.12.6-0ubuntu2) ...[0m
+[0;32m    amazon-ebs-ubuntu-bionic: 7[40;0f[42m[30mProgress: [ 82%][49m[39m [###############################################...........] 8Setting up redis-tools (5:4.0.9-1ubuntu0.2) ...[0m
+[0;32m    amazon-ebs-ubuntu-bionic: Setting up docker.io (20.10.21-0ubuntu1~18.04.2) ...[0m
+[0;32m    amazon-ebs-ubuntu-bionic: Adding group `docker' (GID 116) ...[0m
+[0;32m    amazon-ebs-ubuntu-bionic: Done.[0m
+[0;32m    amazon-ebs-ubuntu-bionic: Created symlink /etc/systemd/system/multi-user.target.wants/docker.service → /lib/systemd/system/docker.service.[0m
+[0;32m    amazon-ebs-ubuntu-bionic: Created symlink /etc/systemd/system/sockets.target.wants/docker.socket → /lib/systemd/system/docker.socket.[0m
+[0;32m    amazon-ebs-ubuntu-bionic: 7[40;0f[42m[30mProgress: [ 83%][49m[39m [################################################..........] 8Setting up libdjvulibre21:amd64 (3.5.27.1-8ubuntu0.4) ...[0m
+[0;32m    amazon-ebs-ubuntu-bionic: Setting up libharfbuzz0b:amd64 (1.7.2-1ubuntu1) ...[0m
+[0;32m    amazon-ebs-ubuntu-bionic: Setting up libtiff5:amd64 (4.0.9-5ubuntu0.10) ...[0m
+[0;32m    amazon-ebs-ubuntu-bionic: 7[40;0f[42m[30mProgress: [ 84%][49m[39m [################################################..........] 8Setting up libthai0:amd64 (0.1.27-2) ...[0m
+[0;32m    amazon-ebs-ubuntu-bionic: Setting up libopenexr22:amd64 (2.2.0-11.1ubuntu1.9) ...[0m
+[0;32m    amazon-ebs-ubuntu-bionic: 7[40;0f[42m[30mProgress: [ 85%][49m[39m [#################################################.........] 8Setting up libwebpmux3:amd64 (0.6.1-2ubuntu0.18.04.1) ...[0m
+[0;32m    amazon-ebs-ubuntu-bionic: Setting up netpbm (2:10.0-15.3build1) ...[0m
+[0;32m    amazon-ebs-ubuntu-bionic: Setting up libice6:amd64 (2:1.0.9-2ubuntu0.18.04.1) ...[0m
+[0;32m    amazon-ebs-ubuntu-bionic: 7[40;0f[42m[30mProgress: [ 86%][49m[39m [#################################################.........] 8Setting up libwebpdemux2:amd64 (0.6.1-2ubuntu0.18.04.1) ...[0m
+[0;32m    amazon-ebs-ubuntu-bionic: Setting up libavahi-common3:amd64 (0.7-3.1ubuntu1.3) ...[0m
+[0;32m    amazon-ebs-ubuntu-bionic: 7[40;0f[42m[30mProgress: [ 87%][49m[39m [##################################################........] 8Setting up redis-server (5:4.0.9-1ubuntu0.2) ...[0m
+[0;32m    amazon-ebs-ubuntu-bionic: Created symlink /etc/systemd/system/redis.service → /lib/systemd/system/redis-server.service.[0m
+[0;32m    amazon-ebs-ubuntu-bionic: Created symlink /etc/systemd/system/multi-user.target.wants/redis-server.service → /lib/systemd/system/redis-server.service.[0m
+[0;32m    amazon-ebs-ubuntu-bionic: Setting up libwmf0.2-7:amd64 (0.2.8.4-12) ...[0m
+[0;32m    amazon-ebs-ubuntu-bionic: Setting up libfontconfig1:amd64 (2.12.6-0ubuntu2) ...[0m
+[0;32m    amazon-ebs-ubuntu-bionic: 7[40;0f[42m[30mProgress: [ 88%][49m[39m [###################################################.......] 8Setting up libsm6:amd64 (2:1.2.2-1) ...[0m
+[0;32m    amazon-ebs-ubuntu-bionic: Setting up python3-pil:amd64 (5.1.0-1ubuntu0.8) ...[0m
+[0;32m    amazon-ebs-ubuntu-bionic: 7[40;0f[42m[30mProgress: [ 89%][49m[39m [###################################################.......] 8Setting up libmagickcore-6.q16-3:amd64 (8:6.9.7.4+dfsg-16ubuntu6.15) ...[0m
+[0;32m    amazon-ebs-ubuntu-bionic: Setting up libmagickwand-6.q16-3:amd64 (8:6.9.7.4+dfsg-16ubuntu6.15) ...[0m
+[0;32m    amazon-ebs-ubuntu-bionic: Setting up libxt6:amd64 (1:1.1.5-1) ...[0m
+[0;32m    amazon-ebs-ubuntu-bionic: 7[40;0f[42m[30mProgress: [ 90%][49m[39m [####################################################......] 8Setting up libavahi-client3:amd64 (0.7-3.1ubuntu1.3) ...[0m
+[0;32m    amazon-ebs-ubuntu-bionic: Setting up fontconfig (2.12.6-0ubuntu2) ...[0m
+[0;32m    amazon-ebs-ubuntu-bionic: Regenerating fonts cache... done.[0m
+[0;32m    amazon-ebs-ubuntu-bionic: 7[40;0f[42m[30mProgress: [ 91%][49m[39m [####################################################......] 8Setting up libcups2:amd64 (2.2.7-1ubuntu2.9) ...[0m
+[0;32m    amazon-ebs-ubuntu-bionic: Setting up libcairo2:amd64 (1.15.10-2ubuntu0.1) ...[0m
+[0;32m    amazon-ebs-ubuntu-bionic: Setting up imagemagick-6.q16 (8:6.9.7.4+dfsg-16ubuntu6.15) ...[0m
+[0;32m    amazon-ebs-ubuntu-bionic: 7[40;0f[42m[30mProgress: [ 92%][49m[39m [#####################################################.....] 8update-alternatives: using /usr/bin/compare-im6.q16 to provide /usr/bin/compare (compare) in auto mode[0m
+[0;32m    amazon-ebs-ubuntu-bionic: update-alternatives: using /usr/bin/compare-im6.q16 to provide /usr/bin/compare-im6 (compare-im6) in auto mode[0m
+[0;32m    amazon-ebs-ubuntu-bionic: update-alternatives: using /usr/bin/animate-im6.q16 to provide /usr/bin/animate (animate) in auto mode[0m
+[0;32m    amazon-ebs-ubuntu-bionic: update-alternatives: using /usr/bin/animate-im6.q16 to provide /usr/bin/animate-im6 (animate-im6) in auto mode[0m
+[0;32m    amazon-ebs-ubuntu-bionic: update-alternatives: using /usr/bin/convert-im6.q16 to provide /usr/bin/convert (convert) in auto mode[0m
+[0;32m    amazon-ebs-ubuntu-bionic: update-alternatives: using /usr/bin/convert-im6.q16 to provide /usr/bin/convert-im6 (convert-im6) in auto mode[0m
+[0;32m    amazon-ebs-ubuntu-bionic: update-alternatives: using /usr/bin/composite-im6.q16 to provide /usr/bin/composite (composite) in auto mode[0m
+[0;32m    amazon-ebs-ubuntu-bionic: update-alternatives: using /usr/bin/composite-im6.q16 to provide /usr/bin/composite-im6 (composite-im6) in auto mode[0m
+[0;32m    amazon-ebs-ubuntu-bionic: update-alternatives: using /usr/bin/conjure-im6.q16 to provide /usr/bin/conjure (conjure) in auto mode[0m
+[0;32m    amazon-ebs-ubuntu-bionic: update-alternatives: using /usr/bin/conjure-im6.q16 to provide /usr/bin/conjure-im6 (conjure-im6) in auto mode[0m
+[0;32m    amazon-ebs-ubuntu-bionic: update-alternatives: using /usr/bin/import-im6.q16 to provide /usr/bin/import (import) in auto mode[0m
+[0;32m    amazon-ebs-ubuntu-bionic: update-alternatives: using /usr/bin/import-im6.q16 to provide /usr/bin/import-im6 (import-im6) in auto mode[0m
+[0;32m    amazon-ebs-ubuntu-bionic: update-alternatives: using /usr/bin/identify-im6.q16 to provide /usr/bin/identify (identify) in auto mode[0m
+[0;32m    amazon-ebs-ubuntu-bionic: update-alternatives: using /usr/bin/identify-im6.q16 to provide /usr/bin/identify-im6 (identify-im6) in auto mode[0m
+[0;32m    amazon-ebs-ubuntu-bionic: update-alternatives: using /usr/bin/stream-im6.q16 to provide /usr/bin/stream (stream) in auto mode[0m
+[0;32m    amazon-ebs-ubuntu-bionic: update-alternatives: using /usr/bin/stream-im6.q16 to provide /usr/bin/stream-im6 (stream-im6) in auto mode[0m
+[0;32m    amazon-ebs-ubuntu-bionic: update-alternatives: using /usr/bin/display-im6.q16 to provide /usr/bin/display (display) in auto mode[0m
+[0;32m    amazon-ebs-ubuntu-bionic: update-alternatives: using /usr/bin/display-im6.q16 to provide /usr/bin/display-im6 (display-im6) in auto mode[0m
+[0;32m    amazon-ebs-ubuntu-bionic: update-alternatives: using /usr/bin/montage-im6.q16 to provide /usr/bin/montage (montage) in auto mode[0m
+[0;32m    amazon-ebs-ubuntu-bionic: update-alternatives: using /usr/bin/montage-im6.q16 to provide /usr/bin/montage-im6 (montage-im6) in auto mode[0m
+[0;32m    amazon-ebs-ubuntu-bionic: update-alternatives: using /usr/bin/mogrify-im6.q16 to provide /usr/bin/mogrify (mogrify) in auto mode[0m
+[0;32m    amazon-ebs-ubuntu-bionic: update-alternatives: using /usr/bin/mogrify-im6.q16 to provide /usr/bin/mogrify-im6 (mogrify-im6) in auto mode[0m
+[0;32m    amazon-ebs-ubuntu-bionic: Setting up libxmu6:amd64 (2:1.1.2-2) ...[0m
+[0;32m    amazon-ebs-ubuntu-bionic: Setting up libcupsfilters1:amd64 (1.20.2-0ubuntu3.1) ...[0m
+[0;32m    amazon-ebs-ubuntu-bionic: 7[40;0f[42m[30mProgress: [ 93%][49m[39m [######################################################....] 8Setting up libcupsimage2:amd64 (2.2.7-1ubuntu2.9) ...[0m
+[0;32m    amazon-ebs-ubuntu-bionic: Setting up libpango-1.0-0:amd64 (1.40.14-1ubuntu0.1) ...[0m
+[0;32m    amazon-ebs-ubuntu-bionic: Setting up imagemagick (8:6.9.7.4+dfsg-16ubuntu6.15) ...[0m
+[0;32m    amazon-ebs-ubuntu-bionic: 7[40;0f[42m[30mProgress: [ 94%][49m[39m [######################################################....] 8Setting up libgs9:amd64 (9.26~dfsg+0-0ubuntu0.18.04.17) ...[0m
+[0;32m    amazon-ebs-ubuntu-bionic: Setting up libxaw7:amd64 (2:1.0.13-1) ...[0m
+[0;32m    amazon-ebs-ubuntu-bionic: 7[40;0f[42m[30mProgress: [ 95%][49m[39m [#######################################################...] 8Setting up ghostscript (9.26~dfsg+0-0ubuntu0.18.04.17) ...[0m
+[0;32m    amazon-ebs-ubuntu-bionic: Setting up libpangoft2-1.0-0:amd64 (1.40.14-1ubuntu0.1) ...[0m
+[0;32m    amazon-ebs-ubuntu-bionic: Setting up groff (1.22.3-10) ...[0m
+[0;32m    amazon-ebs-ubuntu-bionic: 7[40;0f[42m[30mProgress: [ 96%][49m[39m [#######################################################...] 8Setting up libpangocairo-1.0-0:amd64 (1.40.14-1ubuntu0.1) ...[0m
+[0;32m    amazon-ebs-ubuntu-bionic: Setting up libmagickcore-6.q16-3-extra:amd64 (8:6.9.7.4+dfsg-16ubuntu6.15) ...[0m
+[0;32m    amazon-ebs-ubuntu-bionic: 7[40;0f[42m[30mProgress: [ 97%][49m[39m [########################################################..] 8Processing triggers for man-db (2.8.3-2ubuntu0.1) ...[0m
+[0;36m    azure-ubuntu-bionic: Fetched 27.4 MB in 6s (4234 kB/s)[0m
+[0;36m    azure-ubuntu-bionic: Reading package lists...[0m
+[1;31m==> azure-ubuntu-bionic: Warning: apt-key output should not be parsed (stdout is not a terminal)[0m
+[0;36m    azure-ubuntu-bionic: OK[0m
+[0;36m    azure-ubuntu-bionic: Hit:1 http://azure.archive.ubuntu.com/ubuntu bionic InRelease[0m
+[0;36m    azure-ubuntu-bionic: Hit:2 http://azure.archive.ubuntu.com/ubuntu bionic-updates InRelease[0m
+[0;36m    azure-ubuntu-bionic: Hit:3 http://azure.archive.ubuntu.com/ubuntu bionic-backports InRelease[0m
+[0;36m    azure-ubuntu-bionic: Hit:4 http://azure.archive.ubuntu.com/ubuntu bionic-security InRelease[0m
+[0;36m    azure-ubuntu-bionic: Get:5 https://packages.microsoft.com/repos/azure-cli bionic InRelease [2419 B][0m
+[0;36m    azure-ubuntu-bionic: Hit:6 https://apt.releases.hashicorp.com bionic InRelease[0m
+[0;36m    azure-ubuntu-bionic: Get:7 https://packages.microsoft.com/repos/azure-cli bionic/main amd64 Packages [550 B][0m
+[0;36m    azure-ubuntu-bionic: Get:8 https://packages.microsoft.com/repos/azure-cli bionic/main all Packages [7314 B][0m
+[0;32m    amazon-ebs-ubuntu-bionic: Processing triggers for shared-mime-info (1.9-2) ...[0m
+[0;36m    azure-ubuntu-bionic: Fetched 10.3 kB in 1s (17.9 kB/s)[0m
+[0;36m    azure-ubuntu-bionic: Reading package lists...[0m
+[1;31m==> azure-ubuntu-bionic:[0m
+[1;31m==> azure-ubuntu-bionic: WARNING: apt does not have a stable CLI interface. Use with caution in scripts.[0m
+[1;31m==> azure-ubuntu-bionic:[0m
+[0;36m    azure-ubuntu-bionic: Hit:1 http://azure.archive.ubuntu.com/ubuntu bionic InRelease[0m
+[0;36m    azure-ubuntu-bionic: Hit:2 http://azure.archive.ubuntu.com/ubuntu bionic-updates InRelease[0m
+[0;36m    azure-ubuntu-bionic: Hit:3 http://azure.archive.ubuntu.com/ubuntu bionic-backports InRelease[0m
+[0;36m    azure-ubuntu-bionic: Hit:4 http://azure.archive.ubuntu.com/ubuntu bionic-security InRelease[0m
+[0;36m    azure-ubuntu-bionic: Hit:5 https://packages.microsoft.com/repos/azure-cli bionic InRelease[0m
+[0;36m    azure-ubuntu-bionic: Hit:6 https://apt.releases.hashicorp.com bionic InRelease[0m
+[0;32m    amazon-ebs-ubuntu-bionic: Processing triggers for mime-support (3.60ubuntu1) ...[0m
+[0;32m    amazon-ebs-ubuntu-bionic: Processing triggers for ureadahead (0.100.0-21) ...[0m
+[0;32m    amazon-ebs-ubuntu-bionic: Processing triggers for install-info (6.5.0.dfsg.1-2) ...[0m
+[0;32m    amazon-ebs-ubuntu-bionic: Processing triggers for libc-bin (2.27-3ubuntu1.6) ...[0m
+[0;32m    amazon-ebs-ubuntu-bionic: Processing triggers for systemd (237-3ubuntu10.57) ...[0m
+[0;32m    amazon-ebs-ubuntu-bionic: Processing triggers for sgml-base (1.29) ...[0m
+[0;32m    amazon-ebs-ubuntu-bionic: Setting up docutils-common (0.14+dfsg-3) ...[0m
+[0;32m    amazon-ebs-ubuntu-bionic: Processing triggers for sgml-base (1.29) ...[0m
+[0;32m    amazon-ebs-ubuntu-bionic: 7[40;0f[42m[30mProgress: [ 98%][49m[39m [########################################################..] 8Setting up python3-docutils (0.14+dfsg-3) ...[0m
+[0;32m    amazon-ebs-ubuntu-bionic: update-alternatives: using /usr/share/docutils/scripts/python3/rst-buildhtml to provide /usr/bin/rst-buildhtml (rst-buildhtml) in auto mode[0m
+[0;32m    amazon-ebs-ubuntu-bionic: update-alternatives: using /usr/share/docutils/scripts/python3/rst2html to provide /usr/bin/rst2html (rst2html) in auto mode[0m
+[0;32m    amazon-ebs-ubuntu-bionic: update-alternatives: using /usr/share/docutils/scripts/python3/rst2html4 to provide /usr/bin/rst2html4 (rst2html4) in auto mode[0m
+[0;32m    amazon-ebs-ubuntu-bionic: update-alternatives: using /usr/share/docutils/scripts/python3/rst2html5 to provide /usr/bin/rst2html5 (rst2html5) in auto mode[0m
+[0;32m    amazon-ebs-ubuntu-bionic: update-alternatives: using /usr/share/docutils/scripts/python3/rst2latex to provide /usr/bin/rst2latex (rst2latex) in auto mode[0m
+[0;32m    amazon-ebs-ubuntu-bionic: update-alternatives: using /usr/share/docutils/scripts/python3/rst2man to provide /usr/bin/rst2man (rst2man) in auto mode[0m
+[0;32m    amazon-ebs-ubuntu-bionic: update-alternatives: using /usr/share/docutils/scripts/python3/rst2odt to provide /usr/bin/rst2odt (rst2odt) in auto mode[0m
+[0;32m    amazon-ebs-ubuntu-bionic: update-alternatives: using /usr/share/docutils/scripts/python3/rst2odt_prepstyles to provide /usr/bin/rst2odt_prepstyles (rst2odt_prepstyles) in auto mode[0m
+[0;32m    amazon-ebs-ubuntu-bionic: update-alternatives: using /usr/share/docutils/scripts/python3/rst2pseudoxml to provide /usr/bin/rst2pseudoxml (rst2pseudoxml) in auto mode[0m
+[0;32m    amazon-ebs-ubuntu-bionic: update-alternatives: using /usr/share/docutils/scripts/python3/rst2s5 to provide /usr/bin/rst2s5 (rst2s5) in auto mode[0m
+[0;32m    amazon-ebs-ubuntu-bionic: update-alternatives: using /usr/share/docutils/scripts/python3/rst2xetex to provide /usr/bin/rst2xetex (rst2xetex) in auto mode[0m
+[0;32m    amazon-ebs-ubuntu-bionic: update-alternatives: using /usr/share/docutils/scripts/python3/rst2xml to provide /usr/bin/rst2xml (rst2xml) in auto mode[0m
+[0;32m    amazon-ebs-ubuntu-bionic: update-alternatives: using /usr/share/docutils/scripts/python3/rstpep2html to provide /usr/bin/rstpep2html (rstpep2html) in auto mode[0m
+[0;32m    amazon-ebs-ubuntu-bionic: Setting up python3-botocore (1.16.19+repack-1ubuntu0.18.04.1) ...[0m
+[0;32m    amazon-ebs-ubuntu-bionic: 7[40;0f[42m[30mProgress: [ 99%][49m[39m [#########################################################.] 8Setting up python3-s3transfer (0.3.3-1ubuntu0.18.04.1) ...[0m
+[0;36m    azure-ubuntu-bionic: Reading package lists...[0m
+[0;32m    amazon-ebs-ubuntu-bionic: Setting up awscli (1.18.69-1ubuntu0.18.04.1) ...[0m
+[0;36m    azure-ubuntu-bionic: Building dependency tree...[0m
+[0;36m    azure-ubuntu-bionic: Reading state information...[0m
+[0;36m    azure-ubuntu-bionic: 12 packages can be upgraded. Run 'apt list --upgradable' to see them.[0m
+[1;31m==> azure-ubuntu-bionic:[0m
+[1;31m==> azure-ubuntu-bionic: WARNING: apt does not have a stable CLI interface. Use with caution in scripts.[0m
+[1;31m==> azure-ubuntu-bionic:[0m
+[0;36m    azure-ubuntu-bionic: Reading package lists...[0m
+[0;32m    amazon-ebs-ubuntu-bionic:[0m
+[0;36m    azure-ubuntu-bionic: Building dependency tree...[0m
+[0;36m    azure-ubuntu-bionic: Reading state information...[0m
+[0;36m    azure-ubuntu-bionic: The following additional packages will be installed:[0m
+[0;36m    azure-ubuntu-bionic:   bridge-utils containerd libjq1 libonig4 pigz runc ubuntu-fan[0m
+[0;36m    azure-ubuntu-bionic: Suggested packages:[0m
+[0;36m    azure-ubuntu-bionic:   ifupdown aufs-tools cgroupfs-mount | cgroup-lite debootstrap docker-doc[0m
+[0;36m    azure-ubuntu-bionic:   rinse zfs-fuse | zfsutils zip[0m
+[0;36m    azure-ubuntu-bionic: The following NEW packages will be installed:[0m
+[0;36m    azure-ubuntu-bionic:   azure-cli bridge-utils consul-enterprise containerd docker.io jq libjq1[0m
+[0;36m    azure-ubuntu-bionic:   libonig4 nomad-enterprise pigz runc ubuntu-fan unzip vault-enterprise[0m
+[0;36m    azure-ubuntu-bionic: 0 upgraded, 14 newly installed, 0 to remove and 12 not upgraded.[0m
+[0;36m    azure-ubuntu-bionic: Need to get 277 MB of archives.[0m
+[0;36m    azure-ubuntu-bionic: After this operation, 1669 MB of additional disk space will be used.[0m
+[0;36m    azure-ubuntu-bionic: Get:1 http://azure.archive.ubuntu.com/ubuntu bionic/universe amd64 pigz amd64 2.4-1 [57.4 kB][0m
+[0;36m    azure-ubuntu-bionic: Get:2 http://azure.archive.ubuntu.com/ubuntu bionic/main amd64 bridge-utils amd64 1.5-15ubuntu1 [30.1 kB][0m
+[0;36m    azure-ubuntu-bionic: Get:3 http://azure.archive.ubuntu.com/ubuntu bionic-updates/universe amd64 runc amd64 1.1.4-0ubuntu1~18.04.1 [3820 kB][0m
+[0;36m    azure-ubuntu-bionic: Get:4 https://packages.microsoft.com/repos/azure-cli bionic/main amd64 azure-cli amd64 2.47.0-1~bionic [58.1 MB][0m
+[0;36m    azure-ubuntu-bionic: Get:5 http://azure.archive.ubuntu.com/ubuntu bionic-updates/universe amd64 containerd amd64 1.6.12-0ubuntu1~18.04.1 [31.5 MB][0m
+[0;36m    azure-ubuntu-bionic: Get:6 https://apt.releases.hashicorp.com bionic/main amd64 consul-enterprise amd64 1.10.2+ent [41.8 MB][0m
+[0;36m    azure-ubuntu-bionic: Get:7 http://azure.archive.ubuntu.com/ubuntu bionic-updates/universe amd64 docker.io amd64 20.10.21-0ubuntu1~18.04.2 [30.3 MB][0m
+[0;36m    azure-ubuntu-bionic: Get:8 https://apt.releases.hashicorp.com bionic/main amd64 nomad-enterprise amd64 1.0.4+ent [41.8 MB][0m
+[0;32m    amazon-ebs-ubuntu-bionic: 7[0;40r8[1A[Jaws-cli/1.18.69 Python/3.6.9 Linux/5.4.0-1099-aws botocore/1.16.19[0m
+[0;32m    amazon-ebs-ubuntu-bionic: Consul v1.10.2+ent[0m
+[0;32m    amazon-ebs-ubuntu-bionic: Revision e68f6c988[0m
+[0;32m    amazon-ebs-ubuntu-bionic: Protocol 2 spoken by default, understands 2 to 3 (agent will automatically use protocol >2 when speaking to compatible agents)[0m
+[0;32m    amazon-ebs-ubuntu-bionic:[0m
+[0;32m    amazon-ebs-ubuntu-bionic: [0mVault v1.8.0+ent (23da4956984b4760b85cba1a9bf08a635e3b8e94)[0m[0m
+[0;36m    azure-ubuntu-bionic: Get:9 http://azure.archive.ubuntu.com/ubuntu bionic/universe amd64 libonig4 amd64 6.7.0-1 [119 kB][0m
+[0;32m    amazon-ebs-ubuntu-bionic: Nomad v1.0.4+ent (72adb9f0e0ca0ac142f783fd62891840bc9029ba)[0m
+[0;36m    azure-ubuntu-bionic: Get:10 http://azure.archive.ubuntu.com/ubuntu bionic/universe amd64 libjq1 amd64 1.5+dfsg-2 [111 kB][0m
+[0;36m    azure-ubuntu-bionic: Get:11 http://azure.archive.ubuntu.com/ubuntu bionic/universe amd64 jq amd64 1.5+dfsg-2 [45.6 kB][0m
+[0;36m    azure-ubuntu-bionic: Get:12 http://azure.archive.ubuntu.com/ubuntu bionic/main amd64 ubuntu-fan all 0.12.10 [34.7 kB][0m
+[0;36m    azure-ubuntu-bionic: Get:13 http://azure.archive.ubuntu.com/ubuntu bionic-updates/main amd64 unzip amd64 6.0-21ubuntu1.2 [168 kB][0m
+[0;32m    amazon-ebs-ubuntu-bionic: Docker version 20.10.21, build 20.10.21-0ubuntu1~18.04.2[0m
+[0;32m    amazon-ebs-ubuntu-bionic: jq-1.5-1-a5b5cbe[0m
+[0;32m    amazon-ebs-ubuntu-bionic: UnZip 6.00 of 20 April 2009, by Debian. Original by Info-ZIP.[0m
+[0;32m    amazon-ebs-ubuntu-bionic:[0m
+[0;32m    amazon-ebs-ubuntu-bionic: Latest sources and executables are at ftp://ftp.info-zip.org/pub/infozip/ ;[0m
+[0;32m    amazon-ebs-ubuntu-bionic: see ftp://ftp.info-zip.org/pub/infozip/UnZip.html for other sites.[0m
+[0;32m    amazon-ebs-ubuntu-bionic:[0m
+[0;32m    amazon-ebs-ubuntu-bionic: Compiled with gcc 7.5.0 for Unix (Linux ELF).[0m
+[0;32m    amazon-ebs-ubuntu-bionic:[0m
+[0;32m    amazon-ebs-ubuntu-bionic: UnZip special compilation options:[0m
+[0;32m    amazon-ebs-ubuntu-bionic:         ACORN_FTYPE_NFS[0m
+[0;32m    amazon-ebs-ubuntu-bionic:         COPYRIGHT_CLEAN (PKZIP 0.9x unreducing method not supported)[0m
+[0;32m    amazon-ebs-ubuntu-bionic:         SET_DIR_ATTRIB[0m
+[0;32m    amazon-ebs-ubuntu-bionic:         SYMLINKS (symbolic links supported, if RTL and file system permit)[0m
+[0;32m    amazon-ebs-ubuntu-bionic:         TIMESTAMP[0m
+[0;32m    amazon-ebs-ubuntu-bionic:         UNIXBACKUP[0m
+[0;32m    amazon-ebs-ubuntu-bionic:         USE_EF_UT_TIME[0m
+[0;32m    amazon-ebs-ubuntu-bionic:         USE_UNSHRINK (PKZIP/Zip 1.x unshrinking method supported)[0m
+[0;32m    amazon-ebs-ubuntu-bionic:         USE_DEFLATE64 (PKZIP 4.x Deflate64(tm) supported)[0m
+[0;32m    amazon-ebs-ubuntu-bionic:         UNICODE_SUPPORT [wide-chars, char coding: UTF-8] (handle UTF-8 paths)[0m
+[0;32m    amazon-ebs-ubuntu-bionic:         LARGE_FILE_SUPPORT (large files over 2 GiB supported)[0m
+[0;32m    amazon-ebs-ubuntu-bionic:         ZIP64_SUPPORT (archives using Zip64 for large files supported)[0m
+[0;32m    amazon-ebs-ubuntu-bionic:         USE_BZIP2 (PKZIP 4.6+, using bzip2 lib version 1.0.6, 6-Sept-2010)[0m
+[0;32m    amazon-ebs-ubuntu-bionic:         VMS_TEXT_CONV[0m
+[0;32m    amazon-ebs-ubuntu-bionic:         WILD_STOP_AT_DIR[0m
+[0;32m    amazon-ebs-ubuntu-bionic:         [decryption, version 2.11 of 05 Jan 2007][0m
+[0;32m    amazon-ebs-ubuntu-bionic:[0m
+[0;32m    amazon-ebs-ubuntu-bionic: UnZip and ZipInfo environment options:[0m
+[0;32m    amazon-ebs-ubuntu-bionic:            UNZIP:  [none][0m
+[0;32m    amazon-ebs-ubuntu-bionic:         UNZIPOPT:  [none][0m
+[0;32m    amazon-ebs-ubuntu-bionic:          ZIPINFO:  [none][0m
+[0;32m    amazon-ebs-ubuntu-bionic:       ZIPINFOOPT:  [none][0m
+[0;32m    amazon-ebs-ubuntu-bionic: redis-cli 4.0.9[0m
+[0;36m    azure-ubuntu-bionic: Get:14 https://apt.releases.hashicorp.com bionic/main amd64 vault-enterprise amd64 1.8.0+ent [68.8 MB][0m
+[1;32m==> amazon-ebs-ubuntu-bionic: Uploading /etc/consul.hclic => /tmp/consul.hclic[0m
+[1;32m==> amazon-ebs-ubuntu-bionic: Provisioning with shell script: /tmp/packer-shell024267005[0m
+[1;32m==> amazon-ebs-ubuntu-bionic: Uploading /etc/vault.hclic => /tmp/vault.hclic[0m
+[1;32m==> amazon-ebs-ubuntu-bionic: Provisioning with shell script: /tmp/packer-shell818653412[0m
+[1;32m==> amazon-ebs-ubuntu-bionic: Uploading /usr/local/bin/envoy => /tmp/envoy[0m
+[1;31m==> azure-ubuntu-bionic: debconf: unable to initialize frontend: Dialog[0m
+[1;31m==> azure-ubuntu-bionic: debconf: (Dialog frontend will not work on a dumb terminal, an emacs shell buffer, or without a controlling terminal.)[0m
+[1;31m==> azure-ubuntu-bionic: debconf: falling back to frontend: Readline[0m
+[1;31m==> azure-ubuntu-bionic: debconf: unable to initialize frontend: Readline[0m
+[1;31m==> azure-ubuntu-bionic: debconf: (This frontend requires a controlling tty.)[0m
+[1;31m==> azure-ubuntu-bionic: debconf: falling back to frontend: Teletype[0m
+[1;31m==> azure-ubuntu-bionic: dpkg-preconfigure: unable to re-open stdin:[0m
+[0;36m    azure-ubuntu-bionic: Fetched 277 MB in 3s (104 MB/s)[0m
+[0;36m    azure-ubuntu-bionic: Selecting previously unselected package pigz.[0m
+[0;36m    azure-ubuntu-bionic: (Reading database ... 59110 files and directories currently installed.)[0m
+[0;36m    azure-ubuntu-bionic: Preparing to unpack .../00-pigz_2.4-1_amd64.deb ...[0m
+[0;36m    azure-ubuntu-bionic: Unpacking pigz (2.4-1) ...[0m
+[0;36m    azure-ubuntu-bionic: Selecting previously unselected package bridge-utils.[0m
+[0;36m    azure-ubuntu-bionic: Preparing to unpack .../01-bridge-utils_1.5-15ubuntu1_amd64.deb ...[0m
+[0;36m    azure-ubuntu-bionic: Unpacking bridge-utils (1.5-15ubuntu1) ...[0m
+[0;36m    azure-ubuntu-bionic: Selecting previously unselected package runc.[0m
+[0;36m    azure-ubuntu-bionic: Preparing to unpack .../02-runc_1.1.4-0ubuntu1~18.04.1_amd64.deb ...[0m
+[0;36m    azure-ubuntu-bionic: Unpacking runc (1.1.4-0ubuntu1~18.04.1) ...[0m
+[1;32m==> amazon-ebs-ubuntu-bionic: Provisioning with shell script: /tmp/packer-shell145434234[0m
+[0;36m    azure-ubuntu-bionic: Selecting previously unselected package containerd.[0m
+[0;36m    azure-ubuntu-bionic: Preparing to unpack .../03-containerd_1.6.12-0ubuntu1~18.04.1_amd64.deb ...[0m
+[0;36m    azure-ubuntu-bionic: Unpacking containerd (1.6.12-0ubuntu1~18.04.1) ...[0m
+[0;32m    amazon-ebs-ubuntu-bionic:[0m
+[0;32m    amazon-ebs-ubuntu-bionic: envoy  version: 98c1c9e9a40804b93b074badad1cdf284b47d58b/1.18.3/Clean/RELEASE/BoringSSL[0m
+[0;32m    amazon-ebs-ubuntu-bionic:[0m
+[1;32m==> amazon-ebs-ubuntu-bionic: Provisioning with shell script: scripts/cleanup.sh[0m
+[1;32m==> amazon-ebs-ubuntu-bionic: Stopping the source instance...[0m
+[0;32m    amazon-ebs-ubuntu-bionic: Stopping instance[0m
+[1;32m==> amazon-ebs-ubuntu-bionic: Waiting for the instance to stop...[0m
+[0;36m    azure-ubuntu-bionic: Selecting previously unselected package docker.io.[0m
+[0;36m    azure-ubuntu-bionic: Preparing to unpack .../04-docker.io_20.10.21-0ubuntu1~18.04.2_amd64.deb ...[0m
+[0;36m    azure-ubuntu-bionic: Unpacking docker.io (20.10.21-0ubuntu1~18.04.2) ...[0m
+[0;36m    azure-ubuntu-bionic: Selecting previously unselected package libonig4:amd64.[0m
+[0;36m    azure-ubuntu-bionic: Preparing to unpack .../05-libonig4_6.7.0-1_amd64.deb ...[0m
+[0;36m    azure-ubuntu-bionic: Unpacking libonig4:amd64 (6.7.0-1) ...[0m
+[0;36m    azure-ubuntu-bionic: Selecting previously unselected package libjq1:amd64.[0m
+[0;36m    azure-ubuntu-bionic: Preparing to unpack .../06-libjq1_1.5+dfsg-2_amd64.deb ...[0m
+[0;36m    azure-ubuntu-bionic: Unpacking libjq1:amd64 (1.5+dfsg-2) ...[0m
+[0;36m    azure-ubuntu-bionic: Selecting previously unselected package jq.[0m
+[0;36m    azure-ubuntu-bionic: Preparing to unpack .../07-jq_1.5+dfsg-2_amd64.deb ...[0m
+[0;36m    azure-ubuntu-bionic: Unpacking jq (1.5+dfsg-2) ...[0m
+[0;36m    azure-ubuntu-bionic: Selecting previously unselected package ubuntu-fan.[0m
+[0;36m    azure-ubuntu-bionic: Preparing to unpack .../08-ubuntu-fan_0.12.10_all.deb ...[0m
+[0;36m    azure-ubuntu-bionic: Unpacking ubuntu-fan (0.12.10) ...[0m
+[0;36m    azure-ubuntu-bionic: Selecting previously unselected package unzip.[0m
+[0;36m    azure-ubuntu-bionic: Preparing to unpack .../09-unzip_6.0-21ubuntu1.2_amd64.deb ...[0m
+[0;36m    azure-ubuntu-bionic: Unpacking unzip (6.0-21ubuntu1.2) ...[0m
+[0;36m    azure-ubuntu-bionic: Selecting previously unselected package azure-cli.[0m
+[0;36m    azure-ubuntu-bionic: Preparing to unpack .../10-azure-cli_2.47.0-1~bionic_amd64.deb ...[0m
+[0;36m    azure-ubuntu-bionic: Unpacking azure-cli (2.47.0-1~bionic) ...[0m
+[1;32m==> amazon-ebs-ubuntu-bionic: Creating AMI hashistack-2023-04-13 from instance i-096f6b66a310b7f10[0m
+[0;32m    amazon-ebs-ubuntu-bionic: AMI: ami-01e1e3f0046f48453[0m
+[1;32m==> amazon-ebs-ubuntu-bionic: Waiting for AMI to become ready...[0m
+[0;36m    azure-ubuntu-bionic: Selecting previously unselected package consul-enterprise.[0m
+[0;36m    azure-ubuntu-bionic: Preparing to unpack .../11-consul-enterprise_1.10.2+ent_amd64.deb ...[0m
+[0;36m    azure-ubuntu-bionic: Unpacking consul-enterprise (1.10.2+ent) ...[0m
+[0;36m    azure-ubuntu-bionic: Selecting previously unselected package nomad-enterprise.[0m
+[0;36m    azure-ubuntu-bionic: Preparing to unpack .../12-nomad-enterprise_1.0.4+ent_amd64.deb ...[0m
+[0;36m    azure-ubuntu-bionic: Unpacking nomad-enterprise (1.0.4+ent) ...[0m
+[0;36m    azure-ubuntu-bionic: Selecting previously unselected package vault-enterprise.[0m
+[0;36m    azure-ubuntu-bionic: Preparing to unpack .../13-vault-enterprise_1.8.0+ent_amd64.deb ...[0m
+[0;36m    azure-ubuntu-bionic: Unpacking vault-enterprise (1.8.0+ent) ...[0m
+[0;36m    azure-ubuntu-bionic: Setting up vault-enterprise (1.8.0+ent) ...[0m
+[0;36m    azure-ubuntu-bionic: Generating Vault TLS key and self-signed certificate...[0m
+[0;36m    azure-ubuntu-bionic: Can't load /home/packer/.rnd into RNG[0m
+[0;36m    azure-ubuntu-bionic: 140689817895360:error:2406F079:random number generator:RAND_load_file:Cannot open file:../crypto/rand/randfile.c:88:Filename=/home/packer/.rnd[0m
+[0;36m    azure-ubuntu-bionic: Generating a RSA private key[0m
+[0;36m    azure-ubuntu-bionic: ...........................................++++[0m
+[0;36m    azure-ubuntu-bionic: ................................................................................................................................................................................................++++[0m
+[0;36m    azure-ubuntu-bionic: writing new private key to 'tls.key'[0m
+[0;36m    azure-ubuntu-bionic: -----[0m
+[0;36m    azure-ubuntu-bionic: Vault TLS key and self-signed certificate have been generated in '/opt/vault/tls'.[0m
+[0;36m    azure-ubuntu-bionic:[0m
+[0;36m    azure-ubuntu-bionic: The following shall apply unless your organization has a separately signed Enterprise License Agreement or Evaluation Agreement governing your use of the software:[0m
+[0;36m    azure-ubuntu-bionic:[0m
+[0;36m    azure-ubuntu-bionic: Software in this repository is subject to the license terms located in the software, copies of which are also available at https://eula.hashicorp.com/ClickThruELA-Global.pdf or https://www.hashicorp.com/terms-of-evaluation as applicable. Please read the license terms prior to using the software. Your installation and use of the software constitutes your acceptance of these terms. If you do not accept the terms, do not use the software.[0m
+[0;36m    azure-ubuntu-bionic:[0m
+[0;36m    azure-ubuntu-bionic: Setting up azure-cli (2.47.0-1~bionic) ...[0m
+[0;36m    azure-ubuntu-bionic: Setting up runc (1.1.4-0ubuntu1~18.04.1) ...[0m
+[0;36m    azure-ubuntu-bionic: Setting up libonig4:amd64 (6.7.0-1) ...[0m
+[0;36m    azure-ubuntu-bionic: Setting up unzip (6.0-21ubuntu1.2) ...[0m
+[0;36m    azure-ubuntu-bionic: Setting up nomad-enterprise (1.0.4+ent) ...[0m
+[0;36m    azure-ubuntu-bionic: Setting up containerd (1.6.12-0ubuntu1~18.04.1) ...[0m
+[0;36m    azure-ubuntu-bionic: Created symlink /etc/systemd/system/multi-user.target.wants/containerd.service → /lib/systemd/system/containerd.service.[0m
+[0;36m    azure-ubuntu-bionic: Setting up bridge-utils (1.5-15ubuntu1) ...[0m
+[0;36m    azure-ubuntu-bionic: debconf: unable to initialize frontend: Dialog[0m
+[0;36m    azure-ubuntu-bionic: debconf: (Dialog frontend will not work on a dumb terminal, an emacs shell buffer, or without a controlling terminal.)[0m
+[0;36m    azure-ubuntu-bionic: debconf: falling back to frontend: Readline[0m
+[0;36m    azure-ubuntu-bionic: Setting up libjq1:amd64 (1.5+dfsg-2) ...[0m
+[0;36m    azure-ubuntu-bionic: Setting up ubuntu-fan (0.12.10) ...[0m
+[0;36m    azure-ubuntu-bionic: Created symlink /etc/systemd/system/multi-user.target.wants/ubuntu-fan.service → /lib/systemd/system/ubuntu-fan.service.[0m
+[0;36m    azure-ubuntu-bionic: Setting up consul-enterprise (1.10.2+ent) ...[0m
+[0;36m    azure-ubuntu-bionic:[0m
+[0;36m    azure-ubuntu-bionic: The following shall apply unless your organization has a separately signed Enterprise License Agreement or Evaluation Agreement governing your use of the software:[0m
+[0;36m    azure-ubuntu-bionic:[0m
+[0;36m    azure-ubuntu-bionic: Software in this repository is subject to the license terms located in the software, copies of which are also available at https://eula.hashicorp.com/ClickThruELA-Global.pdf or https://www.hashicorp.com/terms-of-evaluation as applicable. Please read the license terms prior to using the software. Your installation and use of the software constitutes your acceptance of these terms. If you do not accept the terms, do not use the software.[0m
+[0;36m    azure-ubuntu-bionic:[0m
+[0;36m    azure-ubuntu-bionic: Setting up pigz (2.4-1) ...[0m
+[0;36m    azure-ubuntu-bionic: Setting up jq (1.5+dfsg-2) ...[0m
+[0;36m    azure-ubuntu-bionic: Setting up docker.io (20.10.21-0ubuntu1~18.04.2) ...[0m
+[0;36m    azure-ubuntu-bionic: debconf: unable to initialize frontend: Dialog[0m
+[0;36m    azure-ubuntu-bionic: debconf: (Dialog frontend will not work on a dumb terminal, an emacs shell buffer, or without a controlling terminal.)[0m
+[0;36m    azure-ubuntu-bionic: debconf: falling back to frontend: Readline[0m
+[0;36m    azure-ubuntu-bionic: Adding group `docker' (GID 116) ...[0m
+[0;36m    azure-ubuntu-bionic: Done.[0m
+[0;36m    azure-ubuntu-bionic: Created symlink /etc/systemd/system/multi-user.target.wants/docker.service → /lib/systemd/system/docker.service.[0m
+[0;36m    azure-ubuntu-bionic: Created symlink /etc/systemd/system/sockets.target.wants/docker.socket → /lib/systemd/system/docker.socket.[0m
+[0;36m    azure-ubuntu-bionic: Processing triggers for ureadahead (0.100.0-21) ...[0m
+[0;36m    azure-ubuntu-bionic: Processing triggers for libc-bin (2.27-3ubuntu1.6) ...[0m
+[0;36m    azure-ubuntu-bionic: Processing triggers for systemd (237-3ubuntu10.57) ...[0m
+[0;36m    azure-ubuntu-bionic: Processing triggers for man-db (2.8.3-2ubuntu0.1) ...[0m
+[0;36m    azure-ubuntu-bionic: Processing triggers for mime-support (3.60ubuntu1) ...[0m
+[0;36m    azure-ubuntu-bionic: azure-cli                         2.47.0[0m
+[0;36m    azure-ubuntu-bionic:[0m
+[0;36m    azure-ubuntu-bionic: core                              2.47.0[0m
+[0;36m    azure-ubuntu-bionic: telemetry                          1.0.8[0m
+[0;36m    azure-ubuntu-bionic:[0m
+[0;36m    azure-ubuntu-bionic: Dependencies:[0m
+[0;36m    azure-ubuntu-bionic: msal                              1.20.0[0m
+[0;36m    azure-ubuntu-bionic: azure-mgmt-resource               22.0.0[0m
+[0;36m    azure-ubuntu-bionic:[0m
+[0;36m    azure-ubuntu-bionic: Python location '/opt/az/bin/python3'[0m
+[0;36m    azure-ubuntu-bionic: Extensions directory '/home/packer/.azure/cliextensions'[0m
+[0;36m    azure-ubuntu-bionic:[0m
+[0;36m    azure-ubuntu-bionic: Python (Linux) 3.10.10 (main, Mar 31 2023, 09:27:10) [GCC 7.5.0][0m
+[0;36m    azure-ubuntu-bionic:[0m
+[0;36m    azure-ubuntu-bionic: Legal docs and information: aka.ms/AzureCliLegal[0m
+[0;36m    azure-ubuntu-bionic:[0m
+[0;36m    azure-ubuntu-bionic:[0m
+[0;36m    azure-ubuntu-bionic: Your CLI is up-to-date.[0m
+[0;36m    azure-ubuntu-bionic: Consul v1.10.2+ent[0m
+[0;36m    azure-ubuntu-bionic: Revision e68f6c988[0m
+[0;36m    azure-ubuntu-bionic: Protocol 2 spoken by default, understands 2 to 3 (agent will automatically use protocol >2 when speaking to compatible agents)[0m
+[0;36m    azure-ubuntu-bionic:[0m
+[0;36m    azure-ubuntu-bionic: Vault v1.8.0+ent (23da4956984b4760b85cba1a9bf08a635e3b8e94)[0m
+[0;36m    azure-ubuntu-bionic: Nomad v1.0.4+ent (72adb9f0e0ca0ac142f783fd62891840bc9029ba)[0m
+[0;36m    azure-ubuntu-bionic: Docker version 20.10.21, build 20.10.21-0ubuntu1~18.04.2[0m
+[0;36m    azure-ubuntu-bionic: jq-1.5-1-a5b5cbe[0m
+[0;36m    azure-ubuntu-bionic: UnZip 6.00 of 20 April 2009, by Debian. Original by Info-ZIP.[0m
+[0;36m    azure-ubuntu-bionic:[0m
+[0;36m    azure-ubuntu-bionic: Latest sources and executables are at ftp://ftp.info-zip.org/pub/infozip/ ;[0m
+[0;36m    azure-ubuntu-bionic: see ftp://ftp.info-zip.org/pub/infozip/UnZip.html for other sites.[0m
+[0;36m    azure-ubuntu-bionic:[0m
+[0;36m    azure-ubuntu-bionic: Compiled with gcc 7.5.0 for Unix (Linux ELF).[0m
+[0;36m    azure-ubuntu-bionic:[0m
+[0;36m    azure-ubuntu-bionic: UnZip special compilation options:[0m
+[0;36m    azure-ubuntu-bionic:         ACORN_FTYPE_NFS[0m
+[0;36m    azure-ubuntu-bionic:         COPYRIGHT_CLEAN (PKZIP 0.9x unreducing method not supported)[0m
+[0;36m    azure-ubuntu-bionic:         SET_DIR_ATTRIB[0m
+[0;36m    azure-ubuntu-bionic:         SYMLINKS (symbolic links supported, if RTL and file system permit)[0m
+[0;36m    azure-ubuntu-bionic:         TIMESTAMP[0m
+[0;36m    azure-ubuntu-bionic:         UNIXBACKUP[0m
+[0;36m    azure-ubuntu-bionic:         USE_EF_UT_TIME[0m
+[0;36m    azure-ubuntu-bionic:         USE_UNSHRINK (PKZIP/Zip 1.x unshrinking method supported)[0m
+[0;36m    azure-ubuntu-bionic:         USE_DEFLATE64 (PKZIP 4.x Deflate64(tm) supported)[0m
+[0;36m    azure-ubuntu-bionic:         UNICODE_SUPPORT [wide-chars, char coding: UTF-8] (handle UTF-8 paths)[0m
+[0;36m    azure-ubuntu-bionic:         LARGE_FILE_SUPPORT (large files over 2 GiB supported)[0m
+[0;36m    azure-ubuntu-bionic:         ZIP64_SUPPORT (archives using Zip64 for large files supported)[0m
+[0;36m    azure-ubuntu-bionic:         USE_BZIP2 (PKZIP 4.6+, using bzip2 lib version 1.0.6, 6-Sept-2010)[0m
+[0;36m    azure-ubuntu-bionic:         VMS_TEXT_CONV[0m
+[0;36m    azure-ubuntu-bionic:         WILD_STOP_AT_DIR[0m
+[0;36m    azure-ubuntu-bionic:         [decryption, version 2.11 of 05 Jan 2007][0m
+[0;36m    azure-ubuntu-bionic:[0m
+[0;36m    azure-ubuntu-bionic: UnZip and ZipInfo environment options:[0m
+[0;36m    azure-ubuntu-bionic:            UNZIP:  [none][0m
+[0;36m    azure-ubuntu-bionic:         UNZIPOPT:  [none][0m
+[0;36m    azure-ubuntu-bionic:          ZIPINFO:  [none][0m
+[0;36m    azure-ubuntu-bionic:       ZIPINFOOPT:  [none][0m
+[1;36m==> azure-ubuntu-bionic: Uploading /etc/consul.hclic => /tmp/consul.hclic[0m
+[1;36m==> azure-ubuntu-bionic: Provisioning with shell script: /tmp/packer-shell340153345[0m
+[1;36m==> azure-ubuntu-bionic: Uploading /etc/vault.hclic => /tmp/vault.hclic[0m
+[1;36m==> azure-ubuntu-bionic: Provisioning with shell script: /tmp/packer-shell083538589[0m
+[1;36m==> azure-ubuntu-bionic: Uploading /usr/local/bin/envoy => /tmp/envoy[0m
+[1;36m==> azure-ubuntu-bionic: Provisioning with shell script: /tmp/packer-shell902582775[0m
+[0;36m    azure-ubuntu-bionic:[0m
+[0;36m    azure-ubuntu-bionic: envoy  version: 98c1c9e9a40804b93b074badad1cdf284b47d58b/1.18.3/Clean/RELEASE/BoringSSL[0m
+[0;36m    azure-ubuntu-bionic:[0m
+[1;36m==> azure-ubuntu-bionic: Provisioning with shell script: scripts/cleanup.sh[0m
+[1;36m==> azure-ubuntu-bionic: Querying the machine's properties ...[0m
+[1;36m==> azure-ubuntu-bionic:  -> ResourceGroupName : 'pkr-Resource-Group-mw3b8rzom0'[0m
+[1;36m==> azure-ubuntu-bionic:  -> ComputeName       : 'pkrvmmw3b8rzom0'[0m
+[1;36m==> azure-ubuntu-bionic:  -> Managed OS Disk   : '/subscriptions/37bc21fd-d0f5-46a3-8802-d5136be12b7e/resourceGroups/pkr-Resource-Group-mw3b8rzom0/providers/Microsoft.Compute/disks/pkrosmw3b8rzom0'[0m
+[1;36m==> azure-ubuntu-bionic: Querying the machine's additional disks properties ...[0m
+[1;36m==> azure-ubuntu-bionic:  -> ResourceGroupName : 'pkr-Resource-Group-mw3b8rzom0'[0m
+[1;36m==> azure-ubuntu-bionic:  -> ComputeName       : 'pkrvmmw3b8rzom0'[0m
+[1;36m==> azure-ubuntu-bionic: Powering off machine ...[0m
+[1;36m==> azure-ubuntu-bionic:  -> ResourceGroupName : 'pkr-Resource-Group-mw3b8rzom0'[0m
+[1;36m==> azure-ubuntu-bionic:  -> ComputeName       : 'pkrvmmw3b8rzom0'[0m
+[1;36m==> azure-ubuntu-bionic: Capturing image ...[0m
+[1;36m==> azure-ubuntu-bionic:  -> Compute ResourceGroupName : 'pkr-Resource-Group-mw3b8rzom0'[0m
+[1;36m==> azure-ubuntu-bionic:  -> Compute Name              : 'pkrvmmw3b8rzom0'[0m
+[1;36m==> azure-ubuntu-bionic:  -> Compute Location          : 'South Central US'[0m
+[1;36m==> azure-ubuntu-bionic:  -> Image ResourceGroupName   : 'packer'[0m
+[1;36m==> azure-ubuntu-bionic:  -> Image Name                : 'hashistack-2023-04-13'[0m
+[1;36m==> azure-ubuntu-bionic:  -> Image Location            : 'South Central US'[0m
+[1;36m==> azure-ubuntu-bionic: Removing the created Deployment object: 'pkrdpmw3b8rzom0'[0m
+[1;36m==> azure-ubuntu-bionic: 
+==> azure-ubuntu-bionic: Cleanup requested, deleting resource group ...[0m
+[1;32m==> amazon-ebs-ubuntu-bionic: Modifying attributes on AMI (ami-01e1e3f0046f48453)...[0m
+[0;32m    amazon-ebs-ubuntu-bionic: Modifying: description[0m
+[1;32m==> amazon-ebs-ubuntu-bionic: Modifying attributes on snapshot (snap-03d3be98518c38a29)...[0m
+[1;32m==> amazon-ebs-ubuntu-bionic: Adding tags to AMI (ami-01e1e3f0046f48453)...[0m
+[1;32m==> amazon-ebs-ubuntu-bionic: Tagging snapshot: snap-03d3be98518c38a29[0m
+[1;32m==> amazon-ebs-ubuntu-bionic: Creating AMI tags[0m
+[0;32m    amazon-ebs-ubuntu-bionic: Adding tag: "OS": "ubuntu"[0m
+[0;32m    amazon-ebs-ubuntu-bionic: Adding tag: "OS-Version": "bionic"[0m
+[0;32m    amazon-ebs-ubuntu-bionic: Adding tag: "Name": "Hashistack"[0m
+[1;32m==> amazon-ebs-ubuntu-bionic: Creating snapshot tags[0m
+[1;32m==> amazon-ebs-ubuntu-bionic: Terminating the source AWS instance...[0m
+[1;32m==> amazon-ebs-ubuntu-bionic: Cleaning up any extra volumes...[0m
+[1;32m==> amazon-ebs-ubuntu-bionic: No volumes to clean up, skipping[0m
+[1;32m==> amazon-ebs-ubuntu-bionic: Deleting temporary security group...[0m
+[1;32m==> amazon-ebs-ubuntu-bionic: Deleting temporary keypair...[0m
+[1;32mBuild 'amazon-ebs-ubuntu-bionic' finished after 9 minutes 28 seconds.[0m
+[1;36m==> azure-ubuntu-bionic: Resource group has been deleted.[0m
+[1;36mBuild 'azure-ubuntu-bionic' finished after 11 minutes 2 seconds.[0m
+
+==> Wait completed after 11 minutes 2 seconds
+
+==> Builds finished. The artifacts of successful builds are:
+--> azure-ubuntu-bionic: Azure.ResourceManagement.VMImage:
+
+OSType: Linux
+ManagedImageResourceGroupName: packer
+ManagedImageName: hashistack-2023-04-13
+ManagedImageId: /subscriptions/37bc21fd-d0f5-46a3-8802-d5136be12b7e/resourceGroups/packer/providers/Microsoft.Compute/images/hashistack-2023-04-13
+ManagedImageLocation: South Central US
+
+--> amazon-ebs-ubuntu-bionic: AMIs were created:
+us-east-1: ami-01e1e3f0046f48453
+

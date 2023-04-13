@@ -1,0 +1,42 @@
+[0m[1mdata.terraform_remote_state.infra: Refreshing state...[0m
+[0m[1mgoogle_service_account.consul: Refreshing state... [id=projects/p-vog23x9oea5u-0/serviceAccounts/consul-vfej@p-vog23x9oea5u-0.iam.gserviceaccount.com][0m
+[0m[1mgoogle_project_iam_member.consul: Refreshing state... [id=p-vog23x9oea5u-0/roles/viewer/serviceAccount:consul-vfej@p-vog23x9oea5u-0.iam.gserviceaccount.com][0m
+[0m[1maws_iam_role.consul: Refreshing state... [id=consul-vfej][0m
+[0m[1maws_iam_policy.nomad: Refreshing state... [id=arn:aws:iam::332258952501:policy/nomad-vfej][0m
+[0m[1maws_iam_role.nomad: Refreshing state... [id=nomad-vfej][0m
+[0m[1maws_iam_role.cts: Refreshing state... [id=cts-vfej][0m
+[0m[1maws_iam_policy.consul: Refreshing state... [id=arn:aws:iam::332258952501:policy/consul-vfej][0m
+[0m[1maws_iam_policy.cts: Refreshing state... [id=arn:aws:iam::332258952501:policy/cts-vfej][0m
+[0m[1maws_iam_role_policy_attachment.cts: Refreshing state... [id=cts-vfej-20230413123055294600000003][0m
+[0m[1maws_iam_instance_profile.cts: Refreshing state... [id=cts-vfej][0m
+[0m[1maws_iam_instance_profile.nomad: Refreshing state... [id=nomad-vfej][0m
+[0m[1maws_iam_role_policy_attachment.nomad: Refreshing state... [id=nomad-vfej-20230413123055189900000001][0m
+[0m[1maws_iam_role_policy_attachment.consul: Refreshing state... [id=consul-vfej-20230413123055208500000002][0m
+[0m[1maws_iam_instance_profile.consul: Refreshing state... [id=consul-vfej][0m
+[0m[1mdata.azurerm_subscription.primary: Refreshing state... [id=/subscriptions/37bc21fd-d0f5-46a3-8802-d5136be12b7e][0m
+[0m[1mazurerm_user_assigned_identity.product-api: Refreshing state... [id=/subscriptions/37bc21fd-d0f5-46a3-8802-d5136be12b7e/resourceGroups/instruqt-vfej/providers/Microsoft.ManagedIdentity/userAssignedIdentities/product-api-vfej][0m
+[0m[1mazurerm_user_assigned_identity.consul: Refreshing state... [id=/subscriptions/37bc21fd-d0f5-46a3-8802-d5136be12b7e/resourceGroups/instruqt-vfej/providers/Microsoft.ManagedIdentity/userAssignedIdentities/consul-vfej][0m
+[0m[1mazurerm_role_assignment.product-api: Refreshing state... [id=/subscriptions/37bc21fd-d0f5-46a3-8802-d5136be12b7e/providers/Microsoft.Authorization/roleAssignments/91609573-967f-006b-1c74-f52df625c51b][0m
+[0m[1mazurerm_role_assignment.consul: Refreshing state... [id=/subscriptions/37bc21fd-d0f5-46a3-8802-d5136be12b7e/providers/Microsoft.Authorization/roleAssignments/e664fb3d-04b7-639a-908d-f9fe3f0d460a][0m
+[33m
+[1m[33mWarning: [0m[0m[1m"skip_credentials_validation": [DEPRECATED] This field is deprecated and will be removed in version 3.0 of the Azure Provider[0m
+
+[0m[0m[0m
+[0m[1m[32m
+Apply complete! Resources: 0 added, 0 changed, 0 destroyed.[0m
+[0m[1m[32m
+Outputs:
+
+aws_consul_iam_instance_profile_name = consul-vfej
+aws_consul_iam_role_arn = arn:aws:iam::332258952501:role/consul-vfej
+aws_cts_iam_instance_profile_name = cts-vfej
+aws_cts_iam_role_arn = arn:aws:iam::332258952501:role/cts-vfej
+aws_nomad_iam_instance_profile_name = nomad-vfej
+aws_nomad_iam_role_arn = arn:aws:iam::332258952501:role/nomad-vfej
+azure_consul_user_assigned_identity_id = /subscriptions/37bc21fd-d0f5-46a3-8802-d5136be12b7e/resourceGroups/instruqt-vfej/providers/Microsoft.ManagedIdentity/userAssignedIdentities/consul-vfej
+azure_consul_user_assigned_identity_name = consul-vfej
+azure_consul_user_assigned_identity_principal_id = fbb7256b-225e-42f6-8db0-efd3e176d19e
+azure_product_api_user_assigned_identity_id = /subscriptions/37bc21fd-d0f5-46a3-8802-d5136be12b7e/resourceGroups/instruqt-vfej/providers/Microsoft.ManagedIdentity/userAssignedIdentities/product-api-vfej
+azure_product_api_user_assigned_identity_name = product-api-vfej
+azure_product_api_user_assigned_identity_principal_id = efb6b0ac-81cb-46e3-bb01-0d2ebc1385e0
+gcp_consul_service_account_email = consul-vfej@p-vog23x9oea5u-0.iam.gserviceaccount.com[0m

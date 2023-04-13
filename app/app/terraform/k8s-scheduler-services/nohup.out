@@ -1,0 +1,84 @@
+[0m[1mdata.terraform_remote_state.infra: Refreshing state...[0m
+[0m[1mdata.terraform_remote_state.iam: Refreshing state...[0m
+[0m[1mdata.google_client_config.provider: Refreshing state...[0m
+[0m[1mgoogle_container_cluster.react: Creating...[0m[0m
+[0m[1mgoogle_container_cluster.graphql: Creating...[0m[0m
+[0m[1mgoogle_container_cluster.react: Still creating... [10s elapsed][0m[0m
+[0m[1mgoogle_container_cluster.graphql: Still creating... [10s elapsed][0m[0m
+[0m[1mgoogle_container_cluster.react: Still creating... [20s elapsed][0m[0m
+[0m[1mgoogle_container_cluster.graphql: Still creating... [20s elapsed][0m[0m
+[0m[1mgoogle_container_cluster.react: Still creating... [30s elapsed][0m[0m
+[0m[1mgoogle_container_cluster.graphql: Still creating... [30s elapsed][0m[0m
+[0m[1mgoogle_container_cluster.react: Still creating... [40s elapsed][0m[0m
+[0m[1mgoogle_container_cluster.graphql: Still creating... [40s elapsed][0m[0m
+[0m[1mgoogle_container_cluster.react: Still creating... [50s elapsed][0m[0m
+[0m[1mgoogle_container_cluster.graphql: Still creating... [50s elapsed][0m[0m
+[0m[1mgoogle_container_cluster.react: Still creating... [1m0s elapsed][0m[0m
+[0m[1mgoogle_container_cluster.graphql: Still creating... [1m0s elapsed][0m[0m
+[0m[1mgoogle_container_cluster.react: Still creating... [1m10s elapsed][0m[0m
+[0m[1mgoogle_container_cluster.graphql: Still creating... [1m10s elapsed][0m[0m
+[0m[1mgoogle_container_cluster.react: Still creating... [1m20s elapsed][0m[0m
+[0m[1mgoogle_container_cluster.graphql: Still creating... [1m20s elapsed][0m[0m
+[0m[1mgoogle_container_cluster.react: Still creating... [1m30s elapsed][0m[0m
+[0m[1mgoogle_container_cluster.graphql: Still creating... [1m30s elapsed][0m[0m
+[0m[1mgoogle_container_cluster.react: Still creating... [1m40s elapsed][0m[0m
+[0m[1mgoogle_container_cluster.graphql: Still creating... [1m40s elapsed][0m[0m
+[0m[1mgoogle_container_cluster.react: Still creating... [1m50s elapsed][0m[0m
+[0m[1mgoogle_container_cluster.graphql: Still creating... [1m50s elapsed][0m[0m
+[0m[1mgoogle_container_cluster.react: Still creating... [2m0s elapsed][0m[0m
+[0m[1mgoogle_container_cluster.graphql: Still creating... [2m0s elapsed][0m[0m
+[0m[1mgoogle_container_cluster.react: Still creating... [2m10s elapsed][0m[0m
+[0m[1mgoogle_container_cluster.graphql: Still creating... [2m10s elapsed][0m[0m
+[0m[1mgoogle_container_cluster.react: Still creating... [2m20s elapsed][0m[0m
+[0m[1mgoogle_container_cluster.graphql: Still creating... [2m20s elapsed][0m[0m
+[0m[1mgoogle_container_cluster.react: Still creating... [2m30s elapsed][0m[0m
+[0m[1mgoogle_container_cluster.graphql: Still creating... [2m30s elapsed][0m[0m
+[0m[1mgoogle_container_cluster.react: Still creating... [2m40s elapsed][0m[0m
+[0m[1mgoogle_container_cluster.graphql: Still creating... [2m40s elapsed][0m[0m
+[0m[1mgoogle_container_cluster.react: Still creating... [2m50s elapsed][0m[0m
+[0m[1mgoogle_container_cluster.graphql: Still creating... [2m50s elapsed][0m[0m
+[0m[1mgoogle_container_cluster.react: Still creating... [3m0s elapsed][0m[0m
+[0m[1mgoogle_container_cluster.graphql: Still creating... [3m0s elapsed][0m[0m
+[0m[1mgoogle_container_cluster.react: Still creating... [3m10s elapsed][0m[0m
+[0m[1mgoogle_container_cluster.graphql: Still creating... [3m10s elapsed][0m[0m
+[0m[1mgoogle_container_cluster.react: Still creating... [3m20s elapsed][0m[0m
+[0m[1mgoogle_container_cluster.graphql: Still creating... [3m20s elapsed][0m[0m
+[0m[1mgoogle_container_cluster.react: Still creating... [3m30s elapsed][0m[0m
+[0m[1mgoogle_container_cluster.graphql: Still creating... [3m30s elapsed][0m[0m
+[0m[1mgoogle_container_cluster.react: Still creating... [3m40s elapsed][0m[0m
+[0m[1mgoogle_container_cluster.graphql: Still creating... [3m40s elapsed][0m[0m
+[0m[1mgoogle_container_cluster.react: Still creating... [3m50s elapsed][0m[0m
+[0m[1mgoogle_container_cluster.graphql: Still creating... [3m50s elapsed][0m[0m
+[0m[1mgoogle_container_cluster.react: Still creating... [4m0s elapsed][0m[0m
+[0m[1mgoogle_container_cluster.graphql: Still creating... [4m0s elapsed][0m[0m
+[0m[1mgoogle_container_cluster.react: Still creating... [4m10s elapsed][0m[0m
+[0m[1mgoogle_container_cluster.graphql: Still creating... [4m10s elapsed][0m[0m
+[0m[1mgoogle_container_cluster.react: Still creating... [4m20s elapsed][0m[0m
+[0m[1mgoogle_container_cluster.graphql: Still creating... [4m20s elapsed][0m[0m
+[0m[1mgoogle_container_cluster.react: Still creating... [4m30s elapsed][0m[0m
+[0m[1mgoogle_container_cluster.graphql: Still creating... [4m30s elapsed][0m[0m
+[0m[1mgoogle_container_cluster.react: Still creating... [4m40s elapsed][0m[0m
+[0m[1mgoogle_container_cluster.graphql: Still creating... [4m40s elapsed][0m[0m
+[0m[1mgoogle_container_cluster.react: Still creating... [4m50s elapsed][0m[0m
+[0m[1mgoogle_container_cluster.graphql: Still creating... [4m50s elapsed][0m[0m
+[0m[1mgoogle_container_cluster.graphql: Creation complete after 4m58s [id=projects/p-vog23x9oea5u-0/locations/us-central1-a/clusters/graphql-vfej][0m[0m
+[0m[1mgoogle_container_cluster.react: Still creating... [5m0s elapsed][0m[0m
+[0m[1mgoogle_container_cluster.react: Still creating... [5m10s elapsed][0m[0m
+[0m[1mgoogle_container_cluster.react: Still creating... [5m20s elapsed][0m[0m
+[0m[1mgoogle_container_cluster.react: Still creating... [5m30s elapsed][0m[0m
+[0m[1mgoogle_container_cluster.react: Still creating... [5m40s elapsed][0m[0m
+[0m[1mgoogle_container_cluster.react: Still creating... [5m50s elapsed][0m[0m
+[0m[1mgoogle_container_cluster.react: Still creating... [6m0s elapsed][0m[0m
+[0m[1mgoogle_container_cluster.react: Still creating... [6m10s elapsed][0m[0m
+[0m[1mgoogle_container_cluster.react: Creation complete after 6m12s [id=projects/p-vog23x9oea5u-0/locations/us-central1-a/clusters/react-vfej][0m[0m
+[0m[1m[32m
+Apply complete! Resources: 2 added, 0 changed, 0 destroyed.[0m
+[0m[1m[32m
+Outputs:
+
+gcp_gke_cluster_graphql_cluster_ca_certificate = LS0tLS1CRUdJTiBDRVJUSUZJQ0FURS0tLS0tCk1JSUVMVENDQXBXZ0F3SUJBZ0lSQU02SU9xVGF3b0dPMUVTVUZ4VUorTVV3RFFZSktvWklodmNOQVFFTEJRQXcKTHpFdE1Dc0dBMVVFQXhNa01UZGtZelF5Tm1JdE5qTmlZaTAwTXpsaUxUbGhZekV0T0RabVpHVm1ZV0ZqWXpjeQpNQ0FYRFRJek1EUXhNekV4TXpFME5Gb1lEekl3TlRNd05EQTFNVEl6TVRRMFdqQXZNUzB3S3dZRFZRUURFeVF4Ck4yUmpOREkyWWkwMk0ySmlMVFF6T1dJdE9XRmpNUzA0Tm1aa1pXWmhZV05qTnpJd2dnR2lNQTBHQ1NxR1NJYjMKRFFFQkFRVUFBNElCandBd2dnR0tBb0lCZ1FDekhJaCs2empaRjcvOG0yNjNRdWdoSng5SHAyc09ld1l1WE1vcQpSUHd1OUZnYjh5WkdzR2JvOWk0SGZoZUlhRE1NaWUvNzFaM3phL2xwNGR1Lyt5c1JKSWhHS2VTTENlMm5OaUJwClNNL1FScUlPeW1WNmdveXQwbUo5MmVnUW5pcWgyZ3NTdHB0akZUV2I0MVlWNHM5ZGxqcHBiNmFvcDFBWFV5dWEKbGgvSDdxczFXYVlKbGZCemg5R0I3eE9mRDJDZ05aV2cyOW9kR0xNblp3cTAzK050OUFDaUlaLzdQVW11dy9YYgpKUU11d2FiYTZPWVJjQVMvbEtNSWhYSlNTblp4VXVuNmV3Slpqd0djcEl4V2JKOXA1alpNUTNwQzFGSUx0TDFyCjRuYmM4cHplbnd6bldyS1lOd21kL0FvUGtXQkh0eEVYU2pRL211UHlrZ1YvMGVsWWNNbGNRN2ppRkFIelJBR0YKQkNvNm5ZNFcway8vOC9Kakk4SVE1MklDSnd5MVBrSTVNa3NZNGpSNkVFNGFjVGE4RWV3VDZ2bnNORlBmMWtURgppK0IvR0tjN1lEbXYyMWl1VHBUR2F1TDMyVFB5Vm5aTzlpSUt1ZzhEMUN6cVd0dWNpWG8zWk4yUjVvZ1lyTEYzClNlNmUvUlJZYlZ5YnkxbXhHaXU4ZXNqdmIxVUNBd0VBQWFOQ01FQXdEZ1lEVlIwUEFRSC9CQVFEQWdJRU1BOEcKQTFVZEV3RUIvd1FGTUFNQkFmOHdIUVlEVlIwT0JCWUVGQTV6QlZlU0RJMVZXQnFOaWhjanlQUytJVEZ0TUEwRwpDU3FHU0liM0RRRUJDd1VBQTRJQmdRQmpFcFd1YlhqNlZYQyt5SXIxb2sxVm5zdXdsclVXUVJnT3JNc0IwZkhqCjZjN0x2M3Q1cDg0ZzF0bTF1TDR4QVJCQnVaaUFmWkRFYmMwWjRVWVdQZVdyekYvVHAxdUM0Y2FPc0FGLzVZQUgKd3NscWMvZEUxdS9zMStWSnhiOUNBb3VXTHZsNEphWWlEZVhtNVcvYklwL1VOaVVZY0gyUk9vVXhzVlZIY283SApFY05wS1BVaUt0R3ljaUF2UkJ1eVo4OHljR1NkN0JHQkV3djZuQ1l4cGhHRUhXdUxhTDVtZXVBT2FpQnlnY3hNCkFtbDJqbnpvdko0OUwyNGtUSStPMGxyaXpYYjhWNHNzSnc2SUF3YWhua0dmaStFYTBNbnJheERyOG84anUyNzQKdndZL0tXZ1daK0dtRjQvUENXNjhqNVV6d3hGanFxcmp6VjZFOHZOL1hoUVkwSklmZk94TUJsSjhnTUVZbHZRZApkV212L1psbXdYTnhsYVd6cWoycmgxKzNUZ3JOWHg5L3ZnUFJZV3dHRkNuRGdNV0RYMnU4MjAzMVJ6VVpjUkNhCkNJY2ViNkhFclVCaU9qUFliNXA0U0R0ekY1MTlTalVId2dPUHNmWTByTnc4NFBFaFJnMUtYTVJBeHM3Q2VPL1AKV0U5LzFpeVlDV3REUmQ3Y3NxelNET2M9Ci0tLS0tRU5EIENFUlRJRklDQVRFLS0tLS0K
+gcp_gke_cluster_graphql_endpoint = 34.173.137.200
+gcp_gke_cluster_graphql_name = graphql-vfej
+gcp_gke_cluster_react_cluster_ca_certificate = LS0tLS1CRUdJTiBDRVJUSUZJQ0FURS0tLS0tCk1JSUVMVENDQXBXZ0F3SUJBZ0lSQU95Sm5NU1Z6NGtZcWFlYytkdDZNNzR3RFFZSktvWklodmNOQVFFTEJRQXcKTHpFdE1Dc0dBMVVFQXhNa1pESXlOalptTkdVdE9ESmlNUzAwWkRWaExXRTRZak10WkRWaU9HTmtNRE5oTUdZeQpNQ0FYRFRJek1EUXhNekV4TXpFME5sb1lEekl3TlRNd05EQTFNVEl6TVRRMldqQXZNUzB3S3dZRFZRUURFeVJrCk1qSTJObVkwWlMwNE1tSXhMVFJrTldFdFlUaGlNeTFrTldJNFkyUXdNMkV3WmpJd2dnR2lNQTBHQ1NxR1NJYjMKRFFFQkFRVUFBNElCandBd2dnR0tBb0lCZ1FDMkN5b0s0bEE1UkJTbzl5SGYzV3B4TmR1ZEZEdllkeW9LdkJEcAorRHMySUhsSlFobURmZDZmZnpaWVZjTWdrVzA5ZWozV1c5eGhUOEdGUThSeS9DU0xUNFRSemJPekFOcjh5VHJuCmpHZ2NSdzVmZFR0OXQwNzZMTzk2UFR6SjBzdlUwaGJPRGNicDRJRnEwazFpdDJWcUJTT2NxbTF5c2o2a0lpLzgKcUNPU3NNSEwzT1FEUmhmOS93SHpoRWlLQ2R5eXVyMldzMURxYkVDbGtJQ2NCQzR0amk4VEVOUU9GdXJKMDdPRwoxeTBMMmhVUGt1dUQ5eThLbDhTaG5yMVE0eGZXeDZwdUF4WTVidWNyQk5DbU16dG55YW9qUldMUHBRVVZhaFdiClJEOUMvNDN1OHNGcDhTcDNYQkVXV1VVWTFqdE5zTXZEbjV1SDR4QUhwMlVFVWFJdkl5eGQwbHhBbnhUSmhvYU0KR0Z4MTdsdWNWT3pmdzI3Y1ZRSjBubkJlTXBadUpERW1NTFBzeVlMMGM1RmhpbXJIWHlsUWpBQlR4TUltZ2xwNApQUGhJSkZVNTYyMHI4V3JVN2RPa0tEMHNyVjhOZGtPN3Vmc2xOVFREeWxBWlMzak5qR095dWs1ZThtM0FIWEpWClBRMmg0WTBSaVhOL1AzQWN5MmR3eFlWQXRsVUNBd0VBQWFOQ01FQXdEZ1lEVlIwUEFRSC9CQVFEQWdJRU1BOEcKQTFVZEV3RUIvd1FGTUFNQkFmOHdIUVlEVlIwT0JCWUVGRStaWEozbmtCOFR4cnc4Rk5GZW9ON0J4VEZUTUEwRwpDU3FHU0liM0RRRUJDd1VBQTRJQmdRQlRXMWZBNHRWdnRUZ1VnTWlnb3FlRjl0ODVJS2F2ckhNdU5mNUdhUlg4CjRJWnJWa3JLS21wZnQ5WVl1TEVHdFdZWWYxZlZJQXZLQit6bTBCeXd3aUw0eVlhdVpocklaUWpJYmlDMW4xbHIKamZVSTFNSEN0M3YwQzRjNFA3Ly9wcVN4T2N6VXROVlZhWVVSNDhicTNuVm1GZzdrSkZjWGQrRTZXeGJ1MTBiNgpaaEl1YkxlUlFuWUYyU012NUFJSmE5eVdvZzBvZmFpbjZvd3lkR2FZUVdmcEgvTFhBRHh5UFNabEVMc1hmeEhUCnQwVjdHaEh4UU5EUjByZ2RGelZ6dGt6aHhQbk01c2JOWSthQU9OYU5KOXh5VnJPeGg0cWVIcWVzb2xCRGJpanMKU2pxTUlVSCthRXowTDdnZTZVTldxNDZaT1B4UjAzQXg5THVibUgvbkp4MFVVMGE5dlZpdXVsdUQzdC83YS8xcgpNdDc1YkVGZ2lXVzdrMFZWRXlxb0hKL0tCb2IrbWZlb2JvVlRGZTd4UkJIZ1lmbWFLZWxFNlBlTEZKOHg4ejZJCmQzRjlwcjBOTUtUY3BxQTJ0RE4xdldYMUhoeDVwcmE3VE5sK05ReW9VSlZUWGZ6endndFZBUFR4dFFlUHdaL2YKbHdRaGFJSWlxVnlPa3BlM3FOT01Gdnc9Ci0tLS0tRU5EIENFUlRJRklDQVRFLS0tLS0K
+gcp_gke_cluster_react_endpoint = 35.225.86.63
+gcp_gke_cluster_react_name = react-vfej[0m

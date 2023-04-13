@@ -1,0 +1,19 @@
+[0m[1mdata.terraform_remote_state.infra: Refreshing state...[0m
+[0m[1mdata.terraform_remote_state.iam: Refreshing state...[0m
+[0m[1mdata.template_file.init: Refreshing state...[0m
+[0m[1mdata.template_file.nomad-client: Refreshing state...[0m
+[0m[1mdata.aws_ami.ubuntu: Refreshing state...[0m
+[0m[1maws_security_group.nomad: Creating...[0m[0m
+[0m[1maws_security_group.nomad: Creation complete after 6s [id=sg-03743b1fb7d63270e][0m[0m
+[0m[1maws_instance.nomad: Creating...[0m[0m
+[0m[1maws_instance.nomad-client[0]: Creating...[0m[0m
+[0m[1maws_instance.nomad: Still creating... [10s elapsed][0m[0m
+[0m[1maws_instance.nomad-client[0]: Still creating... [10s elapsed][0m[0m
+[0m[1maws_instance.nomad: Creation complete after 15s [id=i-030eb67331a5ac97c][0m[0m
+[0m[1maws_instance.nomad-client[0]: Creation complete after 16s [id=i-078a7bf9896c446fb][0m[0m
+[0m[1m[32m
+Apply complete! Resources: 3 added, 0 changed, 0 destroyed.[0m
+[0m[1m[32m
+Outputs:
+
+aws_nomad_server_public_ip = 54.162.183.133[0m

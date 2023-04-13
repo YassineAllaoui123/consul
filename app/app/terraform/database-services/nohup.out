@@ -1,0 +1,61 @@
+[0m[1mdata.terraform_remote_state.infra: Reading...[0m[0m
+[0m[1mdata.terraform_remote_state.infra: Read complete after 0s[0m[0m
+[0m[1mrandom_password.pg: Creating...[0m[0m
+[0m[1mrandom_password.pg: Creation complete after 0s [id=none][0m[0m
+[0m[1mazurerm_postgresql_flexible_server.postgres: Creating...[0m[0m
+[0m[1mazurerm_postgresql_flexible_server.postgres: Still creating... [10s elapsed][0m[0m
+[0m[1mazurerm_postgresql_flexible_server.postgres: Still creating... [20s elapsed][0m[0m
+[0m[1mazurerm_postgresql_flexible_server.postgres: Still creating... [30s elapsed][0m[0m
+[0m[1mazurerm_postgresql_flexible_server.postgres: Still creating... [40s elapsed][0m[0m
+[0m[1mazurerm_postgresql_flexible_server.postgres: Still creating... [50s elapsed][0m[0m
+[0m[1mazurerm_postgresql_flexible_server.postgres: Still creating... [1m0s elapsed][0m[0m
+[0m[1mazurerm_postgresql_flexible_server.postgres: Still creating... [1m10s elapsed][0m[0m
+[0m[1mazurerm_postgresql_flexible_server.postgres: Still creating... [1m20s elapsed][0m[0m
+[0m[1mazurerm_postgresql_flexible_server.postgres: Still creating... [1m30s elapsed][0m[0m
+[0m[1mazurerm_postgresql_flexible_server.postgres: Still creating... [1m40s elapsed][0m[0m
+[0m[1mazurerm_postgresql_flexible_server.postgres: Still creating... [1m50s elapsed][0m[0m
+[0m[1mazurerm_postgresql_flexible_server.postgres: Still creating... [2m0s elapsed][0m[0m
+[0m[1mazurerm_postgresql_flexible_server.postgres: Still creating... [2m10s elapsed][0m[0m
+[0m[1mazurerm_postgresql_flexible_server.postgres: Still creating... [2m20s elapsed][0m[0m
+[0m[1mazurerm_postgresql_flexible_server.postgres: Still creating... [2m30s elapsed][0m[0m
+[0m[1mazurerm_postgresql_flexible_server.postgres: Still creating... [2m40s elapsed][0m[0m
+[0m[1mazurerm_postgresql_flexible_server.postgres: Still creating... [2m50s elapsed][0m[0m
+[0m[1mazurerm_postgresql_flexible_server.postgres: Still creating... [3m0s elapsed][0m[0m
+[0m[1mazurerm_postgresql_flexible_server.postgres: Still creating... [3m10s elapsed][0m[0m
+[0m[1mazurerm_postgresql_flexible_server.postgres: Still creating... [3m20s elapsed][0m[0m
+[0m[1mazurerm_postgresql_flexible_server.postgres: Still creating... [3m30s elapsed][0m[0m
+[0m[1mazurerm_postgresql_flexible_server.postgres: Still creating... [3m40s elapsed][0m[0m
+[0m[1mazurerm_postgresql_flexible_server.postgres: Still creating... [3m50s elapsed][0m[0m
+[0m[1mazurerm_postgresql_flexible_server.postgres: Still creating... [4m0s elapsed][0m[0m
+[0m[1mazurerm_postgresql_flexible_server.postgres: Creation complete after 4m8s [id=/subscriptions/37bc21fd-d0f5-46a3-8802-d5136be12b7e/resourceGroups/instruqt-vfej/providers/Microsoft.DBforPostgreSQL/flexibleServers/instruqt-vfej][0m[0m
+[33m
+[1m[33mWarning: [0m[0m[1mResource targeting is in effect[0m
+
+[0mYou are creating a plan with the -target option, which means that the result
+of this plan may not represent all of the changes requested by the current
+configuration.
+		
+The -target option is not for routine use, and is provided only for
+exceptional situations such as recovering from errors or mistakes, or when
+Terraform specifically suggests to use it as part of an error message.
+[0m[0m
+[33m
+[1m[33mWarning: [0m[0m[1mApplied changes may be incomplete[0m
+
+[0mThe plan was created with the -target option in effect, so some changes
+requested in the configuration may have been ignored and the output values may
+not be fully updated. Run the following command to verify that no other
+changes are pending:
+    terraform plan
+	
+Note that the -target option is not suitable for routine use, and is provided
+only for exceptional situations such as recovering from errors or mistakes, or
+when Terraform specifically suggests to use it as part of an error message.
+[0m[0m
+[0m[1m[32m
+Apply complete! Resources: 2 added, 0 changed, 0 destroyed.[0m
+[0m[1m[32m
+Outputs:
+
+postgres_fqdn = instruqt-vfej.postgres.database.azure.com
+postgres_password = YO!QRaDfqBjpNuBLegtR[0m

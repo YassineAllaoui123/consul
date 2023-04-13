@@ -1,0 +1,35 @@
+[0m[1mdata.terraform_remote_state.iam: Refreshing state...[0m
+[0m[1mdata.terraform_remote_state.infra: Refreshing state...[0m
+[0m[1mdata.template_file.aws_esm_init: Refreshing state...[0m
+[0m[1mdata.aws_ami.ubuntu: Refreshing state...[0m
+[0m[1mdata.azurerm_subscription.primary: Refreshing state...[0m
+[0m[1mdata.azurerm_image.ubuntu: Refreshing state...[0m
+[0m[1mdata.template_file.azure-esm-init: Refreshing state...[0m
+[0m[1maws_security_group.consul: Creating...[0m[0m
+[0m[1mazurerm_public_ip.esm: Creating...[0m[0m
+[0m[1maws_security_group.consul: Creation complete after 6s [id=sg-0348152677440de74][0m[0m
+[0m[1maws_instance.esm: Creating...[0m[0m
+[0m[1mazurerm_public_ip.esm: Creation complete after 6s [id=/subscriptions/37bc21fd-d0f5-46a3-8802-d5136be12b7e/resourceGroups/instruqt-vfej/providers/Microsoft.Network/publicIPAddresses/consul-esm-ip][0m[0m
+[0m[1mazurerm_network_interface.consul-esm: Creating...[0m[0m
+[0m[1mazurerm_network_interface.consul-esm: Creation complete after 6s [id=/subscriptions/37bc21fd-d0f5-46a3-8802-d5136be12b7e/resourceGroups/instruqt-vfej/providers/Microsoft.Network/networkInterfaces/consul-esm-nic][0m[0m
+[0m[1mazurerm_virtual_machine.consul-esm: Creating...[0m[0m
+[0m[1maws_instance.esm: Still creating... [10s elapsed][0m[0m
+[0m[1maws_instance.esm: Creation complete after 15s [id=i-0c5f7d2aad814a0dd][0m[0m
+[0m[1mazurerm_virtual_machine.consul-esm: Still creating... [10s elapsed][0m[0m
+[0m[1mazurerm_virtual_machine.consul-esm: Still creating... [20s elapsed][0m[0m
+[0m[1mazurerm_virtual_machine.consul-esm: Still creating... [30s elapsed][0m[0m
+[0m[1mazurerm_virtual_machine.consul-esm: Still creating... [40s elapsed][0m[0m
+[0m[1mazurerm_virtual_machine.consul-esm: Still creating... [50s elapsed][0m[0m
+[0m[1mazurerm_virtual_machine.consul-esm: Creation complete after 56s [id=/subscriptions/37bc21fd-d0f5-46a3-8802-d5136be12b7e/resourceGroups/instruqt-vfej/providers/Microsoft.Compute/virtualMachines/consul-esm-vm][0m[0m
+[33m
+[1m[33mWarning: [0m[0m[1m"skip_credentials_validation": [DEPRECATED] This field is deprecated and will be removed in version 3.0 of the Azure Provider[0m
+
+[0m[0m[0m
+[0m[1m[32m
+Apply complete! Resources: 5 added, 0 changed, 0 destroyed.[0m
+[0m[1m[32m
+Outputs:
+
+aws_esm_private_ip = 10.1.3.47
+aws_esm_public_ip = 18.212.203.11
+azure_esm_public_ip = 13.65.190.100[0m

@@ -1,0 +1,68 @@
+# Copyright (c) HashiCorp, Inc.
+# SPDX-License-Identifier: MPL-2.0
+
+global:
+  name: consul
+  datacenter: gcp-us-central-1
+  image: 'hashicorp/consul-enterprise:1.10.2-ent'
+  tls:
+    enabled: true
+    caCert:
+      secretName: consul-federation
+      secretKey: caCert
+    caKey:
+      secretName: consul-federation
+      secretKey: caKey
+    enableAutoEncrypt: true
+  gossipEncryption:
+    secretName: consul-federation
+    secretKey: gossipEncryptionKey
+  acls:
+    manageSystemACLs: true
+    replicationToken:
+      secretName: consul-federation
+      secretKey: replicationToken
+  federation:
+    enabled: true
+ui:
+  enabled: true
+  service:
+    type: NodePort
+    additionalSpec: |
+       ports:
+        - name: https
+          port: 443
+          targetPort: 8501
+          nodePort: 30851
+server:
+  replicas: 1
+  bootstrapExpect: 1
+  extraVolumes:
+    - type: secret
+      name: consul-federation
+      items:
+        - key: serverConfigJSON
+          path: config.json
+      load: true
+  exposeGossipAndRPCPorts: true
+  ports:
+    serflan:
+      port: 9301
+  enterpriseLicense:
+      secretName: 'consul-ent-license'
+      secretKey: 'key'
+client:
+  enabled: true
+  exposeGossipPorts: true
+controller:
+  enabled: true
+meshGateway:
+  enabled: true
+  replicas: 1
+syncCatalog:
+  enabled: true
+  default: false
+  toConsul: true
+  toK8S: false
+connectInject:
+  enabled: true

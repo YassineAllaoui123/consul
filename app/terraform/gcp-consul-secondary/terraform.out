@@ -1,0 +1,9 @@
+[0m[1mdata.terraform_remote_state.iam: Refreshing state...[0m
+[0m[1mdata.terraform_remote_state.infra: Refreshing state...[0m
+[0m[1mgoogle_container_cluster.shared: Refreshing state... [id=projects/p-vog23x9oea5u-0/locations/us-central1-a/clusters/shared-vfej][0m
+[0m[1m[32m
+Apply complete! Resources: 0 added, 0 changed, 0 destroyed.[0m
+[0m[1m[32m
+Outputs:
+
+gcp_gke_cluster_shared_name = shared-vfej[0m

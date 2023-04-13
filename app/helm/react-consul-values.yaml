@@ -1,0 +1,52 @@
+# Copyright (c) HashiCorp, Inc.
+# SPDX-License-Identifier: MPL-2.0
+
+global:
+  enabled: false
+  name: consul-react
+  image: 'hashicorp/consul-enterprise:1.10.2-ent'
+  datacenter: gcp-us-central-1
+  acls:
+      manageSystemACLs: true
+      bootstrapToken:
+        secretName: bootstrap-token
+        secretKey: token
+  tls:
+    enabled: true
+    enableAutoEncrypt: true
+    caCert:
+      secretName: hashicorp-consul-ca-cert
+      secretKey: tls.crt
+  gossipEncryption:
+    secretName: hashicorp-consul-gossip-key
+    secretKey: key
+  enableConsulNamespaces: true
+client:
+  enabled: true
+  join:
+    - "provider=gce zone_pattern=us-central1-a tag_value=consul-server"
+externalServers:
+  enabled: true
+  hosts:
+    - "provider=gce zone_pattern=us-central1-a tag_value=consul-server"
+  tlsServerName: server.gcp-us-central-1.consul
+  httpsPort: 30851
+controller:
+  enabled: true
+syncCatalog:
+  enabled: true
+  default: false
+  toConsul: true
+  toK8S: false
+  k8sTag: k8s-react
+  consulNamespaces:
+    consulDestinationNamespace: "frontend"
+connectInject:
+  enabled: true
+  default: true
+  envoyExtraArgs: "-l debug"
+  k8sAllowNamespaces: ["default"]
+  consulNamespaces:
+    consulDestinationNamespace: "frontend"
+ingressGateways:
+  enabled: false
